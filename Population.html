@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Population </title>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script type="text/javascript">
+ 
+
+
+function init(){
+    google.charts.load('current', {'packages': ['geomap']});
+    google.charts.setOnLoadCallback(drawMap);
+  }
+  init();
+
+  
+  function drawMap() {
+    var container = document.getElementById('map_canvas1');
+	  container.innerHTML = '<img src="https://data-gov.tw.rpi.edu/images/ajax-loader.gif" /><br /><br />Please wait... The query may take some time to complete.';
+       
+var queryurl = "http://localhost:3030/Quality of Care - Populations.js"
+
+var query = new google.visualization.Query(queryurl); // Send the query.
+
+      // query.setTimeout(30);
+    query.send(handleQueryResponse);
+  }
+
+  function  handleQueryResponse(response){
+
+  	 
+    if (response.isError()) {
+    	
+      alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+      return;
+    }
+
+ 	var data = response.getDataTable();
+    console.log(data);
+		
+	/***code to visualize**/
+	    var newdata = new google.visualization.DataTable();
+
+                newdata.addColumn('string', 'State');
+                newdata.addColumn('number', 'homeless_outpateint');
+				newdata.addColumn('string', 'homeless_outpateint');
+
+		 
+                var rows = data.getNumberOfRows();
+
+                for (var i = 0; i < rows; i++)
+                {
+                    var state = 'US-' + data.getValue(i, 0);
+                    var Inpat09 =  data.getValue(i, 1); 
+
+			  
+                    newdata.addRow([state, Inpat09, state]);
+                }
+      		  
+                     
+               var options = {};
+                options['region'] = 'US';	
+                options['dataMode'] = 'regions';
+                options['width'] = 800;
+                options['height'] = 300;
+				
+		options['colors'] = [0xCCFFFF,0x99FFFF,0x66FFFF,0x00FFFF
+,0x33CCCC,0x00CCCC,0x66CCFF,0x00CCFF,0x9999FF,0X3399FF ,0x3333FF,0x003399,0x000066];
+	
+                var visualize = document.getElementById('map_canvas1');
+                var geomap1 = new google.visualization.GeoMap(visualize);
+                geomap1.draw(newdata, options );   
+  }
+ </script>
+  </head>
+  <body>
+    <h1> Population Data </h1>
+    <div class = "row" style="margin:0;">
+    <div class="col-md-6">
+      <div id='map_canvas1'></div>
+    </div>
+   </div>
+  </body>
