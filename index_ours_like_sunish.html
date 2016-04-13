@@ -1,3 +1,5 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Patient data</title>
@@ -24,10 +26,6 @@ function init(){
   function drawMap() {
     var container = document.getElementById('map_canvas1');
 	  container.innerHTML = '<img src="https://data-gov.tw.rpi.edu/images/ajax-loader.gif" /><br /><br />Please wait... The query may take some time to complete.';
-    var container = document.getElementById('map_canvas2');
-	  container.innerHTML = '<img src="https://data-gov.tw.rpi.edu/images/ajax-loader.gif" /><br /><br />Please wait... The query may take some time to complete.';
-    
-    var sparqlproxy = "https://data-gov.tw.rpi.edu/sparql?";
     
     var querytxt =  "PREFIX DS1202:<http://data-gov.tw.rpi.edu/vocab/p/1202/>" +
                     "PREFIX xsd:<http://www.w3.org/2001/XMLSchema#> " +
@@ -65,11 +63,14 @@ var queryurl = "http://localhost:3030/Quality of Care - Populations.js"
 
  	alert('4');
     var data = response.getDataTable();
-    console.log(data);
+    alert('5');
+   // console.log(data);
+    alert('6');
     var graphData = new google.visualization.DataTable();
 
     var rows = data.getNumberOfRows();
 
+  alert('number of rows in data'+rows);
      graphData.addColumn('string', 'State');
      graphData.addColumn('number', 'outPatients');
 
@@ -79,8 +80,8 @@ var queryurl = "http://localhost:3030/Quality of Care - Populations.js"
       var outPatients = data.getValue(i, 2);
      
       graphData.addRow([state, outPatients]);
+      alert('adding data to the graphData');
     }
-
  var options = {
       chart: {
         title: 'outpatient - state stuff',
@@ -89,8 +90,9 @@ var queryurl = "http://localhost:3030/Quality of Care - Populations.js"
       height: 500
     };
         var chart = new google.charts.Line(document.getElementById('map_canvas1'));
+        alert('going to draw the graph');
     chart.draw(graphData, options);
-
+      alert('just drew the graph')
 
 
   }
