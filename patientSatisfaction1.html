@@ -25,7 +25,7 @@ function init(){
     var container = document.getElementById('map_canvas1');
     container.innerHTML = '<img src="https://data-gov.tw.rpi.edu/images/ajax-loader.gif" /><br /><br />Please wait... The query may take some time to complete.';
     var container = document.getElementById('map_canvas2');
-    container.innerHTML = '<img src="https://data-gov.tw.rpi.edu/images/ajax-loader.gif" /><br /><br />Please wait... The query may take some time to complete.';
+    //container.innerHTML = '<img src="https://data-gov.tw.rpi.edu/images/ajax-loader.gif" /><br /><br />Please wait... The query may take some time to complete.';
 /*
     var queryurl = "http://localhost:3030/myDataset/query?query=" + encodeURIComponent(querytxt) + "&output=xml";
     alert('1');
@@ -42,9 +42,9 @@ var queryurl = "http://localhost:3030/patientSatisfaction.js"
 
   function  handleQueryResponse(response){
 
-     alert('2');
+  //   alert('2');
     if (response.isError()) {
-       alert('3');
+  //     alert('3');
       alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
       return;
     }
