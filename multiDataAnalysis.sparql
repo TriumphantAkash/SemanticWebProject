@@ -1,0 +1,23 @@
+PREFIX DS1208: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/raw/>
+PREFIX DS1209: <http://logd.tw.rpi.edu/source/data-gov/dataset/1209/vocab/raw/>
+PREFIX DS1212: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/raw/>
+
+SELECT distinct ?state (SUM(xsd:double(?white_inpatients)) as ?Total_white_inpatients) (SUM(xsd:double(?afr_am_inpatients)) as ?Total_afr_amr_inpatients) (SUM(xsd:double(?homeless_outpateint)) as ?total_homeless_outpateint) (SUM(xsd:double(?emergency)) as ?Total_emergency)
+WHERE {
+
+GRAPH <http://logd.tw.rpi.edu/source/data-gov/dataset/1209/version/1st-anniversary>  {	
+?s DS1209:white_inpatient ?white_inpatients.
+?s DS1209:african_american_inpatient ?afr_am_inpatients.
+?s DS1209:state ?state .    
+}
+
+GRAPH <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary>  {	
+				?s1 DS1208:homeless_outpateint ?homeless_outpateint.
+				?s1 DS1208:state ?state .   
+}
+
+GRAPH <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary>  {	
+?s2 DS1212:emergency ?emergency.
+?s2 DS1212:state ?state.
+}}
+order by ?state

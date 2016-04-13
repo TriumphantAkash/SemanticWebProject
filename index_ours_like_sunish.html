@@ -1,0 +1,114 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Patient data</title>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script type="text/javascript">
+  var vm = this;
+  vm.DPValue = "JudicialBranch";
+
+
+function init(){
+    google.charts.load('current', {'packages': ['line']});
+    google.charts.setOnLoadCallback(drawMap);
+  }
+  init();
+
+  function dropValueChange(dp){
+    vm.DPValue = dp;
+    drawMap();
+  }
+
+  function drawMap() {
+    var container = document.getElementById('map_canvas1');
+	  container.innerHTML = '<img src="https://data-gov.tw.rpi.edu/images/ajax-loader.gif" /><br /><br />Please wait... The query may take some time to complete.';
+    var container = document.getElementById('map_canvas2');
+	  container.innerHTML = '<img src="https://data-gov.tw.rpi.edu/images/ajax-loader.gif" /><br /><br />Please wait... The query may take some time to complete.';
+    
+    var sparqlproxy = "https://data-gov.tw.rpi.edu/sparql?";
+    
+    var querytxt =  "PREFIX DS1202:<http://data-gov.tw.rpi.edu/vocab/p/1202/>" +
+                    "PREFIX xsd:<http://www.w3.org/2001/XMLSchema#> " +
+                    "SELECT distinct ?state (SUM( xsd:integer(?homeless_outpateint)) as ?total_homeless_outpateint)" +
+                    "WHERE {" +
+                    "GRAPH <http://localhost:3030/myDataset/data/GRAPH_1208>" +
+                    "{" +
+                    " ?s1 DS1202:homeless_outpateint ?homeless_outpateint." +
+                    " ?s1 DS1202:state ?state . " +
+                    "}" +
+                    "}" +
+                    "group by ?state   order  by  ?state";
+/*
+    var queryurl = "http://localhost:3030/myDataset/query?query=" + encodeURIComponent(querytxt) + "&output=xml";
+    alert('1');
+    */
+
+var queryurl = "http://localhost:3030/Quality of Care - Populations.js"
+
+    var query = new google.visualization.Query(queryurl); // Send the query.
+
+    alert(queryurl);
+   // query.setTimeout(30);
+    query.send(handleQueryResponse);
+  }
+
+  function  handleQueryResponse(response){
+
+  	 alert('2');
+    if (response.isError()) {
+    	 alert('3');
+      alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+      return;
+    }
+
+ 	alert('4');
+    var data = response.getDataTable();
+    console.log(data);
+    var graphData = new google.visualization.DataTable();
+
+    var rows = data.getNumberOfRows();
+
+     graphData.addColumn('string', 'State');
+     graphData.addColumn('number', 'outPatients');
+
+     for (var i = 0; i < rows; i++ ){
+
+      var State = data.getValue(i, 1);
+      var outPatients = data.getValue(i, 2);
+     
+      graphData.addRow([state, outPatients]);
+    }
+
+ var options = {
+      chart: {
+        title: 'outpatient - state stuff',
+        subtitle: 'numebr of outPatients'
+      },
+      height: 500
+    };
+        var chart = new google.charts.Line(document.getElementById('map_canvas1'));
+    chart.draw(graphData, options);
+
+
+
+  }
+
+
+  </script>
+
+  </head>
+
+  <body>
+    
+    <h1> hello </h1>
+    <div class = "row" style="margin:0;">
+    <div class="col-md-6">
+      <div id='map_canvas1'></div>
+    </div>
+    <div class="col-md-6">
+      <div id='map_canvas2'></div>
+    </div>
+</div>
+  </body>

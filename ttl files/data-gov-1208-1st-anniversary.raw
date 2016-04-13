@@ -1,0 +1,3633 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Mar-01/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/data-gov/provenance/1208/version/1st-anniversary/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix data-gov_vocab: <http://logd.tw.rpi.edu/source/data-gov/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix ds1208_vocab: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/raw/> .
+@prefix ds1208: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/> .
+@prefix ds1208_global_value: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+raw:visn ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VISN" ;
+	rdfs:label "VISN" ;
+	rdfs:range rdfs:Literal .
+
+raw:visn_name ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "VISN Name" ;
+	rdfs:label "VISN Name" ;
+	rdfs:range rdfs:Literal .
+
+raw:facility_name ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Facility Name" ;
+	rdfs:label "Facility Name" ;
+	rdfs:range rdfs:Literal .
+
+raw:city ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "City" ;
+	rdfs:label "City" ;
+	rdfs:range rdfs:Literal .
+
+raw:state ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "State" ;
+	rdfs:label "State" ;
+	rdfs:range rdfs:Literal .
+
+raw:female_outpatient ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Female (outpatient)" ;
+	rdfs:label "Female outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:male_outpatient ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Male (outpatient)" ;
+	rdfs:label "Male outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:geriatric_65_yo_inpatient ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Geriatric ? 65 yo (inpatient)" ;
+	rdfs:label "Geriatric ? 65 yo inpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:geriatric_65yo_inpatient ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Geriatric <65yo (inpatient)" ;
+	rdfs:label "Geriatric <65yo inpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:geriatric_65_yo_outpatient ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Geriatric ? 65 yo (outpatient)" ;
+	rdfs:label "Geriatric ? 65 yo outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:p_65yo_outpatient ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "<65yo (outpatient)" ;
+	rdfs:label "<65yo outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:disabled_p1_p4_inpatient ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Disabled P1-P4 (inpatient)" ;
+	rdfs:label "Disabled P1-P4 inpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:disabled_p1_p4_outpatient ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "Disabled P1-P4 (outpatient)" ;
+	rdfs:label "Disabled P1-P4 outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:homeless_outpateint ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Homeless (outpateint)" ;
+	rdfs:label "Homeless outpateint" ;
+	rdfs:range rdfs:Literal .
+
+raw:mental_health_outpatient ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mental Health (outpatient)" ;
+	rdfs:label "Mental Health outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:non_mental_health_outpatient ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Non - Mental Health (outpatient)" ;
+	rdfs:label "Non - Mental Health outpatient" ;
+	rdfs:range rdfs:Literal .
+
+ds1208:thing_2 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VA Connecticut HCS" ;
+	raw:city "West Haven" ;
+	raw:state "CT" ;
+	raw:female_outpatient "78" ;
+	raw:male_outpatient "83" ;
+	raw:geriatric_65_yo_inpatient "87" ;
+	raw:geriatric_65yo_inpatient "89" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "89" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "89" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "2"^^xsd:integer .
+
+ds1208:thing_3 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "Edith Nourse Rogers Memorial Veterans Hospital" ;
+	raw:city "Bedford" ;
+	raw:state "MA" ;
+	raw:female_outpatient "79" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "89" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "3"^^xsd:integer .
+
+ds1208:thing_4 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name """VA Boston HCS
+W Roxbury Brockton Jamaica Plns""" ;
+	raw:city "West Roxbury" ;
+	raw:state "MA" ;
+	raw:female_outpatient "80" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "86" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "4"^^xsd:integer .
+
+ds1208:thing_5 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Northampton" ;
+	raw:state "MA" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "87" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "83" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "92" ;
+	ov:csvRow "5"^^xsd:integer .
+
+ds1208:thing_6 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VAMC/RO" ;
+	raw:city "Togus" ;
+	raw:state "ME" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "89" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "78" ;
+	raw:disabled_p1_p4_inpatient "89" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "88" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "6"^^xsd:integer .
+
+ds1208:thing_7 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Manchester" ;
+	raw:state "NH" ;
+	raw:female_outpatient "79" ;
+	raw:male_outpatient "84" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "98" ;
+	raw:mental_health_outpatient "85" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "7"^^xsd:integer .
+
+ds1208:thing_8 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Providence" ;
+	raw:state "RI" ;
+	raw:female_outpatient "81" ;
+	raw:male_outpatient "84" ;
+	raw:geriatric_65_yo_inpatient "96" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "97" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "88" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "8"^^xsd:integer .
+
+ds1208:thing_9 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VAM/ROC" ;
+	raw:city "White River Junction" ;
+	raw:state "VT" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "89" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "96" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "9"^^xsd:integer .
+
+ds1208:thing_10 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "2" ;
+	raw:visn_name "VA Healthcare Network Upstate New York" ;
+	raw:facility_name "Samuel S. Stratton VAMC" ;
+	raw:city "Albany" ;
+	raw:state "NY" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "84" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "10"^^xsd:integer .
+
+ds1208:thing_11 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "2" ;
+	raw:visn_name "VA Healthcare Network Upstate New York" ;
+	raw:facility_name "VA Western New York HCS Buffalo Batavia" ;
+	raw:city "Buffalo" ;
+	raw:state "NY" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "84" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "11"^^xsd:integer .
+
+ds1208:thing_12 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "2" ;
+	raw:visn_name "VA Healthcare Network Upstate New York" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Bath" ;
+	raw:state "NY" ;
+	raw:female_outpatient "78" ;
+	raw:male_outpatient "81" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "84" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "*" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "12"^^xsd:integer .
+
+ds1208:thing_13 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "2" ;
+	raw:visn_name "VA Healthcare Network Upstate New York" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Canandaigua" ;
+	raw:state "NY" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "90" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "13"^^xsd:integer .
+
+ds1208:thing_14 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "2" ;
+	raw:visn_name "VA Healthcare Network Upstate New York" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Syracuse" ;
+	raw:state "NY" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "85" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "14"^^xsd:integer .
+
+ds1208:thing_15 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "3" ;
+	raw:visn_name "VA NY/NJ Veterans Healthcare Network" ;
+	raw:facility_name "VA New Jersey HCS East Orange Campus" ;
+	raw:city "East Orange" ;
+	raw:state "NJ" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "80" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "15"^^xsd:integer .
+
+ds1208:thing_16 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "3" ;
+	raw:visn_name "VA NY/NJ Veterans Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Bronx" ;
+	raw:state "NY" ;
+	raw:female_outpatient "71" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "89" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "91" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "95" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "16"^^xsd:integer .
+
+ds1208:thing_17 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "3" ;
+	raw:visn_name "VA NY/NJ Veterans Healthcare Network" ;
+	raw:facility_name """VA NY Harbor HCS
+NY Harbor Brooklyn""" ;
+	raw:city "New York Harbor" ;
+	raw:state "NY" ;
+	raw:female_outpatient "70" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "76" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "83" ;
+	raw:mental_health_outpatient "78" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "17"^^xsd:integer .
+
+ds1208:thing_18 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "3" ;
+	raw:visn_name "VA NY/NJ Veterans Healthcare Network" ;
+	raw:facility_name "VA Hudson Valley HCS Montrose Castle Pt" ;
+	raw:city "Montrose" ;
+	raw:state "NY" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "86" ;
+	raw:geriatric_65yo_inpatient "87" ;
+	raw:geriatric_65_yo_outpatient "86" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "88" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "93" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "18"^^xsd:integer .
+
+ds1208:thing_19 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "3" ;
+	raw:visn_name "VA NY/NJ Veterans Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Northport" ;
+	raw:state "NY" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "85" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "87" ;
+	ov:csvRow "19"^^xsd:integer .
+
+ds1208:thing_20 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAM&RO" ;
+	raw:city "Wilmington" ;
+	raw:state "DE" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "86" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "78" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "20"^^xsd:integer .
+
+ds1208:thing_21 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "James E. Van Zandt VA Medical Center" ;
+	raw:city "Altoona" ;
+	raw:state "PA" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "85" ;
+	raw:geriatric_65_yo_inpatient "97" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "89" ;
+	raw:p_65yo_outpatient "84" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "87" ;
+	raw:homeless_outpateint "100" ;
+	raw:mental_health_outpatient "86" ;
+	raw:non_mental_health_outpatient "87" ;
+	ov:csvRow "21"^^xsd:integer .
+
+ds1208:thing_22 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Butler" ;
+	raw:state "PA" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "67" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "22"^^xsd:integer .
+
+ds1208:thing_23 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Coatesville" ;
+	raw:state "PA" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "84" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "78" ;
+	raw:homeless_outpateint "85" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "23"^^xsd:integer .
+
+ds1208:thing_24 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Erie" ;
+	raw:state "PA" ;
+	raw:female_outpatient "79" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "97" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "98" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "90" ;
+	raw:mental_health_outpatient "85" ;
+	raw:non_mental_health_outpatient "87" ;
+	ov:csvRow "24"^^xsd:integer .
+
+ds1208:thing_25 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Lebanon" ;
+	raw:state "PA" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "75" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "91" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "25"^^xsd:integer .
+
+ds1208:thing_26 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Philadelphia" ;
+	raw:state "PA" ;
+	raw:female_outpatient "78" ;
+	raw:male_outpatient "81" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "91" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "88" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "26"^^xsd:integer .
+
+ds1208:thing_27 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name """VA Pittsburgh HCS
+Heinz Univ Dr Highld Dr""" ;
+	raw:city "Pittsburgh" ;
+	raw:state "PA" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "85" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "27"^^xsd:integer .
+
+ds1208:thing_28 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Wilkes-Barre" ;
+	raw:state "PA" ;
+	raw:female_outpatient "81" ;
+	raw:male_outpatient "85" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "91" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "91" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "28"^^xsd:integer .
+
+ds1208:thing_29 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "Louis A. Johnson VAMC" ;
+	raw:city "Clarksburg" ;
+	raw:state "WV" ;
+	raw:female_outpatient "79" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "86" ;
+	raw:p_65yo_outpatient "84" ;
+	raw:disabled_p1_p4_inpatient "91" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "100" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "29"^^xsd:integer .
+
+ds1208:thing_30 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "5" ;
+	raw:visn_name "VA Capitol Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Washington" ;
+	raw:state "DC" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "96" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "30"^^xsd:integer .
+
+ds1208:thing_31 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "5" ;
+	raw:visn_name "VA Capitol Health Care Network" ;
+	raw:facility_name """VA Maryland HCS
+Baltimore Perry Pt""" ;
+	raw:city "Baltimore" ;
+	raw:state "MD" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "76" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "79" ;
+	raw:mental_health_outpatient "78" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "31"^^xsd:integer .
+
+ds1208:thing_32 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "5" ;
+	raw:visn_name "VA Capitol Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Martinsburg" ;
+	raw:state "WV" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "96" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "86" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "32"^^xsd:integer .
+
+ds1208:thing_33 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Asheville" ;
+	raw:state "NC" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "86" ;
+	raw:p_65yo_outpatient "84" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "86" ;
+	raw:homeless_outpateint "95" ;
+	raw:mental_health_outpatient "86" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "33"^^xsd:integer .
+
+ds1208:thing_34 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Durham" ;
+	raw:state "NC" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "92" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "34"^^xsd:integer .
+
+ds1208:thing_35 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Fayetteville" ;
+	raw:state "NC" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "65" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "35"^^xsd:integer .
+
+ds1208:thing_36 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "W.G. (Bill) Hefner VA Medical Center" ;
+	raw:city "Salisbury" ;
+	raw:state "NC" ;
+	raw:female_outpatient "70" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "90" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "36"^^xsd:integer .
+
+ds1208:thing_37 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Hampton" ;
+	raw:state "VA" ;
+	raw:female_outpatient "80" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "97" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "91" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "37"^^xsd:integer .
+
+ds1208:thing_38 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "Hunter Holmes McGuire VAMC" ;
+	raw:city "Richmond" ;
+	raw:state "VA" ;
+	raw:female_outpatient "81" ;
+	raw:male_outpatient "83" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "83" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "84" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "38"^^xsd:integer .
+
+ds1208:thing_39 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Salem" ;
+	raw:state "VA" ;
+	raw:female_outpatient "84" ;
+	raw:male_outpatient "81" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "97" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "100" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "78" ;
+	ov:csvRow "39"^^xsd:integer .
+
+ds1208:thing_40 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Beckley" ;
+	raw:state "WV" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "100" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "40"^^xsd:integer .
+
+ds1208:thing_41 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Birmingham" ;
+	raw:state "AL" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "81" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "91" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "41"^^xsd:integer .
+
+ds1208:thing_42 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "Central Alabama Veterans HCS Tuskeegee Montgomery" ;
+	raw:city "Montgomery" ;
+	raw:state "AL" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "76" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "90" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "85" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "42"^^xsd:integer .
+
+ds1208:thing_43 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Tuscaloosa" ;
+	raw:state "AL" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "89" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "83" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "87" ;
+	ov:csvRow "43"^^xsd:integer .
+
+ds1208:thing_44 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Atlanta" ;
+	raw:state "GA" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "89" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "44"^^xsd:integer .
+
+ds1208:thing_45 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Augusta" ;
+	raw:state "GA" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "85" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "83" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "87" ;
+	ov:csvRow "45"^^xsd:integer .
+
+ds1208:thing_46 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "Carl Vinson VA Medical Center" ;
+	raw:city "Dublin" ;
+	raw:state "GA" ;
+	raw:female_outpatient "80" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "86" ;
+	raw:p_65yo_outpatient "83" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "97" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "46"^^xsd:integer .
+
+ds1208:thing_47 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "Ralph H. Johnson VAMC" ;
+	raw:city "Charleston" ;
+	raw:state "SC" ;
+	raw:female_outpatient "78" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "97" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "97" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "88" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "47"^^xsd:integer .
+
+ds1208:thing_48 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "Wm. Jennings Bryan Dorn VAMC" ;
+	raw:city "Columbia" ;
+	raw:state "SC" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "83" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "91" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "84" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "48"^^xsd:integer .
+
+ds1208:thing_49 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Bay Pines" ;
+	raw:state "FL" ;
+	raw:female_outpatient "79" ;
+	raw:male_outpatient "83" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "88" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "96" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "87" ;
+	ov:csvRow "49"^^xsd:integer .
+
+ds1208:thing_50 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "N FLA/S GA Veterans HS Gainesville Lake Cty" ;
+	raw:city "Gainesville" ;
+	raw:state "FL" ;
+	raw:female_outpatient "79" ;
+	raw:male_outpatient "83" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "88" ;
+	raw:p_65yo_outpatient "83" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "86" ;
+	raw:homeless_outpateint "75" ;
+	raw:mental_health_outpatient "86" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "50"^^xsd:integer .
+
+ds1208:thing_51 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Miami" ;
+	raw:state "FL" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "87" ;
+	raw:homeless_outpateint "87" ;
+	raw:mental_health_outpatient "85" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "51"^^xsd:integer .
+
+ds1208:thing_52 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "East Central Florida HCS" ;
+	raw:city "Orlando" ;
+	raw:state "FL" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "83" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "81" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "52"^^xsd:integer .
+
+ds1208:thing_53 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "James A. Haley VA Medical Center" ;
+	raw:city "Tampa" ;
+	raw:state "FL" ;
+	raw:female_outpatient "80" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "73" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "53"^^xsd:integer .
+
+ds1208:thing_54 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "West Palm Beach" ;
+	raw:state "FL" ;
+	raw:female_outpatient "79" ;
+	raw:male_outpatient "86" ;
+	raw:geriatric_65_yo_inpatient "96" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "88" ;
+	raw:p_65yo_outpatient "85" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "89" ;
+	raw:homeless_outpateint "89" ;
+	raw:mental_health_outpatient "89" ;
+	raw:non_mental_health_outpatient "88" ;
+	ov:csvRow "54"^^xsd:integer .
+
+ds1208:thing_55 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "San Juan" ;
+	raw:state "PR" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "83" ;
+	raw:geriatric_65_yo_inpatient "90" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "89" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "99" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "55"^^xsd:integer .
+
+ds1208:thing_56 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Lexington" ;
+	raw:state "KY" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "81" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "56"^^xsd:integer .
+
+ds1208:thing_57 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Louisville" ;
+	raw:state "KY" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "76" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "91" ;
+	raw:mental_health_outpatient "78" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "57"^^xsd:integer .
+
+ds1208:thing_58 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Memphis" ;
+	raw:state "TN" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "76" ;
+	raw:geriatric_65_yo_inpatient "87" ;
+	raw:geriatric_65yo_inpatient "89" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "87" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "88" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "80" ;
+	ov:csvRow "58"^^xsd:integer .
+
+ds1208:thing_59 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Mountain Home" ;
+	raw:state "TN" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "73" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "97" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "85" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "78" ;
+	ov:csvRow "59"^^xsd:integer .
+
+ds1208:thing_60 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name """Tennessee Valley HCS
+Nashville Murfreesboro """ ;
+	raw:city "Nashville" ;
+	raw:state "TN" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "76" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "78" ;
+	raw:p_65yo_outpatient "75" ;
+	raw:disabled_p1_p4_inpatient "91" ;
+	raw:disabled_p1_p4_outpatient "76" ;
+	raw:homeless_outpateint "90" ;
+	raw:mental_health_outpatient "74" ;
+	raw:non_mental_health_outpatient "77" ;
+	ov:csvRow "60"^^xsd:integer .
+
+ds1208:thing_61 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Huntington" ;
+	raw:state "WV" ;
+	raw:female_outpatient "80" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "96" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "87" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "86" ;
+	raw:homeless_outpateint "94" ;
+	raw:mental_health_outpatient "85" ;
+	raw:non_mental_health_outpatient "87" ;
+	ov:csvRow "61"^^xsd:integer .
+
+ds1208:thing_62 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "10" ;
+	raw:visn_name "VA Health Care System of Ohio" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Chillicothe" ;
+	raw:state "OH" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "75" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "78" ;
+	raw:p_65yo_outpatient "73" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "76" ;
+	raw:homeless_outpateint "93" ;
+	raw:mental_health_outpatient "76" ;
+	raw:non_mental_health_outpatient "77" ;
+	ov:csvRow "62"^^xsd:integer .
+
+ds1208:thing_63 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "10" ;
+	raw:visn_name "VA Health Care System of Ohio" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Cincinnati" ;
+	raw:state "OH" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "75" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "84" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "63"^^xsd:integer .
+
+ds1208:thing_64 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "10" ;
+	raw:visn_name "VA Health Care System of Ohio" ;
+	raw:facility_name """Louis Stokes VA Medical Center
+Cleveland Brecksville""" ;
+	raw:city "Cleveland" ;
+	raw:state "OH" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "81" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "84" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "64"^^xsd:integer .
+
+ds1208:thing_65 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "10" ;
+	raw:visn_name "VA Health Care System of Ohio" ;
+	raw:facility_name "Chalmers Wylie Outpatient Clinic ������" ;
+	raw:city "Columbus" ;
+	raw:state "OH" ;
+	raw:female_outpatient "68" ;
+	raw:male_outpatient "77" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "78" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "90" ;
+	raw:mental_health_outpatient "78" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "65"^^xsd:integer .
+
+ds1208:thing_66 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "10" ;
+	raw:visn_name "VA Health Care System of Ohio" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Dayton" ;
+	raw:state "OH" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "87" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "66"^^xsd:integer .
+
+ds1208:thing_67 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "VA Illiana HCS" ;
+	raw:city "Danville" ;
+	raw:state "IL" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "97" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "97" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "100" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "67"^^xsd:integer .
+
+ds1208:thing_68 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "VA Northern Indiana HCS Marion Ft Wayne" ;
+	raw:city "Marion" ;
+	raw:state "IN" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "89" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "88" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "93" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "68"^^xsd:integer .
+
+ds1208:thing_69 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "Richard L. Roudebush VA Medical Center" ;
+	raw:city "Indianapolis" ;
+	raw:state "IN" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "77" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "86" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "81" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "69"^^xsd:integer .
+
+ds1208:thing_70 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "Ann Arbor VA Ann Arbor HCS" ;
+	raw:city "Ann Arbor" ;
+	raw:state "MI" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "88" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "70"^^xsd:integer .
+
+ds1208:thing_71 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Battle Creek" ;
+	raw:state "MI" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "89" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "87" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "92" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "71"^^xsd:integer .
+
+ds1208:thing_72 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "John D. Dingell VA Medical Center" ;
+	raw:city "Detroit" ;
+	raw:state "MI" ;
+	raw:female_outpatient "71" ;
+	raw:male_outpatient "72" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "78" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "77" ;
+	raw:homeless_outpateint "79" ;
+	raw:mental_health_outpatient "75" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "72"^^xsd:integer .
+
+ds1208:thing_73 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "Aleda E. Lutz VA Medical Center" ;
+	raw:city "Saginaw" ;
+	raw:state "MI" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "97" ;
+	raw:geriatric_65_yo_outpatient "86" ;
+	raw:p_65yo_outpatient "84" ;
+	raw:disabled_p1_p4_inpatient "97" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "*" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "73"^^xsd:integer .
+
+ds1208:thing_74 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "VA Chicago HCS; (Jessie Brown)" ;
+	raw:city "Chicago, West Side " ;
+	raw:state "IL" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "75" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "76" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "74"^^xsd:integer .
+
+ds1208:thing_75 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "Edward Hines Jr. VA Hospital" ;
+	raw:city "Hines" ;
+	raw:state "IL" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "86" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "92" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "75"^^xsd:integer .
+
+ds1208:thing_76 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "North Chicago" ;
+	raw:state "IL" ;
+	raw:female_outpatient "78" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "89" ;
+	raw:geriatric_65_yo_outpatient "87" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "82" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "76"^^xsd:integer .
+
+ds1208:thing_77 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Iron Mountain" ;
+	raw:state "MI" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "81" ;
+	raw:geriatric_65_yo_inpatient "85" ;
+	raw:geriatric_65yo_inpatient "80" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "75" ;
+	raw:disabled_p1_p4_inpatient "84" ;
+	raw:disabled_p1_p4_outpatient "77" ;
+	raw:homeless_outpateint "86" ;
+	raw:mental_health_outpatient "74" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "77"^^xsd:integer .
+
+ds1208:thing_78 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "William S. Middleton Memorial Veterans Hospital" ;
+	raw:city "Madison" ;
+	raw:state "WI" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "83" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "86" ;
+	raw:homeless_outpateint "81" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "78"^^xsd:integer .
+
+ds1208:thing_79 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "Clement J. Zablocki VAMC" ;
+	raw:city "Milwaukee" ;
+	raw:state "WI" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "82" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "79"^^xsd:integer .
+
+ds1208:thing_80 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Tomah" ;
+	raw:state "WI" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "84" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "83" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "87" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "87" ;
+	ov:csvRow "80"^^xsd:integer .
+
+ds1208:thing_81 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "VA Eastern Kansas HCS Topeka Leavenworth" ;
+	raw:city "Topeka" ;
+	raw:state "KS" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "80" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "81"^^xsd:integer .
+
+ds1208:thing_82 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "Robert J. Dole Department of Veterans Affairs Medical and Regional Office Center" ;
+	raw:city "Wichita" ;
+	raw:state "KS" ;
+	raw:female_outpatient "79" ;
+	raw:male_outpatient "83" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "83" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "90" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "82"^^xsd:integer .
+
+ds1208:thing_83 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "Harry S. Truman Memorial" ;
+	raw:city "Columbia" ;
+	raw:state "MO" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "76" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "92" ;
+	raw:mental_health_outpatient "78" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "83"^^xsd:integer .
+
+ds1208:thing_84 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Kansas City" ;
+	raw:state "MO" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "83" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "76" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "84"^^xsd:integer .
+
+ds1208:thing_85 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Marion" ;
+	raw:state "IL" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "89" ;
+	raw:geriatric_65yo_inpatient "89" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "89" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "*" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "85"^^xsd:integer .
+
+ds1208:thing_86 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "John J. Pershing VA Medical Center" ;
+	raw:city "Poplar Bluff" ;
+	raw:state "MO" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "98" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "75" ;
+	raw:p_65yo_outpatient "75" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "77" ;
+	raw:homeless_outpateint "100" ;
+	raw:mental_health_outpatient "78" ;
+	raw:non_mental_health_outpatient "78" ;
+	ov:csvRow "86"^^xsd:integer .
+
+ds1208:thing_87 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "St Louis VAMC St Louis Jefferson Barracks" ;
+	raw:city "St. Louis" ;
+	raw:state "MO" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "75" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "76" ;
+	raw:disabled_p1_p4_inpatient "90" ;
+	raw:disabled_p1_p4_outpatient "78" ;
+	raw:homeless_outpateint "61" ;
+	raw:mental_health_outpatient "76" ;
+	raw:non_mental_health_outpatient "80" ;
+	ov:csvRow "87"^^xsd:integer .
+
+ds1208:thing_88 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Fayetteville" ;
+	raw:state "AR" ;
+	raw:female_outpatient "80" ;
+	raw:male_outpatient "81" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "93" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "88"^^xsd:integer .
+
+ds1208:thing_89 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name """Central Arkansas Veterans HCS
+Little Rock Little Rock N""" ;
+	raw:city "Little Rock" ;
+	raw:state "AR" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "93" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "89"^^xsd:integer .
+
+ds1208:thing_90 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Alexandria" ;
+	raw:state "LA" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "78" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "78" ;
+	raw:homeless_outpateint "75" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "90"^^xsd:integer .
+
+ds1208:thing_91 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "New Orleans" ;
+	raw:state "LA" ;
+	raw:female_outpatient "65" ;
+	raw:male_outpatient "72" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "73" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "76" ;
+	raw:homeless_outpateint "83" ;
+	raw:mental_health_outpatient "75" ;
+	raw:non_mental_health_outpatient "76" ;
+	ov:csvRow "91"^^xsd:integer .
+
+ds1208:thing_92 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "Overton Brooks VA Medical Center" ;
+	raw:city "Shreveport" ;
+	raw:state "LA" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "92" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "92"^^xsd:integer .
+
+ds1208:thing_93 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VA Gulf Coast Veterans HCS" ;
+	raw:city "Biloxi" ;
+	raw:state "MS" ;
+	raw:female_outpatient "78" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "89" ;
+	raw:p_65yo_outpatient "84" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "88" ;
+	raw:homeless_outpateint "80" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "87" ;
+	ov:csvRow "93"^^xsd:integer .
+
+ds1208:thing_94 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "G.V. (Sonny) Montgomery VA Medical Center" ;
+	raw:city "Jackson" ;
+	raw:state "MS" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "83" ;
+	raw:geriatric_65_yo_inpatient "96" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "84" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "91" ;
+	raw:mental_health_outpatient "83" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "94"^^xsd:integer .
+
+ds1208:thing_95 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Muskogee" ;
+	raw:state "OK" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "77" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "85" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "85" ;
+	raw:homeless_outpateint "96" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "95"^^xsd:integer .
+
+ds1208:thing_96 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Oklahoma City" ;
+	raw:state "OK" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "91" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "96"^^xsd:integer .
+
+ds1208:thing_97 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Houston" ;
+	raw:state "TX" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "76" ;
+	raw:geriatric_65_yo_inpatient "89" ;
+	raw:geriatric_65yo_inpatient "89" ;
+	raw:geriatric_65_yo_outpatient "78" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "89" ;
+	raw:disabled_p1_p4_outpatient "78" ;
+	raw:homeless_outpateint "83" ;
+	raw:mental_health_outpatient "78" ;
+	raw:non_mental_health_outpatient "78" ;
+	ov:csvRow "97"^^xsd:integer .
+
+ds1208:thing_98 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "17" ;
+	raw:visn_name "VA Heart of Texas Health Care Network" ;
+	raw:facility_name "VA North Texas HCS" ;
+	raw:city "Dallas" ;
+	raw:state "TX" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "76" ;
+	raw:geriatric_65_yo_inpatient "90" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "74" ;
+	raw:disabled_p1_p4_inpatient "90" ;
+	raw:disabled_p1_p4_outpatient "77" ;
+	raw:homeless_outpateint "77" ;
+	raw:mental_health_outpatient "76" ;
+	raw:non_mental_health_outpatient "79" ;
+	ov:csvRow "98"^^xsd:integer .
+
+ds1208:thing_99 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "17" ;
+	raw:visn_name "VA Heart of Texas Health Care Network" ;
+	raw:facility_name "South Texas Veterans HCS  SanAntonio Kerrville" ;
+	raw:city "San Antonio" ;
+	raw:state "TX" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "92" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "99"^^xsd:integer .
+
+ds1208:thing_100 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "17" ;
+	raw:visn_name "VA Heart of Texas Health Care Network" ;
+	raw:facility_name """Central Texas Veterans HCS
+Temple Waco Marlin""" ;
+	raw:city "Temple" ;
+	raw:state "TX" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "90" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "94" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "100"^^xsd:integer .
+
+ds1208:thing_101 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "Carl T. Hayden VA Medical Center" ;
+	raw:city "Phoenix" ;
+	raw:state "AZ" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "93" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "101"^^xsd:integer .
+
+ds1208:thing_102 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "Northern Arizona VA HCS" ;
+	raw:city "Prescott" ;
+	raw:state "AZ" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "73" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "78" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "75" ;
+	raw:mental_health_outpatient "77" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "102"^^xsd:integer .
+
+ds1208:thing_103 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "Southern Arizona VA HCS" ;
+	raw:city "Tucson" ;
+	raw:state "AZ" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "90" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "103"^^xsd:integer .
+
+ds1208:thing_104 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "New Mexico HCS" ;
+	raw:city "Albuquerque" ;
+	raw:state "NM" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "74" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "76" ;
+	raw:p_65yo_outpatient "70" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "75" ;
+	raw:homeless_outpateint "79" ;
+	raw:mental_health_outpatient "73" ;
+	raw:non_mental_health_outpatient "73" ;
+	ov:csvRow "104"^^xsd:integer .
+
+ds1208:thing_105 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "Amarillo VA HCS" ;
+	raw:city "Amarillo" ;
+	raw:state "TX" ;
+	raw:female_outpatient "69" ;
+	raw:male_outpatient "77" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "90" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "*" ;
+	raw:mental_health_outpatient "77" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "105"^^xsd:integer .
+
+ds1208:thing_106 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "West Texas VA HCS" ;
+	raw:city "Big Spring" ;
+	raw:state "TX" ;
+	raw:female_outpatient "69" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "96" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "97" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "100" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "79" ;
+	ov:csvRow "106"^^xsd:integer .
+
+ds1208:thing_107 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "El Paso VA HCS" ;
+	raw:city "El Paso" ;
+	raw:state "TX" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "76" ;
+	raw:p_65yo_outpatient "71" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "74" ;
+	raw:homeless_outpateint "90" ;
+	raw:mental_health_outpatient "73" ;
+	raw:non_mental_health_outpatient "76" ;
+	ov:csvRow "107"^^xsd:integer .
+
+ds1208:thing_108 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "Eastern Colorado HCS Denver Pueblo" ;
+	raw:city "Denver" ;
+	raw:state "CO" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "77" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "95" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "76" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "80" ;
+	ov:csvRow "108"^^xsd:integer .
+
+ds1208:thing_109 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Grand Junction" ;
+	raw:state "CO" ;
+	raw:female_outpatient "68" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "94" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "78" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "*" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "80" ;
+	ov:csvRow "109"^^xsd:integer .
+
+ds1208:thing_110 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "VA Montana HCS" ;
+	raw:city "Fort Harrison" ;
+	raw:state "MT" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "96" ;
+	raw:geriatric_65yo_inpatient "96" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "53" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "110"^^xsd:integer .
+
+ds1208:thing_111 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "VA Salt Lake City HCS" ;
+	raw:city "Salt Lake City" ;
+	raw:state "UT" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "82" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "71" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "111"^^xsd:integer .
+
+ds1208:thing_112 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "VAM/ROC" ;
+	raw:city "Cheyenne" ;
+	raw:state "WY" ;
+	raw:female_outpatient "78" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "89" ;
+	raw:geriatric_65_yo_outpatient "78" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "90" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "91" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "112"^^xsd:integer .
+
+ds1208:thing_113 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Sheridan" ;
+	raw:state "WY" ;
+	raw:female_outpatient "78" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "86" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "85" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "81" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "113"^^xsd:integer .
+
+ds1208:thing_114 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "Alaska VA HCS and Regional Office" ;
+	raw:city "Anchorage" ;
+	raw:state "AK" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "65" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "80" ;
+	ov:csvRow "114"^^xsd:integer .
+
+ds1208:thing_115 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Boise" ;
+	raw:state "ID" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "90" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "74" ;
+	raw:disabled_p1_p4_inpatient "90" ;
+	raw:disabled_p1_p4_outpatient "77" ;
+	raw:homeless_outpateint "100" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "78" ;
+	ov:csvRow "115"^^xsd:integer .
+
+ds1208:thing_116 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Portland" ;
+	raw:state "OR" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "78" ;
+	raw:disabled_p1_p4_inpatient "91" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "77" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "79" ;
+	ov:csvRow "116"^^xsd:integer .
+
+ds1208:thing_117 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "VA Roseburg HCS" ;
+	raw:city "Roseburg" ;
+	raw:state "OR" ;
+	raw:female_outpatient "69" ;
+	raw:male_outpatient "74" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "76" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "78" ;
+	raw:homeless_outpateint "64" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "78" ;
+	ov:csvRow "117"^^xsd:integer .
+
+ds1208:thing_118 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "Southern Oregon Rehab Ctr & Clinics" ;
+	raw:city "White City" ;
+	raw:state "OR" ;
+	raw:female_outpatient "67" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "78" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "92" ;
+	raw:mental_health_outpatient "75" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "118"^^xsd:integer .
+
+ds1208:thing_119 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "VA Puget Sound HCS�  Seattle American Lake" ;
+	raw:city "Seattle" ;
+	raw:state "WA" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "90" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "119"^^xsd:integer .
+
+ds1208:thing_120 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Spokane" ;
+	raw:state "WA" ;
+	raw:female_outpatient "69" ;
+	raw:male_outpatient "75" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "87" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "90" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "70" ;
+	raw:mental_health_outpatient "77" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "120"^^xsd:integer .
+
+ds1208:thing_121 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "Jonathan M. Wainwright Memorial VA Medical Center" ;
+	raw:city "Walla Walla" ;
+	raw:state "WA" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "76" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "88" ;
+	raw:mental_health_outpatient "78" ;
+	raw:non_mental_health_outpatient "78" ;
+	ov:csvRow "121"^^xsd:integer .
+
+ds1208:thing_122 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name "VA Central California HCS" ;
+	raw:city "Fresno" ;
+	raw:state "CA" ;
+	raw:female_outpatient "77" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "90" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "86" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "89" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "88" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "84" ;
+	ov:csvRow "122"^^xsd:integer .
+
+ds1208:thing_123 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name "VA Northern California HCS Martinez Sacramento" ;
+	raw:city "Martinez, East Bay" ;
+	raw:state "CA" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "83" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "87" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "123"^^xsd:integer .
+
+ds1208:thing_124 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name """VA Palo Alto HCS
+PaloAlto MenloPk Livermore""" ;
+	raw:city "Palo Alto" ;
+	raw:state "CA" ;
+	raw:female_outpatient "78" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "95" ;
+	raw:geriatric_65yo_inpatient "97" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "97" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "86" ;
+	raw:mental_health_outpatient "84" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "124"^^xsd:integer .
+
+ds1208:thing_125 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "San Francisco" ;
+	raw:state "CA" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "93" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "76" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "86" ;
+	raw:mental_health_outpatient "76" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "125"^^xsd:integer .
+
+ds1208:thing_126 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name "VA Pacific Islands HCSSpark M. Matsunaga VA Medical & Regional Office Center" ;
+	raw:city "Honolulu" ;
+	raw:state "HI" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "76" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "78" ;
+	raw:homeless_outpateint "91" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "80" ;
+	ov:csvRow "126"^^xsd:integer .
+
+ds1208:thing_127 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name "VA Sierra Nevada HCS" ;
+	raw:city "Reno" ;
+	raw:state "NV" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "76" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "83" ;
+	raw:homeless_outpateint "90" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "127"^^xsd:integer .
+
+ds1208:thing_128 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "22" ;
+	raw:visn_name "Desert Pacific Healthcare Network" ;
+	raw:facility_name "VA Loma Linda HCS" ;
+	raw:city "Loma Linda" ;
+	raw:state "CA" ;
+	raw:female_outpatient "78" ;
+	raw:male_outpatient "76" ;
+	raw:geriatric_65_yo_inpatient "96" ;
+	raw:geriatric_65yo_inpatient "95" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "96" ;
+	raw:disabled_p1_p4_outpatient "77" ;
+	raw:homeless_outpateint "94" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "80" ;
+	ov:csvRow "128"^^xsd:integer .
+
+ds1208:thing_129 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "22" ;
+	raw:visn_name "Desert Pacific Healthcare Network" ;
+	raw:facility_name "VA Long Beach HCS" ;
+	raw:city "Long Beach" ;
+	raw:state "CA" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "90" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "90" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "92" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "129"^^xsd:integer .
+
+ds1208:thing_130 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "22" ;
+	raw:visn_name "Desert Pacific Healthcare Network" ;
+	raw:facility_name "VA Greater Los Angeles HCS (GLA)" ;
+	raw:city "Los Angeles" ;
+	raw:state "CA" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "90" ;
+	raw:geriatric_65yo_inpatient "89" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "75" ;
+	raw:disabled_p1_p4_inpatient "89" ;
+	raw:disabled_p1_p4_outpatient "77" ;
+	raw:homeless_outpateint "79" ;
+	raw:mental_health_outpatient "75" ;
+	raw:non_mental_health_outpatient "78" ;
+	ov:csvRow "130"^^xsd:integer .
+
+ds1208:thing_131 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "22" ;
+	raw:visn_name "Desert Pacific Healthcare Network" ;
+	raw:facility_name "VA San Diego HCS" ;
+	raw:city "San Diego" ;
+	raw:state "CA" ;
+	raw:female_outpatient "76" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "80" ;
+	raw:homeless_outpateint "81" ;
+	raw:mental_health_outpatient "80" ;
+	raw:non_mental_health_outpatient "79" ;
+	ov:csvRow "131"^^xsd:integer .
+
+ds1208:thing_132 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "22" ;
+	raw:visn_name "Desert Pacific Healthcare Network" ;
+	raw:facility_name "VA Southern Nevada HCS" ;
+	raw:city "Las Vegas" ;
+	raw:state "NV" ;
+	raw:female_outpatient "83" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "94" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "74" ;
+	raw:mental_health_outpatient "81" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "132"^^xsd:integer .
+
+ds1208:thing_133 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VA Nebraska Western Iowa HCS  Omaha Grand Is Lincoln" ;
+	raw:city "Omaha" ;
+	raw:state "NE" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "92" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "78" ;
+	raw:p_65yo_outpatient "79" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "66" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "133"^^xsd:integer .
+
+ds1208:thing_134 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VA Central Iowa HCS   DesMoines Knoxville" ;
+	raw:city "Des Moines" ;
+	raw:state "IA" ;
+	raw:female_outpatient "75" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "94" ;
+	raw:geriatric_65_yo_outpatient "84" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "93" ;
+	raw:disabled_p1_p4_outpatient "84" ;
+	raw:homeless_outpateint "79" ;
+	raw:mental_health_outpatient "79" ;
+	raw:non_mental_health_outpatient "85" ;
+	ov:csvRow "134"^^xsd:integer .
+
+ds1208:thing_135 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Iowa City" ;
+	raw:state "IA" ;
+	raw:female_outpatient "70" ;
+	raw:male_outpatient "79" ;
+	raw:geriatric_65_yo_inpatient "89" ;
+	raw:geriatric_65yo_inpatient "91" ;
+	raw:geriatric_65_yo_outpatient "82" ;
+	raw:p_65yo_outpatient "78" ;
+	raw:disabled_p1_p4_inpatient "88" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "86" ;
+	raw:mental_health_outpatient "78" ;
+	raw:non_mental_health_outpatient "80" ;
+	ov:csvRow "135"^^xsd:integer .
+
+ds1208:thing_136 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Minneapolis" ;
+	raw:state "MN" ;
+	raw:female_outpatient "81" ;
+	raw:male_outpatient "81" ;
+	raw:geriatric_65_yo_inpatient "91" ;
+	raw:geriatric_65yo_inpatient "92" ;
+	raw:geriatric_65_yo_outpatient "81" ;
+	raw:p_65yo_outpatient "81" ;
+	raw:disabled_p1_p4_inpatient "92" ;
+	raw:disabled_p1_p4_outpatient "82" ;
+	raw:homeless_outpateint "92" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "83" ;
+	ov:csvRow "136"^^xsd:integer .
+
+ds1208:thing_137 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "St. Cloud" ;
+	raw:state "MN" ;
+	raw:female_outpatient "73" ;
+	raw:male_outpatient "82" ;
+	raw:geriatric_65_yo_inpatient "*" ;
+	raw:geriatric_65yo_inpatient "*" ;
+	raw:geriatric_65_yo_outpatient "86" ;
+	raw:p_65yo_outpatient "78" ;
+	raw:disabled_p1_p4_inpatient "*" ;
+	raw:disabled_p1_p4_outpatient "81" ;
+	raw:homeless_outpateint "*" ;
+	raw:mental_health_outpatient "77" ;
+	raw:non_mental_health_outpatient "86" ;
+	ov:csvRow "137"^^xsd:integer .
+
+ds1208:thing_138 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VAM/RO" ;
+	raw:city "Fargo" ;
+	raw:state "ND" ;
+	raw:female_outpatient "74" ;
+	raw:male_outpatient "78" ;
+	raw:geriatric_65_yo_inpatient "93" ;
+	raw:geriatric_65yo_inpatient "85" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "80" ;
+	raw:disabled_p1_p4_inpatient "90" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "83" ;
+	raw:mental_health_outpatient "82" ;
+	raw:non_mental_health_outpatient "81" ;
+	ov:csvRow "138"^^xsd:integer .
+
+ds1208:thing_139 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name """VA Black Hills HCS
+Ft Meade Hot Springs""" ;
+	raw:city "Fort Meade" ;
+	raw:state "SD" ;
+	raw:female_outpatient "72" ;
+	raw:male_outpatient "76" ;
+	raw:geriatric_65_yo_inpatient "90" ;
+	raw:geriatric_65yo_inpatient "90" ;
+	raw:geriatric_65_yo_outpatient "80" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "88" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "71" ;
+	raw:mental_health_outpatient "77" ;
+	raw:non_mental_health_outpatient "82" ;
+	ov:csvRow "139"^^xsd:integer .
+
+ds1208:thing_140 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VAM/ROC" ;
+	raw:city "Sioux Falls" ;
+	raw:state "SD" ;
+	raw:female_outpatient "81" ;
+	raw:male_outpatient "80" ;
+	raw:geriatric_65_yo_inpatient "88" ;
+	raw:geriatric_65yo_inpatient "87" ;
+	raw:geriatric_65_yo_outpatient "79" ;
+	raw:p_65yo_outpatient "77" ;
+	raw:disabled_p1_p4_inpatient "89" ;
+	raw:disabled_p1_p4_outpatient "79" ;
+	raw:homeless_outpateint "97" ;
+	raw:mental_health_outpatient "78" ;
+	raw:non_mental_health_outpatient "79" ;
+	ov:csvRow "140"^^xsd:integer .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Mar-01/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/data-gov/provenance/1208/version/1st-anniversary/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix data-gov_vocab: <http://logd.tw.rpi.edu/source/data-gov/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix ds1208_vocab: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/raw/> .
+@prefix ds1208: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/> .
+@prefix ds1208_global_value: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+_:node15quabsh8x2 vann:preferredNamespacePrefix "rdf" ;
+	vann:preferredNamespaceUri "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+
+_:node15quabsh8x3 vann:preferredNamespacePrefix "rdfs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node15quabsh8x4 vann:preferredNamespacePrefix "xsd" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#" .
+
+_:node15quabsh8x5 vann:preferredNamespacePrefix "xsd2" ;
+	vann:preferredNamespaceUri "http://www.w3.org/TR/xmlschema-2/#" .
+
+_:node15quabsh8x6 vann:preferredNamespacePrefix "owl" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#" .
+
+_:node15quabsh8x7 vann:preferredNamespacePrefix "pmlp" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-provenance.owl#" .
+
+_:node15quabsh8x8 vann:preferredNamespacePrefix "pmlj" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-justification.owl#" .
+
+_:node15quabsh8x9 vann:preferredNamespacePrefix "tw_service" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/tw-rpi-edu/service/" .
+
+_:node15quabsh8x10 vann:preferredNamespacePrefix "tw_converter" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Mar-01/" .
+
+_:node15quabsh8x11 vann:preferredNamespacePrefix "provenance" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/provenance/1208/version/1st-anniversary/conversion/raw/" .
+
+_:node15quabsh8x12 vann:preferredNamespacePrefix "conversion" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/vocab/conversion/" .
+
+_:node15quabsh8x13 vann:preferredNamespacePrefix "ov" ;
+	vann:preferredNamespaceUri "http://open.vocab.org/terms/" .
+
+_:node15quabsh8x14 vann:preferredNamespacePrefix "dcterms" ;
+	vann:preferredNamespaceUri "http://purl.org/dc/terms/" .
+
+_:node15quabsh8x15 vann:preferredNamespacePrefix "foaf" ;
+	vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/" .
+
+_:node15quabsh8x16 vann:preferredNamespacePrefix "void" ;
+	vann:preferredNamespaceUri "http://rdfs.org/ns/void#" .
+
+_:node15quabsh8x17 vann:preferredNamespacePrefix "doap" ;
+	vann:preferredNamespaceUri "http://usefulinc.com/ns/doap#" .
+
+_:node15quabsh8x18 vann:preferredNamespacePrefix "scovo" ;
+	vann:preferredNamespaceUri "http://purl.org/NET/scovo#" .
+
+_:node15quabsh8x19 vann:preferredNamespacePrefix "sdmx" ;
+	vann:preferredNamespaceUri "http://purl.org/linked-data/cube#" .
+
+_:node15quabsh8x20 vann:preferredNamespacePrefix "vann" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/vann/" .
+
+_:node15quabsh8x21 vann:preferredNamespacePrefix "data-gov_vocab" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/vocab/" .
+
+_:node15quabsh8x22 vann:preferredNamespacePrefix "base_vocab" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/vocab/" .
+
+_:node15quabsh8x23 vann:preferredNamespacePrefix "ds1208_vocab" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/" .
+
+_:node15quabsh8x24 vann:preferredNamespacePrefix "raw" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/raw/" .
+
+_:node15quabsh8x25 vann:preferredNamespacePrefix "ds1208" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/" .
+
+_:node15quabsh8x26 vann:preferredNamespacePrefix "ds1208_global_value" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/dataset/1208/" .
+
+_:node15quabsh8x27 vann:preferredNamespacePrefix "sioc" ;
+	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
+
+_:node15quabsh8x1 rdfs:seeAlso _:node15quabsh8x2 , _:node15quabsh8x3 , _:node15quabsh8x4 , _:node15quabsh8x5 , _:node15quabsh8x6 , _:node15quabsh8x7 , _:node15quabsh8x8 , _:node15quabsh8x9 , _:node15quabsh8x10 , _:node15quabsh8x11 , _:node15quabsh8x12 , _:node15quabsh8x13 , _:node15quabsh8x14 , _:node15quabsh8x15 , _:node15quabsh8x16 , _:node15quabsh8x17 , _:node15quabsh8x18 , _:node15quabsh8x19 , _:node15quabsh8x20 , _:node15quabsh8x21 , _:node15quabsh8x22 , _:node15quabsh8x23 , _:node15quabsh8x24 , _:node15quabsh8x25 , _:node15quabsh8x26 , _:node15quabsh8x27 .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208> a data-gov_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1208" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1208" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1208> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> , <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/subset/meta> ;
+	dcterms:modified "2011-03-15T23:11:56.326-05:00"^^xsd:dateTime .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> a data-gov_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1208" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1208 1st-anniversary" ;
+	dcterms:modified "2011-03-15T23:11:56.326-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1208/version/1st-anniversary> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.ttl.gz> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw> a data-gov_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset ;
+	dcterms:modified "2011-03-15T23:11:56.326-05:00"^^xsd:dateTime ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1208" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	conversion:conversion_identifier "raw" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1208/version/1st-anniversary/conversion/raw> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.raw.ttl.gz> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw/subset/sample> ;
+	dcterms:created "2011-03-15T23:11:55.892-05:00"^^xsd:dateTime ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1208 1st-anniversary raw" ;
+	conversion:uses_predicate raw:non_mental_health_outpatient , raw:mental_health_outpatient , raw:homeless_outpateint , raw:disabled_p1_p4_outpatient , raw:disabled_p1_p4_inpatient , raw:p_65yo_outpatient , raw:geriatric_65_yo_outpatient , raw:geriatric_65yo_inpatient , raw:geriatric_65_yo_inpatient , raw:male_outpatient , raw:female_outpatient , raw:state , raw:city , raw:facility_name , raw:visn_name , raw:visn ;
+	void:exampleResource ds1208:thing_2 , ds1208:thing_140 .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/subset/meta> a data-gov_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1208" ;
+	dcterms:modified "2011-03-15T23:11:56.326-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1208/subset/meta> ;
+	void:vocabulary <http://rdfs.org/ns/void#> , <http://inference-web.org/2.0/pml-provenance.owl#> , <http://inference-web.org/2.0/pml-justification.owl#> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <http://purl.org/NET/scovo#> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.void.ttl.gz> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw/subset/sample> a data-gov_vocab:Dataset , conversion:Dataset , conversion:DatasetSample , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1208" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	conversion:conversion_identifier "raw" ;
+	dcterms:modified "2011-03-15T23:11:56.326-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1208/version/1st-anniversary/conversion/raw/subset/sample> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.raw.sample.ttl.gz> .
+
+<http://logd.tw.rpi.edu/source/data-gov> a foaf:Agent ;
+	dcterms:identifier "data-gov" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source_page/data-gov> .
+
+provenance:nodeset_1 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.raw.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_2 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.raw.sample.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_3 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_4 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.void.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:infstep_1 a pmlj:InferenceStep ;
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e ;
+	pmlj:hasAntecedentList _:node15quabsh8x28 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node15quabsh8x30 , _:node15quabsh8x29 .
+
+tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e" ;
+	dcterms:version "2011-Mar-01" ;
+	doap:revision "2011-Mar-01" ;
+	doap:platform "Java" .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
+	doap:revision tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e ;
+	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> ;
+	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> ;
+	doap:maintainer <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:documenter <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/JohannaFlores> , <http://tw.rpi.edu/instances/LiDing> , <http://tw.rpi.edu/instances/GinoGervasio> ;
+	doap:helper <http://tw.rpi.edu/instances/AlvaroGraves> , <http://tw.rpi.edu/instances/DominicDiFranzo> , <http://tw.rpi.edu/instances/GinoGervasio> , <http://tw.rpi.edu/instances/JamesMcCusker> ;
+	doap:homepage <https://github.com/timrdf/csv2rdf4lod-automation/wiki> ;
+	doap:audience "Data modelers and architects that need (potentially non-RDB) tabular data encoded within the Resource Description Framework." ;
+	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
+	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
+
+_:node15quabsh8x31 a doap:GitRepository ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
+	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
+
+<http://tw.rpi.edu/instances/GregoryToddWilliams> owl:sameAs <http://kasei.us/about/foaf.xrdf#greg> .
+
+<http://tw.rpi.edu/instances/AlvaroGraves> owl:sameAs <http://alvaro.graves.cl> .
+
+_:node15quabsh8x28 a rdf:List ;
+	rdf:first provenance:nodeset_5 .
+
+provenance:nodeset_5 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv> .
+
+_:node15quabsh8x28 rdf:rest _:node15quabsh8x32 .
+
+_:node15quabsh8x32 a rdf:List ;
+	rdf:first provenance:nodeset_6 .
+
+provenance:nodeset_6 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv.raw.params.ttl> .
+
+_:node15quabsi1x9 ov:csvCol "8"^^xsd:integer .
+
+_:node15quabsh8x32 rdf:rest rdf:nil .
+
+_:node15quabsh8x30 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv.raw.params.ttl> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
+
+_:node15quabsh8x29 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
+
+<http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv> a pmlp:Information ;
+	pmlp:hasFormat <http://iw.cs.utep.edu/registry/FMT/text/CSV.owl#CSV> .
+
+<http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv.raw.params.ttl> a pmlp:Information ;
+	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
+
+conversion:SameAsDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_class rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:has_version rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:MetaDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:num_triples rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhances rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhancement_layer rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:DatasetSample rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:source_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:VersionedDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:LayerDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:base_uri rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_predicate rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:interpretation rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:symbol rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:dataset_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:conversion_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:AbstractDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:null rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:subject_discriminator rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:Dataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+<http://tw.rpi.edu/web/inside/machine/sam#root> a foaf:OnlineAccount ;
+	foaf:accountName "root" ;
+	dcterms:isPartOf <http://tw.rpi.edu/web/inside/machine/sam#> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw> conversion:base_uri "http://logd.tw.rpi.edu"^^xsd:anyURI .
+
+_:node15quabsi1x1 a conversion:RawConversionProcess ;
+	conversion:conversion_identifier "raw" ;
+	dcterms:creator <http://tw.rpi.edu/web/inside/machine/sam#root> ;
+	dcterms:created "2011-03-15T23:11:54-04:00"^^xsd:dateTime .
+
+_:node15quabsi1x2 ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VISN" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x2 .
+
+_:node15quabsi1x3 ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "VISN Name" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x3 .
+
+_:node15quabsi1x4 ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Facility Name" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x4 .
+
+_:node15quabsi1x5 ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "City" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x5 .
+
+_:node15quabsi1x6 ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "State" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x6 .
+
+_:node15quabsi1x7 ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Female (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x7 .
+
+_:node15quabsi1x8 ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Male (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x8 .
+
+_:node15quabsi1x9 ov:csvHeader "Geriatric ? 65 yo (inpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x9 .
+
+_:node15quabsi1x10 ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Geriatric <65yo (inpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x10 .
+
+_:node15quabsi1x11 ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Geriatric ? 65 yo (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x11 .
+
+_:node15quabsi1x12 ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "<65yo (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x12 .
+
+_:node15quabsi1x13 ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Disabled P1-P4 (inpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x13 .
+
+_:node15quabsi1x14 ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "Disabled P1-P4 (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x14 .
+
+_:node15quabsi1x15 ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Homeless (outpateint)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x15 .
+
+_:node15quabsi1x16 ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mental Health (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x16 .
+
+_:node15quabsi1x17 ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Non - Mental Health (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x17 .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw> conversion:conversion_process _:node15quabsi1x1 ;
+	void:statItem _:node15quabsh8x34 .
+
+_:node15quabsh8x34 scovo:dimension void:numberOfTriples ;
+	rdf:value "2922"^^xsd:integer .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw> conversion:num_triples "2922"^^xsd:integer .
+
+# CSV2RDF4LOD DATASET METADATA (reproduced from above):
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Mar-01/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/data-gov/provenance/1208/version/1st-anniversary/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix data-gov_vocab: <http://logd.tw.rpi.edu/source/data-gov/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix ds1208_vocab: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/raw/> .
+@prefix ds1208: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/> .
+@prefix ds1208_global_value: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+raw:visn ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VISN" ;
+	rdfs:label "VISN" ;
+	rdfs:range rdfs:Literal .
+
+raw:visn_name ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "VISN Name" ;
+	rdfs:label "VISN Name" ;
+	rdfs:range rdfs:Literal .
+
+raw:facility_name ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Facility Name" ;
+	rdfs:label "Facility Name" ;
+	rdfs:range rdfs:Literal .
+
+raw:city ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "City" ;
+	rdfs:label "City" ;
+	rdfs:range rdfs:Literal .
+
+raw:state ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "State" ;
+	rdfs:label "State" ;
+	rdfs:range rdfs:Literal .
+
+raw:female_outpatient ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Female (outpatient)" ;
+	rdfs:label "Female outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:male_outpatient ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Male (outpatient)" ;
+	rdfs:label "Male outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:geriatric_65_yo_inpatient ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Geriatric ? 65 yo (inpatient)" ;
+	rdfs:label "Geriatric ? 65 yo inpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:geriatric_65yo_inpatient ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Geriatric <65yo (inpatient)" ;
+	rdfs:label "Geriatric <65yo inpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:geriatric_65_yo_outpatient ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Geriatric ? 65 yo (outpatient)" ;
+	rdfs:label "Geriatric ? 65 yo outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:p_65yo_outpatient ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "<65yo (outpatient)" ;
+	rdfs:label "<65yo outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:disabled_p1_p4_inpatient ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Disabled P1-P4 (inpatient)" ;
+	rdfs:label "Disabled P1-P4 inpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:disabled_p1_p4_outpatient ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "Disabled P1-P4 (outpatient)" ;
+	rdfs:label "Disabled P1-P4 outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:homeless_outpateint ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Homeless (outpateint)" ;
+	rdfs:label "Homeless outpateint" ;
+	rdfs:range rdfs:Literal .
+
+raw:mental_health_outpatient ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mental Health (outpatient)" ;
+	rdfs:label "Mental Health outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:non_mental_health_outpatient ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Non - Mental Health (outpatient)" ;
+	rdfs:label "Non - Mental Health outpatient" ;
+	rdfs:range rdfs:Literal .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Mar-01/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/data-gov/provenance/1208/version/1st-anniversary/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix data-gov_vocab: <http://logd.tw.rpi.edu/source/data-gov/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix ds1208_vocab: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/vocab/raw/> .
+@prefix ds1208: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/> .
+@prefix ds1208_global_value: <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208> a data-gov_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1208" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1208" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1208> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> , <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/subset/meta> ;
+	dcterms:modified "2011-03-15T23:11:56.326-05:00"^^xsd:dateTime .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary> a data-gov_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1208" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1208 1st-anniversary" ;
+	dcterms:modified "2011-03-15T23:11:56.326-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1208/version/1st-anniversary> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.ttl.gz> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw> a data-gov_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset ;
+	dcterms:modified "2011-03-15T23:11:56.326-05:00"^^xsd:dateTime ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1208" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	conversion:conversion_identifier "raw" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1208/version/1st-anniversary/conversion/raw> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.raw.ttl.gz> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw/subset/sample> ;
+	dcterms:created "2011-03-15T23:11:55.892-05:00"^^xsd:dateTime ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1208 1st-anniversary raw" ;
+	conversion:uses_predicate raw:non_mental_health_outpatient , raw:mental_health_outpatient , raw:homeless_outpateint , raw:disabled_p1_p4_outpatient , raw:disabled_p1_p4_inpatient , raw:p_65yo_outpatient , raw:geriatric_65_yo_outpatient , raw:geriatric_65yo_inpatient , raw:geriatric_65_yo_inpatient , raw:male_outpatient , raw:female_outpatient , raw:state , raw:city , raw:facility_name , raw:visn_name , raw:visn ;
+	void:exampleResource ds1208:thing_2 , ds1208:thing_140 .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/subset/meta> a data-gov_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1208" ;
+	dcterms:modified "2011-03-15T23:11:56.326-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1208/subset/meta> ;
+	void:vocabulary <http://rdfs.org/ns/void#> , <http://inference-web.org/2.0/pml-provenance.owl#> , <http://inference-web.org/2.0/pml-justification.owl#> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <http://purl.org/NET/scovo#> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.void.ttl.gz> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw/subset/sample> a data-gov_vocab:Dataset , conversion:Dataset , conversion:DatasetSample , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1208" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	conversion:conversion_identifier "raw" ;
+	dcterms:modified "2011-03-15T23:11:56.326-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1208/version/1st-anniversary/conversion/raw/subset/sample> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.raw.sample.ttl.gz> .
+
+<http://logd.tw.rpi.edu/source/data-gov> a foaf:Agent ;
+	dcterms:identifier "data-gov" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source_page/data-gov> .
+
+provenance:nodeset_1 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.raw.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_2 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.raw.sample.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_3 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_4 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1208/version/1st-anniversary/conversion/data-gov-1208-1st-anniversary.void.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:infstep_1 a pmlj:InferenceStep ;
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e ;
+	pmlj:hasAntecedentList _:node15quabsh8x28 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node15quabsh8x30 , _:node15quabsh8x29 .
+
+tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e" ;
+	dcterms:version "2011-Mar-01" ;
+	doap:revision "2011-Mar-01" ;
+	doap:platform "Java" .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
+	doap:revision tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e ;
+	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> ;
+	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> ;
+	doap:maintainer <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:documenter <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/JohannaFlores> , <http://tw.rpi.edu/instances/LiDing> , <http://tw.rpi.edu/instances/GinoGervasio> ;
+	doap:helper <http://tw.rpi.edu/instances/AlvaroGraves> , <http://tw.rpi.edu/instances/DominicDiFranzo> , <http://tw.rpi.edu/instances/GinoGervasio> , <http://tw.rpi.edu/instances/JamesMcCusker> ;
+	doap:homepage <https://github.com/timrdf/csv2rdf4lod-automation/wiki> ;
+	doap:audience "Data modelers and architects that need (potentially non-RDB) tabular data encoded within the Resource Description Framework." ;
+	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
+	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
+
+_:node15quabsh8x31 a doap:GitRepository ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
+	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
+
+<http://tw.rpi.edu/instances/GregoryToddWilliams> owl:sameAs <http://kasei.us/about/foaf.xrdf#greg> .
+
+<http://tw.rpi.edu/instances/AlvaroGraves> owl:sameAs <http://alvaro.graves.cl> .
+
+_:node15quabsh8x28 a rdf:List ;
+	rdf:first provenance:nodeset_5 .
+
+provenance:nodeset_5 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv> .
+
+_:node15quabsh8x28 rdf:rest _:node15quabsh8x32 .
+
+_:node15quabsh8x32 a rdf:List ;
+	rdf:first provenance:nodeset_6 .
+
+provenance:nodeset_6 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv.raw.params.ttl> .
+
+_:node15quabsi1x9 ov:csvCol "8"^^xsd:integer .
+
+_:node15quabsh8x32 rdf:rest rdf:nil .
+
+_:node15quabsh8x30 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv.raw.params.ttl> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
+
+_:node15quabsh8x29 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
+
+<http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv> a pmlp:Information ;
+	pmlp:hasFormat <http://iw.cs.utep.edu/registry/FMT/text/CSV.owl#CSV> .
+
+<http://logd.tw.rpi.edu/source/data-gov/provenance_file/1208/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Populations.csv.raw.params.ttl> a pmlp:Information ;
+	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
+
+conversion:SameAsDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_class rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:has_version rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:MetaDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:num_triples rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhances rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhancement_layer rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:DatasetSample rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:source_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:VersionedDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:LayerDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:base_uri rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_predicate rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:interpretation rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:symbol rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:dataset_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:conversion_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:AbstractDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:null rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:subject_discriminator rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:Dataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+<http://tw.rpi.edu/web/inside/machine/sam#root> a foaf:OnlineAccount ;
+	foaf:accountName "root" ;
+	dcterms:isPartOf <http://tw.rpi.edu/web/inside/machine/sam#> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw> conversion:base_uri "http://logd.tw.rpi.edu"^^xsd:anyURI .
+
+_:node15quabsi1x1 a conversion:RawConversionProcess ;
+	conversion:conversion_identifier "raw" ;
+	dcterms:creator <http://tw.rpi.edu/web/inside/machine/sam#root> ;
+	dcterms:created "2011-03-15T23:11:54-04:00"^^xsd:dateTime .
+
+_:node15quabsi1x2 ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VISN" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x2 .
+
+_:node15quabsi1x3 ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "VISN Name" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x3 .
+
+_:node15quabsi1x4 ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Facility Name" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x4 .
+
+_:node15quabsi1x5 ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "City" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x5 .
+
+_:node15quabsi1x6 ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "State" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x6 .
+
+_:node15quabsi1x7 ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Female (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x7 .
+
+_:node15quabsi1x8 ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Male (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x8 .
+
+_:node15quabsi1x9 ov:csvHeader "Geriatric ? 65 yo (inpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x9 .
+
+_:node15quabsi1x10 ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Geriatric <65yo (inpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x10 .
+
+_:node15quabsi1x11 ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Geriatric ? 65 yo (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x11 .
+
+_:node15quabsi1x12 ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "<65yo (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x12 .
+
+_:node15quabsi1x13 ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Disabled P1-P4 (inpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x13 .
+
+_:node15quabsi1x14 ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "Disabled P1-P4 (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x14 .
+
+_:node15quabsi1x15 ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Homeless (outpateint)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x15 .
+
+_:node15quabsi1x16 ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mental Health (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x16 .
+
+_:node15quabsi1x17 ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Non - Mental Health (outpatient)" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15quabsi1x1 conversion:enhance _:node15quabsi1x17 .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw> conversion:conversion_process _:node15quabsi1x1 ;
+	void:statItem _:node15quabsh8x35 .
+
+_:node15quabsh8x35 scovo:dimension void:numberOfTriples ;
+	rdf:value "2922"^^xsd:integer .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1208/version/1st-anniversary/conversion/raw> conversion:num_triples "2922"^^xsd:integer .

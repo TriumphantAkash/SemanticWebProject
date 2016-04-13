@@ -1,0 +1,11 @@
+PREFIX DS1212: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/raw/>
+
+SELECT distinct ?state (SUM(xsd:double(?emergency)) as ?emergency) (SUM(xsd:double(?maternity)) as ?maternity)
+WHERE {  
+GRAPH <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary>  {	
+?s DS1212:emergency ?emergency.
+?s DS1212:non_mental_health_outpatient ?maternity.
+?s DS1212:state ?state .    
+}
+}
+order by ?state

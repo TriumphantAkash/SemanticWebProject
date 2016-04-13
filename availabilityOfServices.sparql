@@ -1,0 +1,11 @@
+PREFIX DS1210: <http://logd.tw.rpi.edu/source/data-gov/dataset/1210/vocab/raw/>
+
+SELECT distinct ?state (SUM(xsd:double(?emer_room_beds)) as ?total_emergency_room_beds)
+WHERE {  
+
+GRAPH <http://logd.tw.rpi.edu/source/data-gov/dataset/1210/version/1st-anniversary>  {	
+				?s1 DS1210:emergency_room_beds ?emer_room_beds.
+				?s1 DS1210:state ?state .   
+}
+}
+order by ?state

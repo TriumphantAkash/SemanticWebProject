@@ -1,0 +1,150 @@
+VISN,VISN Name,Facility Name,City,State,Female (outpatient),Male (outpatient),Geriatric ? 65 yo (inpatient),Geriatric <65yo (inpatient),Geriatric ? 65 yo (outpatient),<65yo (outpatient),Disabled P1-P4 (inpatient),Disabled P1-P4 (outpatient),Homeless (outpateint),Mental Health (outpatient),Non - Mental Health (outpatient)
+1,VA New England Health Care System,VA Connecticut HCS,West Haven,CT,78,83,87,89,85,82,89,85,89,84,85
+1,VA New England Health Care System,Edith Nourse Rogers Memorial Veterans Hospital,Bedford,MA,79,79,*,*,79,82,*,82,89,81,83
+1,VA New England Health Care System,"VA Boston HCS
+W Roxbury Brockton Jamaica Plns",West Roxbury,MA,80,82,95,95,82,79,95,81,86,83,83
+1,VA New England Health Care System,VAMC,Northampton,MA,73,79,*,*,87,79,*,82,83,80,92
+1,VA New England Health Care System,VAMC/RO,Togus,ME,76,79,89,92,84,78,89,81,88,83,82
+1,VA New England Health Care System,VAMC,Manchester,NH,79,84,*,*,85,82,*,85,98,85,85
+1,VA New England Health Care System,VAMC,Providence,RI,81,84,96,96,84,81,97,83,88,82,84
+1,VA New England Health Care System,VAM/ROC,White River Junction,VT,77,82,91,89,82,81,92,84,96,83,86
+2,VA Healthcare Network Upstate New York,Samuel S. Stratton VAMC ,Albany,NY,73,82,92,94,85,79,93,79,84,81,84
+2,VA Healthcare Network Upstate New York,VA Western New York HCS Buffalo Batavia,Buffalo,NY,76,82,93,91,84,81,92,82,84,81,85
+2,VA Healthcare Network Upstate New York,VAMC,Bath,NY,78,81,94,96,82,84,93,85,*,83,83
+2,VA Healthcare Network Upstate New York,VAMC,Canandaigua ,NY,75,79,*,*,83,80,*,80,90,82,86
+2,VA Healthcare Network Upstate New York,VAMC,Syracuse,NY,73,80,94,95,82,80,94,83,85,83,83
+3,VA NY/NJ Veterans Healthcare Network,VA New Jersey HCS East Orange Campus,East Orange,NJ,73,82,92,93,83,80,92,82,80,83,85
+3,VA NY/NJ Veterans Healthcare Network,VAMC,Bronx ,NY,71,78,89,92,83,81,91,83,95,83,84
+3,VA NY/NJ Veterans Healthcare Network,"VA NY Harbor HCS
+NY Harbor Brooklyn",New York Harbor,NY,70,78,93,95,84,76,95,79,83,78,83
+3,VA NY/NJ Veterans Healthcare Network,VA Hudson Valley HCS Montrose Castle Pt,Montrose,NY,75,82,86,87,86,80,88,82,93,83,86
+3,VA NY/NJ Veterans Healthcare Network,VAMC,Northport,NY,73,82,92,93,81,80,92,83,85,80,87
+4,VA Stars & Stripes Healthcare Network,VAM&RO,Wilmington,DE,76,82,94,94,86,80,95,84,78,83,85
+4,VA Stars & Stripes Healthcare Network,James E. Van Zandt VA Medical Center ,Altoona,PA,76,85,97,95,89,84,96,87,100,86,87
+4,VA Stars & Stripes Healthcare Network,VAMC,Butler,PA,76,80,*,*,83,77,*,79,67,80,86
+4,VA Stars & Stripes Healthcare Network,VAMC,Coatesville,PA,77,84,94,91,84,80,94,78,85,82,86
+4,VA Stars & Stripes Healthcare Network,VAMC,Erie,PA,79,82,95,97,83,82,98,85,90,85,87
+4,VA Stars & Stripes Healthcare Network,VAMC,Lebanon,PA,77,80,91,90,80,75,92,79,91,81,81
+4,VA Stars & Stripes Healthcare Network,VAMC,Philadelphia,PA,78,81,93,91,82,79,91,82,88,83,84
+4,VA Stars & Stripes Healthcare Network,"VA Pittsburgh HCS
+Heinz Univ Dr Highld Dr",Pittsburgh,PA,76,79,93,93,83,82,93,80,85,82,85
+4,VA Stars & Stripes Healthcare Network,VAMC,Wilkes-Barre,PA,81,85,91,90,85,79,91,84,91,81,83
+4,VA Stars & Stripes Healthcare Network,Louis A. Johnson VAMC,Clarksburg,WV,79,82,93,90,86,84,91,84,100,84,86
+5,VA Capitol Health Care Network,VAMC,Washington,DC,73,78,92,95,84,81,93,83,96,82,84
+5,VA Capitol Health Care Network,"VA Maryland HCS
+Baltimore Perry Pt",Baltimore,MD,74,78,92,92,83,76,93,79,79,78,84
+5,VA Capitol Health Care Network,VAMC,Martinsburg,WV,76,80,96,94,82,80,96,81,86,80,82
+6,VA Mid-Atlantic Health Care Network,VAMC,Asheville,NC,75,82,91,93,86,84,92,86,95,86,86
+6,VA Mid-Atlantic Health Care Network,VAMC,Durham,NC,75,79,94,96,79,79,95,81,92,81,82
+6,VA Mid-Atlantic Health Care Network,VAMC,Fayetteville,NC,76,79,94,92,81,79,94,80,65,80,81
+6,VA Mid-Atlantic Health Care Network,W.G. (Bill) Hefner VA Medical Center,Salisbury,NC,70,80,95,96,82,79,96,81,90,81,84
+6,VA Mid-Atlantic Health Care Network,VAMC,Hampton,VA,80,80,94,97,83,82,94,83,91,81,84
+6,VA Mid-Atlantic Health Care Network,Hunter Holmes McGuire VAMC,Richmond,VA,81,83,93,94,85,83,94,85,84,83,86
+6,VA Mid-Atlantic Health Care Network,VAMC,Salem,VA,84,81,95,97,79,80,95,81,100,81,78
+6,VA Mid-Atlantic Health Care Network,VAMC,Beckley,WV,73,80,92,94,81,80,92,81,100,81,81
+7,VA Southeast Network,VAMC,Birmingham,AL,72,81,91,92,83,82,92,85,91,83,82
+7,VA Southeast Network,Central Alabama Veterans HCS Tuskeegee Montgomery,Montgomery,AL,77,76,93,90,82,81,90,82,85,81,84
+7,VA Southeast Network,VAMC,Tuscaloosa,AL,72,79,*,*,89,82,*,84,83,84,87
+7,VA Southeast Network,VAMC,Atlanta,GA,73,80,94,93,85,80,93,82,89,80,85
+7,VA Southeast Network,VAMC,Augusta,GA,76,80,91,90,84,85,92,85,83,82,87
+7,VA Southeast Network,Carl Vinson VA Medical Center,Dublin,GA,80,80,94,91,86,83,94,85,97,84,85
+7,VA Southeast Network,Ralph H. Johnson VAMC,Charleston,SC,78,78,95,97,81,80,97,82,88,80,81
+7,VA Southeast Network,Wm. Jennings Bryan Dorn VAMC,Columbia,SC,77,83,91,94,85,82,91,84,84,82,84
+8,VA Sunshine Healthcare Network,VAMC,Bay Pines,FL,79,83,94,95,88,82,94,85,96,81,87
+8,VA Sunshine Healthcare Network,N FLA/S GA Veterans HS Gainesville Lake Cty,Gainesville,FL,79,83,93,94,88,83,94,86,75,86,86
+8,VA Sunshine Healthcare Network,VAMC,Miami,FL,75,78,95,96,82,82,96,87,87,85,84
+8,VA Sunshine Healthcare Network,East Central Florida HCS,Orlando,FL,73,78,*,*,84,83,*,84,81,84,85
+8,VA Sunshine Healthcare Network,James A. Haley VA Medical Center,Tampa,FL,80,82,93,92,85,82,94,84,73,84,85
+8,VA Sunshine Healthcare Network,VAMC,West Palm Beach,FL,79,86,96,94,88,85,96,89,89,89,88
+8,VA Sunshine Healthcare Network,VAMC,San Juan,PR,76,83,90,90,79,79,89,81,99,79,81
+9,VA Mid South Healthcare Network,VAMC,Lexington,KY,72,78,94,95,84,82,94,83,81,82,82
+9,VA Mid South Healthcare Network,VAMC,Louisville,KY,72,82,93,94,82,76,94,80,91,78,82
+9,VA Mid South Healthcare Network,VAMC,Memphis,TN,72,76,87,89,82,79,87,81,88,79,80
+9,VA Mid South Healthcare Network,VAMC,Mountain Home,TN,73,73,95,97,80,81,96,83,85,82,78
+9,VA Mid South Healthcare Network,"Tennessee Valley HCS
+Nashville Murfreesboro ",Nashville,TN,74,76,92,91,78,75,91,76,90,74,77
+9,VA Mid South Healthcare Network,VAMC,Huntington,WV,80,82,96,96,85,87,96,86,94,85,87
+10,VA Health Care System of Ohio,VAMC,Chillicothe,OH,73,75,93,92,78,73,92,76,93,76,77
+10,VA Health Care System of Ohio,VAMC,Cincinnati,OH,72,75,94,96,81,82,95,83,84,82,83
+10,VA Health Care System of Ohio,"Louis Stokes VA Medical Center
+Cleveland Brecksville",Cleveland,OH,74,81,93,95,83,77,96,80,84,80,84
+10,VA Health Care System of Ohio,Chalmers Wylie Outpatient Clinic       ,Columbus,OH,68,77,*,*,83,78,*,81,90,78,82
+10,VA Health Care System of Ohio,VAMC,Dayton,OH,74,80,93,94,83,80,93,82,87,81,84
+11,Veterans In Partnership,VA Illiana HCS,Danville,IL,74,80,95,97,81,82,97,82,100,81,85
+11,Veterans In Partnership,VA Northern Indiana HCS Marion Ft Wayne,Marion,IN,75,80,91,89,79,81,88,83,93,81,82
+11,Veterans In Partnership,Richard L. Roudebush VA Medical Center,Indianapolis,IN,74,77,91,93,86,80,92,83,81,81,84
+11,Veterans In Partnership,Ann Arbor VA Ann Arbor HCS,Ann Arbor,MI,75,79,93,91,81,81,92,82,88,82,81
+11,Veterans In Partnership,VAMC,Battle Creek,MI,73,78,92,89,82,79,87,81,92,81,83
+11,Veterans In Partnership,John D. Dingell VA Medical Center,Detroit,MI,71,72,92,94,83,78,93,77,79,75,81
+11,Veterans In Partnership,Aleda E. Lutz VA Medical Center,Saginaw,MI,74,80,93,97,86,84,97,84,*,83,85
+12,The Great Lakes Health Care System,VA Chicago HCS; (Jessie Brown),"Chicago, West Side ",IL,73,75,95,95,85,80,94,81,76,79,84
+12,The Great Lakes Health Care System,Edward Hines Jr. VA Hospital,Hines,IL,77,82,92,91,86,81,92,82,92,79,86
+12,The Great Lakes Health Care System,VAMC,North Chicago,IL,78,82,92,89,87,79,92,84,82,83,84
+12,The Great Lakes Health Care System,VAMC,Iron Mountain,MI,76,81,85,80,82,75,84,77,86,74,81
+12,The Great Lakes Health Care System,William S. Middleton Memorial Veterans Hospital,Madison,WI,73,82,94,90,85,83,94,86,81,82,85
+12,The Great Lakes Health Care System,Clement J. Zablocki VAMC,Milwaukee,WI,76,82,92,91,84,80,92,82,82,80,83
+12,The Great Lakes Health Care System,VAMC,Tomah,WI,74,84,94,93,83,83,95,84,87,84,87
+15,VA Heartland Network,VA Eastern Kansas HCS Topeka Leavenworth,Topeka,KS,76,80,95,96,84,81,95,84,80,79,83
+15,VA Heartland Network,Robert J. Dole Department of Veterans Affairs Medical and Regional Office Center,Wichita,KS,79,83,95,93,83,83,92,83,90,84,85
+15,VA Heartland Network,Harry S. Truman Memorial,Columbia,MO,77,79,94,96,81,76,95,79,92,78,81
+15,VA Heartland Network,VAMC,Kansas City,MO,77,79,91,91,85,83,92,85,76,83,84
+15,VA Heartland Network,VAMC,Marion,IL,73,78,89,89,80,79,89,80,*,82,83
+15,VA Heartland Network,John J. Pershing VA Medical Center,Poplar Bluff,MO,76,80,98,96,75,75,95,77,100,78,78
+15,VA Heartland Network,St Louis VAMC St Louis Jefferson Barracks,St. Louis,MO,77,75,92,90,80,76,90,78,61,76,80
+16,South Central VA Health Care Network,VAMC,Fayetteville,AR,80,81,94,94,83,81,93,83,93,80,82
+16,South Central VA Health Care Network,"Central Arkansas Veterans HCS
+Little Rock Little Rock N",Little Rock,AR,73,80,93,94,84,82,94,83,93,81,83
+16,South Central VA Health Care Network,VAMC,Alexandria,LA,73,78,92,95,83,78,92,78,75,80,82
+16,South Central VA Health Care Network,VAMC,New Orleans,LA,65,72,*,*,79,73,*,76,83,75,76
+16,South Central VA Health Care Network,Overton Brooks VA Medical Center,Shreveport,LA,74,80,94,93,85,77,93,80,92,79,82
+16,South Central VA Health Care Network,VA Gulf Coast Veterans HCS,Biloxi,MS,78,80,93,96,89,84,95,88,80,84,87
+16,South Central VA Health Care Network,G.V. (Sonny) Montgomery VA Medical Center,Jackson,MS,76,83,96,95,82,84,95,85,91,83,86
+16,South Central VA Health Care Network,VAMC,Muskogee,OK,73,77,92,92,85,81,92,85,96,84,86
+16,South Central VA Health Care Network,VAMC,Oklahoma City,OK,76,79,95,95,82,80,96,80,91,79,83
+16,South Central VA Health Care Network,VAMC,Houston,TX,73,76,89,89,78,77,89,78,83,78,78
+17,VA Heart of Texas Health Care Network,VA North Texas HCS,Dallas,TX,73,76,90,91,80,74,90,77,77,76,79
+17,VA Heart of Texas Health Care Network,South Texas Veterans HCS  SanAntonio Kerrville,San Antonio,TX,75,79,91,93,84,79,92,82,92,81,83
+17,VA Heart of Texas Health Care Network,"Central Texas Veterans HCS
+Temple Waco Marlin",Temple,TX,73,78,92,90,84,79,90,81,94,80,83
+18,VA Southwest Health Care Network,Carl T. Hayden VA Medical Center,Phoenix,AZ,73,78,94,92,82,81,94,82,93,81,84
+18,VA Southwest Health Care Network,Northern Arizona VA HCS,Prescott,AZ,73,73,95,95,82,78,95,79,75,77,82
+18,VA Southwest Health Care Network,Southern Arizona VA HCS,Tucson,AZ,73,80,93,93,81,77,93,80,90,79,81
+18,VA Southwest Health Care Network,New Mexico HCS,Albuquerque,NM,72,74,91,92,76,70,92,75,79,73,73
+18,VA Southwest Health Care Network,Amarillo VA HCS,Amarillo,TX,69,77,92,92,80,80,90,83,*,77,84
+18,VA Southwest Health Care Network,West Texas VA HCS,Big Spring,TX,69,79,96,93,82,77,97,79,100,80,79
+18,VA Southwest Health Care Network,El Paso VA HCS,El Paso,TX,75,79,*,*,76,71,*,74,90,73,76
+19,Rocky Mountain Network,Eastern Colorado HCS Denver Pueblo,Denver,CO,77,77,95,95,79,81,95,81,76,81,80
+19,Rocky Mountain Network,VAMC,Grand Junction,CO,68,78,94,96,80,78,94,80,*,80,80
+19,Rocky Mountain Network,VA Montana HCS,Fort Harrison,MT,75,80,96,96,83,79,96,79,53,84,81
+19,Rocky Mountain Network,VA Salt Lake City HCS,Salt Lake City,UT,77,80,93,91,82,82,92,82,71,82,83
+19,Rocky Mountain Network,VAM/ROC,Cheyenne,WY,78,78,92,89,78,79,90,81,91,79,82
+19,Rocky Mountain Network,VAMC,Sheridan,WY,78,78,86,92,80,79,85,81,81,80,83
+20,Northwest Network,Alaska VA HCS and Regional Office,Anchorage,AK,76,82,*,*,81,81,*,80,65,82,80
+20,Northwest Network,VAMC,Boise,ID,73,78,90,90,83,74,90,77,100,80,78
+20,Northwest Network,VAMC,Portland,OR,76,80,92,90,80,78,91,80,77,79,79
+20,Northwest Network,VA Roseburg HCS,Roseburg,OR,69,74,92,93,80,76,92,78,64,79,78
+20,Northwest Network,Southern Oregon Rehab Ctr & Clinics,White City,OR,67,79,*,*,81,78,*,80,92,75,82
+20,Northwest Network,VA Puget Sound HCS‡  Seattle American Lake,Seattle,WA,74,78,93,94,84,80,93,82,90,80,83
+20,Northwest Network,VAMC,Spokane ,WA,69,75,93,87,81,77,90,79,70,77,83
+20,Northwest Network,Jonathan M. Wainwright Memorial VA Medical Center,Walla Walla,WA,76,76,*,*,82,79,*,81,88,78,78
+21,Sierra Pacific Network,VA Central California HCS,Fresno,CA,77,78,90,91,86,79,89,84,88,81,84
+21,Sierra Pacific Network,VA Northern California HCS Martinez Sacramento,"Martinez, East Bay",CA,72,80,93,90,83,77,93,81,87,79,82
+21,Sierra Pacific Network,"VA Palo Alto HCS
+PaloAlto MenloPk Livermore",Palo Alto,CA,78,82,95,97,81,81,97,83,86,84,81
+21,Sierra Pacific Network,VAMC,San Francisco,CA,74,79,93,93,79,76,92,79,86,76,81
+21,Sierra Pacific Network,VA Pacific Islands HCSSpark M. Matsunaga VA Medical & Regional Office Center,Honolulu,HI,72,78,*,*,76,77,*,78,91,79,80
+21,Sierra Pacific Network,VA Sierra Nevada HCS,Reno,NV,73,76,93,90,84,81,92,83,90,80,82
+22,Desert Pacific Healthcare Network,VA Loma Linda HCS,Loma Linda,CA,78,76,96,95,79,77,96,77,94,79,80
+22,Desert Pacific Healthcare Network,VA Long Beach HCS,Long Beach,CA,76,80,90,92,84,79,90,81,92,79,82
+22,Desert Pacific Healthcare Network,VA Greater Los Angeles HCS (GLA),Los Angeles,CA,75,79,90,89,79,75,89,77,79,75,78
+22,Desert Pacific Healthcare Network,VA San Diego HCS,San Diego,CA,76,80,92,92,81,77,92,80,81,80,79
+22,Desert Pacific Healthcare Network,VA Southern Nevada HCS,Las Vegas,NV,83,80,91,94,84,80,94,82,74,81,85
+23,VA Midwest Health Care Network,VA Nebraska Western Iowa HCS  Omaha Grand Is Lincoln,Omaha,NE,72,79,92,94,78,79,92,79,66,79,81
+23,VA Midwest Health Care Network,VA Central Iowa HCS   DesMoines Knoxville,Des Moines,IA,75,82,93,94,84,80,93,84,79,79,85
+23,VA Midwest Health Care Network,VAMC,Iowa City,IA,70,79,89,91,82,78,88,81,86,78,80
+23,VA Midwest Health Care Network,VAMC,Minneapolis,MN,81,81,91,92,81,81,92,82,92,82,83
+23,VA Midwest Health Care Network,VAMC,St. Cloud,MN,73,82,*,*,86,78,*,81,*,77,86
+23,VA Midwest Health Care Network,VAM/RO,Fargo,ND,74,78,93,85,79,80,90,79,83,82,81
+23,VA Midwest Health Care Network,"VA Black Hills HCS
+Ft Meade Hot Springs",Fort Meade ,SD,72,76,90,90,80,77,88,79,71,77,82
+23,VA Midwest Health Care Network,VAM/ROC,Sioux Falls,SD,81,80,88,87,79,77,89,79,97,78,79

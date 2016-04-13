@@ -1,0 +1,2910 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Mar-01/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/data-gov/provenance/1212/version/1st-anniversary/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix data-gov_vocab: <http://logd.tw.rpi.edu/source/data-gov/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix ds1212_vocab: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/raw/> .
+@prefix ds1212: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/> .
+@prefix ds1212_global_value: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+raw:visn ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VISN" ;
+	rdfs:label "VISN" ;
+	rdfs:range rdfs:Literal .
+
+raw:visn_name ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "VISN Name" ;
+	rdfs:label "VISN Name" ;
+	rdfs:range rdfs:Literal .
+
+raw:facility_name ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Facility Name" ;
+	rdfs:label "Facility Name" ;
+	rdfs:range rdfs:Literal .
+
+raw:city ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "City" ;
+	rdfs:label "City" ;
+	rdfs:range rdfs:Literal .
+
+raw:state ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "State" ;
+	rdfs:label "State" ;
+	rdfs:range rdfs:Literal .
+
+raw:inpatient ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Inpatient" ;
+	rdfs:label "Inpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:outpatient ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Outpatient" ;
+	rdfs:label "Outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:emergency ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Emergency" ;
+	rdfs:label "Emergency" ;
+	rdfs:range rdfs:Literal .
+
+raw:maternity ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Maternity" ;
+	rdfs:label "Maternity" ;
+	rdfs:range rdfs:Literal .
+
+raw:intensive_care_units ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Intensive Care Units" ;
+	rdfs:label "Intensive Care Units" ;
+	rdfs:range rdfs:Literal .
+
+ds1212:thing_2 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VA Connecticut HCS" ;
+	raw:city "West Haven" ;
+	raw:state "CT" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "2"^^xsd:integer .
+
+ds1212:thing_3 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "Edith Nourse Rogers Memorial Veterans Hospital" ;
+	raw:city "Bedford" ;
+	raw:state "MA" ;
+	raw:inpatient "86" ;
+	raw:outpatient "79" ;
+	raw:emergency "90" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "3"^^xsd:integer .
+
+ds1212:thing_4 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name """VA Boston HCS
+W Roxbury Brockton Jamaica Plns""" ;
+	raw:city "West Roxbury" ;
+	raw:state "MA" ;
+	raw:inpatient "*" ;
+	raw:outpatient "76" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "4"^^xsd:integer .
+
+ds1212:thing_5 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Northampton" ;
+	raw:state "MA" ;
+	raw:inpatient "95" ;
+	raw:outpatient "77" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "5"^^xsd:integer .
+
+ds1212:thing_6 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VAMC/RO" ;
+	raw:city "Togus" ;
+	raw:state "ME" ;
+	raw:inpatient "*" ;
+	raw:outpatient "81" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "6"^^xsd:integer .
+
+ds1212:thing_7 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Manchester" ;
+	raw:state "NH" ;
+	raw:inpatient "90" ;
+	raw:outpatient "75" ;
+	raw:emergency "90" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "7"^^xsd:integer .
+
+ds1212:thing_8 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Providence" ;
+	raw:state "RI" ;
+	raw:inpatient "*" ;
+	raw:outpatient "80" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "8"^^xsd:integer .
+
+ds1212:thing_9 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "1" ;
+	raw:visn_name "VA New England Health Care System" ;
+	raw:facility_name "VAM/ROC" ;
+	raw:city "White River Junction" ;
+	raw:state "VT" ;
+	raw:inpatient "96" ;
+	raw:outpatient "79" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "9"^^xsd:integer .
+
+ds1212:thing_10 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "2" ;
+	raw:visn_name "VA Healthcare Network Upstate New York" ;
+	raw:facility_name "Samuel S. Stratton VAMC" ;
+	raw:city "Albany" ;
+	raw:state "NY" ;
+	raw:inpatient "89" ;
+	raw:outpatient "77" ;
+	raw:emergency "88" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "10"^^xsd:integer .
+
+ds1212:thing_11 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "2" ;
+	raw:visn_name "VA Healthcare Network Upstate New York" ;
+	raw:facility_name "VA Western New York HCS Buffalo Batavia" ;
+	raw:city "Buffalo" ;
+	raw:state "NY" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "11"^^xsd:integer .
+
+ds1212:thing_12 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "2" ;
+	raw:visn_name "VA Healthcare Network Upstate New York" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Bath" ;
+	raw:state "NY" ;
+	raw:inpatient "93" ;
+	raw:outpatient "79" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "12"^^xsd:integer .
+
+ds1212:thing_13 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "2" ;
+	raw:visn_name "VA Healthcare Network Upstate New York" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Canandaigua" ;
+	raw:state "NY" ;
+	raw:inpatient "93" ;
+	raw:outpatient "79" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "13"^^xsd:integer .
+
+ds1212:thing_14 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "2" ;
+	raw:visn_name "VA Healthcare Network Upstate New York" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Syracuse" ;
+	raw:state "NY" ;
+	raw:inpatient "94" ;
+	raw:outpatient "80" ;
+	raw:emergency "97" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "14"^^xsd:integer .
+
+ds1212:thing_15 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "3" ;
+	raw:visn_name "VA NY/NJ Veterans Healthcare Network" ;
+	raw:facility_name "VA New Jersey HCS East Orange Campus" ;
+	raw:city "East Orange" ;
+	raw:state "NJ" ;
+	raw:inpatient "*" ;
+	raw:outpatient "80" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "15"^^xsd:integer .
+
+ds1212:thing_16 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "3" ;
+	raw:visn_name "VA NY/NJ Veterans Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Bronx" ;
+	raw:state "NY" ;
+	raw:inpatient "94" ;
+	raw:outpatient "78" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "16"^^xsd:integer .
+
+ds1212:thing_17 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "3" ;
+	raw:visn_name "VA NY/NJ Veterans Healthcare Network" ;
+	raw:facility_name """VA NY Harbor HCS
+NY Harbor Brooklyn""" ;
+	raw:city "New York Harbor" ;
+	raw:state "NY" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "17"^^xsd:integer .
+
+ds1212:thing_18 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "3" ;
+	raw:visn_name "VA NY/NJ Veterans Healthcare Network" ;
+	raw:facility_name "VA Hudson Valley HCS Montrose Castle Pt" ;
+	raw:city "Montrose" ;
+	raw:state "NY" ;
+	raw:inpatient "93" ;
+	raw:outpatient "78" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "18"^^xsd:integer .
+
+ds1212:thing_19 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "3" ;
+	raw:visn_name "VA NY/NJ Veterans Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Northport" ;
+	raw:state "NY" ;
+	raw:inpatient "91" ;
+	raw:outpatient "79" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "19"^^xsd:integer .
+
+ds1212:thing_20 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAM&RO" ;
+	raw:city "Wilmington" ;
+	raw:state "DE" ;
+	raw:inpatient "94" ;
+	raw:outpatient "75" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "20"^^xsd:integer .
+
+ds1212:thing_21 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "James E. Van Zandt VA Medical Center" ;
+	raw:city "Altoona" ;
+	raw:state "PA" ;
+	raw:inpatient "87" ;
+	raw:outpatient "78" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "21"^^xsd:integer .
+
+ds1212:thing_22 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Butler" ;
+	raw:state "PA" ;
+	raw:inpatient "93" ;
+	raw:outpatient "77" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "22"^^xsd:integer .
+
+ds1212:thing_23 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Coatesville" ;
+	raw:state "PA" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "23"^^xsd:integer .
+
+ds1212:thing_24 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Erie" ;
+	raw:state "PA" ;
+	raw:inpatient "94" ;
+	raw:outpatient "79" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "24"^^xsd:integer .
+
+ds1212:thing_25 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Lebanon" ;
+	raw:state "PA" ;
+	raw:inpatient "99" ;
+	raw:outpatient "81" ;
+	raw:emergency "97" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "25"^^xsd:integer .
+
+ds1212:thing_26 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Philadelphia" ;
+	raw:state "PA" ;
+	raw:inpatient "*" ;
+	raw:outpatient "78" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "26"^^xsd:integer .
+
+ds1212:thing_27 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name """VA Pittsburgh HCS
+Heinz Univ Dr Highld Dr""" ;
+	raw:city "Pittsburgh" ;
+	raw:state "PA" ;
+	raw:inpatient "92" ;
+	raw:outpatient "79" ;
+	raw:emergency "100" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "27"^^xsd:integer .
+
+ds1212:thing_28 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Wilkes-Barre" ;
+	raw:state "PA" ;
+	raw:inpatient "96" ;
+	raw:outpatient "80" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "28"^^xsd:integer .
+
+ds1212:thing_29 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "4" ;
+	raw:visn_name "VA Stars & Stripes Healthcare Network" ;
+	raw:facility_name "Louis A. Johnson VAMC" ;
+	raw:city "Clarksburg" ;
+	raw:state "WV" ;
+	raw:inpatient "91" ;
+	raw:outpatient "74" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "29"^^xsd:integer .
+
+ds1212:thing_30 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "5" ;
+	raw:visn_name "VA Capitol Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Washington" ;
+	raw:state "DC" ;
+	raw:inpatient "94" ;
+	raw:outpatient "78" ;
+	raw:emergency "90" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "30"^^xsd:integer .
+
+ds1212:thing_31 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "5" ;
+	raw:visn_name "VA Capitol Health Care Network" ;
+	raw:facility_name """VA Maryland HCS
+Baltimore Perry Pt""" ;
+	raw:city "Baltimore" ;
+	raw:state "MD" ;
+	raw:inpatient "93" ;
+	raw:outpatient "78" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "31"^^xsd:integer .
+
+ds1212:thing_32 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "5" ;
+	raw:visn_name "VA Capitol Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Martinsburg" ;
+	raw:state "WV" ;
+	raw:inpatient "91" ;
+	raw:outpatient "79" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "32"^^xsd:integer .
+
+ds1212:thing_33 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Asheville" ;
+	raw:state "NC" ;
+	raw:inpatient "94" ;
+	raw:outpatient "80" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "33"^^xsd:integer .
+
+ds1212:thing_34 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Durham" ;
+	raw:state "NC" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "34"^^xsd:integer .
+
+ds1212:thing_35 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Fayetteville" ;
+	raw:state "NC" ;
+	raw:inpatient "94" ;
+	raw:outpatient "79" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "35"^^xsd:integer .
+
+ds1212:thing_36 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "W.G. (Bill) Hefner VA Medical Center" ;
+	raw:city "Salisbury" ;
+	raw:state "NC" ;
+	raw:inpatient "93" ;
+	raw:outpatient "77" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "36"^^xsd:integer .
+
+ds1212:thing_37 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Hampton" ;
+	raw:state "VA" ;
+	raw:inpatient "95" ;
+	raw:outpatient "76" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "37"^^xsd:integer .
+
+ds1212:thing_38 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "Hunter Holmes McGuire VAMC" ;
+	raw:city "Richmond" ;
+	raw:state "VA" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "38"^^xsd:integer .
+
+ds1212:thing_39 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Salem" ;
+	raw:state "VA" ;
+	raw:inpatient "92" ;
+	raw:outpatient "82" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "39"^^xsd:integer .
+
+ds1212:thing_40 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "6" ;
+	raw:visn_name "VA Mid-Atlantic Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Beckley" ;
+	raw:state "WV" ;
+	raw:inpatient "96" ;
+	raw:outpatient "77" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "40"^^xsd:integer .
+
+ds1212:thing_41 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Birmingham" ;
+	raw:state "AL" ;
+	raw:inpatient "94" ;
+	raw:outpatient "77" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "41"^^xsd:integer .
+
+ds1212:thing_42 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "Central Alabama Veterans HCS Tuskeegee Montgomery" ;
+	raw:city "Montgomery" ;
+	raw:state "AL" ;
+	raw:inpatient "96" ;
+	raw:outpatient "77" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "42"^^xsd:integer .
+
+ds1212:thing_43 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Tuscaloosa" ;
+	raw:state "AL" ;
+	raw:inpatient "98" ;
+	raw:outpatient "79" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "43"^^xsd:integer .
+
+ds1212:thing_44 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Atlanta" ;
+	raw:state "GA" ;
+	raw:inpatient "94" ;
+	raw:outpatient "80" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "44"^^xsd:integer .
+
+ds1212:thing_45 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Augusta" ;
+	raw:state "GA" ;
+	raw:inpatient "96" ;
+	raw:outpatient "76" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "45"^^xsd:integer .
+
+ds1212:thing_46 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "Carl Vinson VA Medical Center" ;
+	raw:city "Dublin" ;
+	raw:state "GA" ;
+	raw:inpatient "95" ;
+	raw:outpatient "79" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "46"^^xsd:integer .
+
+ds1212:thing_47 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "Ralph H. Johnson VAMC" ;
+	raw:city "Charleston" ;
+	raw:state "SC" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "47"^^xsd:integer .
+
+ds1212:thing_48 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "7" ;
+	raw:visn_name "VA Southeast Network" ;
+	raw:facility_name "Wm. Jennings Bryan Dorn VAMC" ;
+	raw:city "Columbia" ;
+	raw:state "SC" ;
+	raw:inpatient "92" ;
+	raw:outpatient "78" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "48"^^xsd:integer .
+
+ds1212:thing_49 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Bay Pines" ;
+	raw:state "FL" ;
+	raw:inpatient "94" ;
+	raw:outpatient "78" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "49"^^xsd:integer .
+
+ds1212:thing_50 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "N FLA/S GA Veterans HS Gainesville Lake Cty" ;
+	raw:city "Gainesville" ;
+	raw:state "FL" ;
+	raw:inpatient "*" ;
+	raw:outpatient "80" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "50"^^xsd:integer .
+
+ds1212:thing_51 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Miami" ;
+	raw:state "FL" ;
+	raw:inpatient "94" ;
+	raw:outpatient "77" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "51"^^xsd:integer .
+
+ds1212:thing_52 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "East Central Florida HCS" ;
+	raw:city "Orlando" ;
+	raw:state "FL" ;
+	raw:inpatient "92" ;
+	raw:outpatient "80" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "52"^^xsd:integer .
+
+ds1212:thing_53 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "James A. Haley VA Medical Center" ;
+	raw:city "Tampa" ;
+	raw:state "FL" ;
+	raw:inpatient "94" ;
+	raw:outpatient "81" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "53"^^xsd:integer .
+
+ds1212:thing_54 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "West Palm Beach" ;
+	raw:state "FL" ;
+	raw:inpatient "97" ;
+	raw:outpatient "77" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "54"^^xsd:integer .
+
+ds1212:thing_55 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "8" ;
+	raw:visn_name "VA Sunshine Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "San Juan" ;
+	raw:state "PR" ;
+	raw:inpatient "91" ;
+	raw:outpatient "78" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "55"^^xsd:integer .
+
+ds1212:thing_56 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Lexington" ;
+	raw:state "KY" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "56"^^xsd:integer .
+
+ds1212:thing_57 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Louisville" ;
+	raw:state "KY" ;
+	raw:inpatient "95" ;
+	raw:outpatient "80" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "57"^^xsd:integer .
+
+ds1212:thing_58 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Memphis" ;
+	raw:state "TN" ;
+	raw:inpatient "94" ;
+	raw:outpatient "80" ;
+	raw:emergency "88" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "58"^^xsd:integer .
+
+ds1212:thing_59 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Mountain Home" ;
+	raw:state "TN" ;
+	raw:inpatient "96" ;
+	raw:outpatient "77" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "59"^^xsd:integer .
+
+ds1212:thing_60 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name """Tennessee Valley HCS
+Nashville Murfreesboro """ ;
+	raw:city "Nashville" ;
+	raw:state "TN" ;
+	raw:inpatient "*" ;
+	raw:outpatient "80" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "60"^^xsd:integer .
+
+ds1212:thing_61 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "9" ;
+	raw:visn_name "VA Mid South Healthcare Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Huntington" ;
+	raw:state "WV" ;
+	raw:inpatient "94" ;
+	raw:outpatient "77" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "61"^^xsd:integer .
+
+ds1212:thing_62 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "10" ;
+	raw:visn_name "VA Health Care System of Ohio" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Chillicothe" ;
+	raw:state "OH" ;
+	raw:inpatient "96" ;
+	raw:outpatient "84" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "62"^^xsd:integer .
+
+ds1212:thing_63 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "10" ;
+	raw:visn_name "VA Health Care System of Ohio" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Cincinnati" ;
+	raw:state "OH" ;
+	raw:inpatient "91" ;
+	raw:outpatient "73" ;
+	raw:emergency "90" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "63"^^xsd:integer .
+
+ds1212:thing_64 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "10" ;
+	raw:visn_name "VA Health Care System of Ohio" ;
+	raw:facility_name """Louis Stokes VA Medical Center
+Cleveland Brecksville""" ;
+	raw:city "Cleveland" ;
+	raw:state "OH" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "64"^^xsd:integer .
+
+ds1212:thing_65 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "10" ;
+	raw:visn_name "VA Health Care System of Ohio" ;
+	raw:facility_name "Chalmers Wylie Outpatient Clinic ������" ;
+	raw:city "Columbus" ;
+	raw:state "OH" ;
+	raw:inpatient "96" ;
+	raw:outpatient "77" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "65"^^xsd:integer .
+
+ds1212:thing_66 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "10" ;
+	raw:visn_name "VA Health Care System of Ohio" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Dayton" ;
+	raw:state "OH" ;
+	raw:inpatient "93" ;
+	raw:outpatient "74" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "66"^^xsd:integer .
+
+ds1212:thing_67 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "VA Illiana HCS" ;
+	raw:city "Danville" ;
+	raw:state "IL" ;
+	raw:inpatient "90" ;
+	raw:outpatient "74" ;
+	raw:emergency "89" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "67"^^xsd:integer .
+
+ds1212:thing_68 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "VA Northern Indiana HCS Marion Ft Wayne" ;
+	raw:city "Marion" ;
+	raw:state "IN" ;
+	raw:inpatient "97" ;
+	raw:outpatient "76" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "68"^^xsd:integer .
+
+ds1212:thing_69 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "Richard L. Roudebush VA Medical Center" ;
+	raw:city "Indianapolis" ;
+	raw:state "IN" ;
+	raw:inpatient "92" ;
+	raw:outpatient "70" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "69"^^xsd:integer .
+
+ds1212:thing_70 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "Ann Arbor VA Ann Arbor HCS" ;
+	raw:city "Ann Arbor" ;
+	raw:state "MI" ;
+	raw:inpatient "96" ;
+	raw:outpatient "79" ;
+	raw:emergency "97" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "70"^^xsd:integer .
+
+ds1212:thing_71 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Battle Creek" ;
+	raw:state "MI" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "71"^^xsd:integer .
+
+ds1212:thing_72 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "John D. Dingell VA Medical Center" ;
+	raw:city "Detroit" ;
+	raw:state "MI" ;
+	raw:inpatient "91" ;
+	raw:outpatient "73" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "72"^^xsd:integer .
+
+ds1212:thing_73 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "11" ;
+	raw:visn_name "Veterans In Partnership" ;
+	raw:facility_name "Aleda E. Lutz VA Medical Center" ;
+	raw:city "Saginaw" ;
+	raw:state "MI" ;
+	raw:inpatient "95" ;
+	raw:outpatient "77" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "73"^^xsd:integer .
+
+ds1212:thing_74 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "VA Chicago HCS; (Jessie Brown)" ;
+	raw:city "Chicago, West Side " ;
+	raw:state "IL" ;
+	raw:inpatient "93" ;
+	raw:outpatient "76" ;
+	raw:emergency "90" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "74"^^xsd:integer .
+
+ds1212:thing_75 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "Edward Hines Jr. VA Hospital" ;
+	raw:city "Hines" ;
+	raw:state "IL" ;
+	raw:inpatient "*" ;
+	raw:outpatient "76" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "75"^^xsd:integer .
+
+ds1212:thing_76 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "North Chicago" ;
+	raw:state "IL" ;
+	raw:inpatient "94" ;
+	raw:outpatient "77" ;
+	raw:emergency "89" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "76"^^xsd:integer .
+
+ds1212:thing_77 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Iron Mountain" ;
+	raw:state "MI" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "77"^^xsd:integer .
+
+ds1212:thing_78 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "William S. Middleton Memorial Veterans Hospital" ;
+	raw:city "Madison" ;
+	raw:state "WI" ;
+	raw:inpatient "96" ;
+	raw:outpatient "78" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "78"^^xsd:integer .
+
+ds1212:thing_79 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "Clement J. Zablocki VAMC" ;
+	raw:city "Milwaukee" ;
+	raw:state "WI" ;
+	raw:inpatient "92" ;
+	raw:outpatient "73" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "79"^^xsd:integer .
+
+ds1212:thing_80 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "12" ;
+	raw:visn_name "The Great Lakes Health Care System" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Tomah" ;
+	raw:state "WI" ;
+	raw:inpatient "91" ;
+	raw:outpatient "78" ;
+	raw:emergency "87" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "80"^^xsd:integer .
+
+ds1212:thing_81 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "VA Eastern Kansas HCS Topeka Leavenworth" ;
+	raw:city "Topeka" ;
+	raw:state "KS" ;
+	raw:inpatient "91" ;
+	raw:outpatient "76" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "81"^^xsd:integer .
+
+ds1212:thing_82 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "Robert J. Dole Department of Veterans Affairs Medical and Regional Office Center" ;
+	raw:city "Wichita" ;
+	raw:state "KS" ;
+	raw:inpatient "94" ;
+	raw:outpatient "77" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "82"^^xsd:integer .
+
+ds1212:thing_83 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "Harry S. Truman Memorial" ;
+	raw:city "Columbia" ;
+	raw:state "MO" ;
+	raw:inpatient "92" ;
+	raw:outpatient "74" ;
+	raw:emergency "89" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "83"^^xsd:integer .
+
+ds1212:thing_84 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Kansas City" ;
+	raw:state "MO" ;
+	raw:inpatient "96" ;
+	raw:outpatient "81" ;
+	raw:emergency "98" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "84"^^xsd:integer .
+
+ds1212:thing_85 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Marion" ;
+	raw:state "IL" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "85"^^xsd:integer .
+
+ds1212:thing_86 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "John J. Pershing VA Medical Center" ;
+	raw:city "Poplar Bluff" ;
+	raw:state "MO" ;
+	raw:inpatient "96" ;
+	raw:outpatient "77" ;
+	raw:emergency "90" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "86"^^xsd:integer .
+
+ds1212:thing_87 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "15" ;
+	raw:visn_name "VA Heartland Network" ;
+	raw:facility_name "St Louis VAMC St Louis Jefferson Barracks" ;
+	raw:city "St. Louis" ;
+	raw:state "MO" ;
+	raw:inpatient "93" ;
+	raw:outpatient "77" ;
+	raw:emergency "88" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "87"^^xsd:integer .
+
+ds1212:thing_88 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Fayetteville" ;
+	raw:state "AR" ;
+	raw:inpatient "93" ;
+	raw:outpatient "79" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "88"^^xsd:integer .
+
+ds1212:thing_89 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name """Central Arkansas Veterans HCS
+Little Rock Little Rock N""" ;
+	raw:city "Little Rock" ;
+	raw:state "AR" ;
+	raw:inpatient "84" ;
+	raw:outpatient "71" ;
+	raw:emergency "81" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "89"^^xsd:integer .
+
+ds1212:thing_90 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Alexandria" ;
+	raw:state "LA" ;
+	raw:inpatient "92" ;
+	raw:outpatient "77" ;
+	raw:emergency "87" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "90"^^xsd:integer .
+
+ds1212:thing_91 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "New Orleans" ;
+	raw:state "LA" ;
+	raw:inpatient "92" ;
+	raw:outpatient "75" ;
+	raw:emergency "85" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "91"^^xsd:integer .
+
+ds1212:thing_92 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "Overton Brooks VA Medical Center" ;
+	raw:city "Shreveport" ;
+	raw:state "LA" ;
+	raw:inpatient "94" ;
+	raw:outpatient "81" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "92"^^xsd:integer .
+
+ds1212:thing_93 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VA Gulf Coast Veterans HCS" ;
+	raw:city "Biloxi" ;
+	raw:state "MS" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "93"^^xsd:integer .
+
+ds1212:thing_94 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "G.V. (Sonny) Montgomery VA Medical Center" ;
+	raw:city "Jackson" ;
+	raw:state "MS" ;
+	raw:inpatient "96" ;
+	raw:outpatient "78" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "94"^^xsd:integer .
+
+ds1212:thing_95 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Muskogee" ;
+	raw:state "OK" ;
+	raw:inpatient "93" ;
+	raw:outpatient "79" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "95"^^xsd:integer .
+
+ds1212:thing_96 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Oklahoma City" ;
+	raw:state "OK" ;
+	raw:inpatient "94" ;
+	raw:outpatient "75" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "96"^^xsd:integer .
+
+ds1212:thing_97 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "16" ;
+	raw:visn_name "South Central VA Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Houston" ;
+	raw:state "TX" ;
+	raw:inpatient "92" ;
+	raw:outpatient "79" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "97"^^xsd:integer .
+
+ds1212:thing_98 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "17" ;
+	raw:visn_name "VA Heart of Texas Health Care Network" ;
+	raw:facility_name "VA North Texas HCS" ;
+	raw:city "Dallas" ;
+	raw:state "TX" ;
+	raw:inpatient "89" ;
+	raw:outpatient "75" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "98"^^xsd:integer .
+
+ds1212:thing_99 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "17" ;
+	raw:visn_name "VA Heart of Texas Health Care Network" ;
+	raw:facility_name "South Texas Veterans HCS  SanAntonio Kerrville" ;
+	raw:city "San Antonio" ;
+	raw:state "TX" ;
+	raw:inpatient "96" ;
+	raw:outpatient "73" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "99"^^xsd:integer .
+
+ds1212:thing_100 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "17" ;
+	raw:visn_name "VA Heart of Texas Health Care Network" ;
+	raw:facility_name """Central Texas Veterans HCS
+Temple Waco Marlin""" ;
+	raw:city "Temple" ;
+	raw:state "TX" ;
+	raw:inpatient "92" ;
+	raw:outpatient "72" ;
+	raw:emergency "90" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "100"^^xsd:integer .
+
+ds1212:thing_101 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "Carl T. Hayden VA Medical Center" ;
+	raw:city "Phoenix" ;
+	raw:state "AZ" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "101"^^xsd:integer .
+
+ds1212:thing_102 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "Northern Arizona VA HCS" ;
+	raw:city "Prescott" ;
+	raw:state "AZ" ;
+	raw:inpatient "94" ;
+	raw:outpatient "75" ;
+	raw:emergency "97" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "102"^^xsd:integer .
+
+ds1212:thing_103 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "Southern Arizona VA HCS" ;
+	raw:city "Tucson" ;
+	raw:state "AZ" ;
+	raw:inpatient "93" ;
+	raw:outpatient "76" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "103"^^xsd:integer .
+
+ds1212:thing_104 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "New Mexico HCS" ;
+	raw:city "Albuquerque" ;
+	raw:state "NM" ;
+	raw:inpatient "94" ;
+	raw:outpatient "75" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "104"^^xsd:integer .
+
+ds1212:thing_105 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "Amarillo VA HCS" ;
+	raw:city "Amarillo" ;
+	raw:state "TX" ;
+	raw:inpatient "*" ;
+	raw:outpatient "72" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "105"^^xsd:integer .
+
+ds1212:thing_106 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "West Texas VA HCS" ;
+	raw:city "Big Spring" ;
+	raw:state "TX" ;
+	raw:inpatient "95" ;
+	raw:outpatient "75" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "106"^^xsd:integer .
+
+ds1212:thing_107 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "18" ;
+	raw:visn_name "VA Southwest Health Care Network" ;
+	raw:facility_name "El Paso VA HCS" ;
+	raw:city "El Paso" ;
+	raw:state "TX" ;
+	raw:inpatient "94" ;
+	raw:outpatient "83" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "107"^^xsd:integer .
+
+ds1212:thing_108 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "Eastern Colorado HCS Denver Pueblo" ;
+	raw:city "Denver" ;
+	raw:state "CO" ;
+	raw:inpatient "97" ;
+	raw:outpatient "80" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "108"^^xsd:integer .
+
+ds1212:thing_109 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Grand Junction" ;
+	raw:state "CO" ;
+	raw:inpatient "93" ;
+	raw:outpatient "79" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "109"^^xsd:integer .
+
+ds1212:thing_110 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "VA Montana HCS" ;
+	raw:city "Fort Harrison" ;
+	raw:state "MT" ;
+	raw:inpatient "95" ;
+	raw:outpatient "78" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "110"^^xsd:integer .
+
+ds1212:thing_111 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "VA Salt Lake City HCS" ;
+	raw:city "Salt Lake City" ;
+	raw:state "UT" ;
+	raw:inpatient "91" ;
+	raw:outpatient "72" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "111"^^xsd:integer .
+
+ds1212:thing_112 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "VAM/ROC" ;
+	raw:city "Cheyenne" ;
+	raw:state "WY" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "112"^^xsd:integer .
+
+ds1212:thing_113 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "19" ;
+	raw:visn_name "Rocky Mountain Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Sheridan" ;
+	raw:state "WY" ;
+	raw:inpatient "91" ;
+	raw:outpatient "70" ;
+	raw:emergency "82" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "113"^^xsd:integer .
+
+ds1212:thing_114 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "Alaska VA HCS and Regional Office" ;
+	raw:city "Anchorage" ;
+	raw:state "AK" ;
+	raw:inpatient "92" ;
+	raw:outpatient "76" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "114"^^xsd:integer .
+
+ds1212:thing_115 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Boise" ;
+	raw:state "ID" ;
+	raw:inpatient "92" ;
+	raw:outpatient "76" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "115"^^xsd:integer .
+
+ds1212:thing_116 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Portland" ;
+	raw:state "OR" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "116"^^xsd:integer .
+
+ds1212:thing_117 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "VA Roseburg HCS" ;
+	raw:city "Roseburg" ;
+	raw:state "OR" ;
+	raw:inpatient "92" ;
+	raw:outpatient "77" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "117"^^xsd:integer .
+
+ds1212:thing_118 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "Southern Oregon Rehab Ctr & Clinics" ;
+	raw:city "White City" ;
+	raw:state "OR" ;
+	raw:inpatient "93" ;
+	raw:outpatient "77" ;
+	raw:emergency "98" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "118"^^xsd:integer .
+
+ds1212:thing_119 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "VA Puget Sound HCS�  Seattle American Lake" ;
+	raw:city "Seattle" ;
+	raw:state "WA" ;
+	raw:inpatient "94" ;
+	raw:outpatient "75" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "119"^^xsd:integer .
+
+ds1212:thing_120 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Spokane" ;
+	raw:state "WA" ;
+	raw:inpatient "93" ;
+	raw:outpatient "67" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "120"^^xsd:integer .
+
+ds1212:thing_121 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "20" ;
+	raw:visn_name "Northwest Network" ;
+	raw:facility_name "Jonathan M. Wainwright Memorial VA Medical Center" ;
+	raw:city "Walla Walla" ;
+	raw:state "WA" ;
+	raw:inpatient "90" ;
+	raw:outpatient "77" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "121"^^xsd:integer .
+
+ds1212:thing_122 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name "VA Central California HCS" ;
+	raw:city "Fresno" ;
+	raw:state "CA" ;
+	raw:inpatient "97" ;
+	raw:outpatient "74" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "122"^^xsd:integer .
+
+ds1212:thing_123 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name "VA Northern California HCS Martinez Sacramento" ;
+	raw:city "Martinez, East Bay" ;
+	raw:state "CA" ;
+	raw:inpatient "*" ;
+	raw:outpatient "70" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "123"^^xsd:integer .
+
+ds1212:thing_124 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name """VA Palo Alto HCS
+PaloAlto MenloPk Livermore""" ;
+	raw:city "Palo Alto" ;
+	raw:state "CA" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "124"^^xsd:integer .
+
+ds1212:thing_125 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "San Francisco" ;
+	raw:state "CA" ;
+	raw:inpatient "96" ;
+	raw:outpatient "77" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "125"^^xsd:integer .
+
+ds1212:thing_126 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name "VA Pacific Islands HCSSpark M. Matsunaga VA Medical & Regional Office Center" ;
+	raw:city "Honolulu" ;
+	raw:state "HI" ;
+	raw:inpatient "94" ;
+	raw:outpatient "76" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "126"^^xsd:integer .
+
+ds1212:thing_127 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "21" ;
+	raw:visn_name "Sierra Pacific Network" ;
+	raw:facility_name "VA Sierra Nevada HCS" ;
+	raw:city "Reno" ;
+	raw:state "NV" ;
+	raw:inpatient "95" ;
+	raw:outpatient "78" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "127"^^xsd:integer .
+
+ds1212:thing_128 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "22" ;
+	raw:visn_name "Desert Pacific Healthcare Network" ;
+	raw:facility_name "VA Loma Linda HCS" ;
+	raw:city "Loma Linda" ;
+	raw:state "CA" ;
+	raw:inpatient "93" ;
+	raw:outpatient "77" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "128"^^xsd:integer .
+
+ds1212:thing_129 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "22" ;
+	raw:visn_name "Desert Pacific Healthcare Network" ;
+	raw:facility_name "VA Long Beach HCS" ;
+	raw:city "Long Beach" ;
+	raw:state "CA" ;
+	raw:inpatient "87" ;
+	raw:outpatient "76" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "129"^^xsd:integer .
+
+ds1212:thing_130 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "22" ;
+	raw:visn_name "Desert Pacific Healthcare Network" ;
+	raw:facility_name "VA Greater Los Angeles HCS (GLA)" ;
+	raw:city "Los Angeles" ;
+	raw:state "CA" ;
+	raw:inpatient "89" ;
+	raw:outpatient "78" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "130"^^xsd:integer .
+
+ds1212:thing_131 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "22" ;
+	raw:visn_name "Desert Pacific Healthcare Network" ;
+	raw:facility_name "VA San Diego HCS" ;
+	raw:city "San Diego" ;
+	raw:state "CA" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "131"^^xsd:integer .
+
+ds1212:thing_132 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "22" ;
+	raw:visn_name "Desert Pacific Healthcare Network" ;
+	raw:facility_name "VA Southern Nevada HCS" ;
+	raw:city "Las Vegas" ;
+	raw:state "NV" ;
+	raw:inpatient "*" ;
+	raw:outpatient "76" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "132"^^xsd:integer .
+
+ds1212:thing_133 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VA Nebraska Western Iowa HCS  Omaha Grand Is Lincoln" ;
+	raw:city "Omaha" ;
+	raw:state "NE" ;
+	raw:inpatient "89" ;
+	raw:outpatient "73" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "133"^^xsd:integer .
+
+ds1212:thing_134 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VA Central Iowa HCS   DesMoines Knoxville" ;
+	raw:city "Des Moines" ;
+	raw:state "IA" ;
+	raw:inpatient "91" ;
+	raw:outpatient "74" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "134"^^xsd:integer .
+
+ds1212:thing_135 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Iowa City" ;
+	raw:state "IA" ;
+	raw:inpatient "93" ;
+	raw:outpatient "73" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "135"^^xsd:integer .
+
+ds1212:thing_136 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "Minneapolis" ;
+	raw:state "MN" ;
+	raw:inpatient "*" ;
+	raw:outpatient "74" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "136"^^xsd:integer .
+
+ds1212:thing_137 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VAMC" ;
+	raw:city "St. Cloud" ;
+	raw:state "MN" ;
+	raw:inpatient "94" ;
+	raw:outpatient "77" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "137"^^xsd:integer .
+
+ds1212:thing_138 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VAM/RO" ;
+	raw:city "Fargo" ;
+	raw:state "ND" ;
+	raw:inpatient "93" ;
+	raw:outpatient "74" ;
+	raw:emergency "89" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "138"^^xsd:integer .
+
+ds1212:thing_139 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name """VA Black Hills HCS
+Ft Meade Hot Springs""" ;
+	raw:city "Fort Meade" ;
+	raw:state "SD" ;
+	raw:inpatient "*" ;
+	raw:outpatient "75" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "139"^^xsd:integer .
+
+ds1212:thing_140 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "23" ;
+	raw:visn_name "VA Midwest Health Care Network" ;
+	raw:facility_name "VAM/ROC" ;
+	raw:city "Sioux Falls" ;
+	raw:state "SD" ;
+	raw:inpatient "" ;
+	raw:outpatient "" ;
+	raw:emergency "" ;
+	raw:maternity "" ;
+	raw:intensive_care_units "" ;
+	ov:csvRow "140"^^xsd:integer .
+
+ds1212:thing_141 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "91" ;
+	raw:outpatient "79" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "141"^^xsd:integer .
+
+ds1212:thing_142 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "93" ;
+	raw:outpatient "75" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "142"^^xsd:integer .
+
+ds1212:thing_143 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "95" ;
+	raw:outpatient "77" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "143"^^xsd:integer .
+
+ds1212:thing_144 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "93" ;
+	raw:outpatient "74" ;
+	raw:emergency "91" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "144"^^xsd:integer .
+
+ds1212:thing_145 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "*" ;
+	raw:outpatient "74" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "145"^^xsd:integer .
+
+ds1212:thing_146 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "93" ;
+	raw:outpatient "76" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "146"^^xsd:integer .
+
+ds1212:thing_147 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	ov:csvRow "147"^^xsd:integer .
+
+ds1212:thing_148 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "96" ;
+	raw:outpatient "74" ;
+	raw:emergency "96" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "148"^^xsd:integer .
+
+ds1212:thing_149 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "92" ;
+	raw:outpatient "76" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "149"^^xsd:integer .
+
+ds1212:thing_150 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "91" ;
+	raw:outpatient "69" ;
+	raw:emergency "86" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "150"^^xsd:integer .
+
+ds1212:thing_151 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "94" ;
+	raw:outpatient "74" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "151"^^xsd:integer .
+
+ds1212:thing_152 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "93" ;
+	raw:outpatient "78" ;
+	raw:emergency "92" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "152"^^xsd:integer .
+
+ds1212:thing_153 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	ov:csvRow "153"^^xsd:integer .
+
+ds1212:thing_154 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "94" ;
+	raw:outpatient "74" ;
+	raw:emergency "85" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "154"^^xsd:integer .
+
+ds1212:thing_155 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "91" ;
+	raw:outpatient "75" ;
+	raw:emergency "94" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "155"^^xsd:integer .
+
+ds1212:thing_156 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "90" ;
+	raw:outpatient "72" ;
+	raw:emergency "83" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "156"^^xsd:integer .
+
+ds1212:thing_157 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "93" ;
+	raw:outpatient "76" ;
+	raw:emergency "86" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "157"^^xsd:integer .
+
+ds1212:thing_158 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "*" ;
+	raw:outpatient "77" ;
+	raw:emergency "*" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "No ICU" ;
+	ov:csvRow "158"^^xsd:integer .
+
+ds1212:thing_159 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "89" ;
+	raw:outpatient "75" ;
+	raw:emergency "95" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "159"^^xsd:integer .
+
+ds1212:thing_160 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "86" ;
+	raw:outpatient "72" ;
+	raw:emergency "93" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "160"^^xsd:integer .
+
+ds1212:thing_161 dcterms:isReferencedBy <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> ;
+	raw:visn "" ;
+	raw:visn_name "" ;
+	raw:facility_name "" ;
+	raw:city "" ;
+	raw:state "" ;
+	raw:inpatient "87" ;
+	raw:outpatient "72" ;
+	raw:emergency "84" ;
+	raw:maternity "**" ;
+	raw:intensive_care_units "**" ;
+	ov:csvRow "161"^^xsd:integer .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Mar-01/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/data-gov/provenance/1212/version/1st-anniversary/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix data-gov_vocab: <http://logd.tw.rpi.edu/source/data-gov/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix ds1212_vocab: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/raw/> .
+@prefix ds1212: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/> .
+@prefix ds1212_global_value: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+_:node15qua5cvjx2 vann:preferredNamespacePrefix "rdf" ;
+	vann:preferredNamespaceUri "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+
+_:node15qua5cvjx3 vann:preferredNamespacePrefix "rdfs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node15qua5cvjx4 vann:preferredNamespacePrefix "xsd" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#" .
+
+_:node15qua5cvjx5 vann:preferredNamespacePrefix "xsd2" ;
+	vann:preferredNamespaceUri "http://www.w3.org/TR/xmlschema-2/#" .
+
+_:node15qua5cvjx6 vann:preferredNamespacePrefix "owl" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#" .
+
+_:node15qua5cvjx7 vann:preferredNamespacePrefix "pmlp" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-provenance.owl#" .
+
+_:node15qua5cvjx8 vann:preferredNamespacePrefix "pmlj" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-justification.owl#" .
+
+_:node15qua5cvjx9 vann:preferredNamespacePrefix "tw_service" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/tw-rpi-edu/service/" .
+
+_:node15qua5cvjx10 vann:preferredNamespacePrefix "tw_converter" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Mar-01/" .
+
+_:node15qua5cvjx11 vann:preferredNamespacePrefix "provenance" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/provenance/1212/version/1st-anniversary/conversion/raw/" .
+
+_:node15qua5cvjx12 vann:preferredNamespacePrefix "conversion" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/vocab/conversion/" .
+
+_:node15qua5cvjx13 vann:preferredNamespacePrefix "ov" ;
+	vann:preferredNamespaceUri "http://open.vocab.org/terms/" .
+
+_:node15qua5cvjx14 vann:preferredNamespacePrefix "dcterms" ;
+	vann:preferredNamespaceUri "http://purl.org/dc/terms/" .
+
+_:node15qua5cvjx15 vann:preferredNamespacePrefix "foaf" ;
+	vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/" .
+
+_:node15qua5cvjx16 vann:preferredNamespacePrefix "void" ;
+	vann:preferredNamespaceUri "http://rdfs.org/ns/void#" .
+
+_:node15qua5cvjx17 vann:preferredNamespacePrefix "doap" ;
+	vann:preferredNamespaceUri "http://usefulinc.com/ns/doap#" .
+
+_:node15qua5cvjx18 vann:preferredNamespacePrefix "scovo" ;
+	vann:preferredNamespaceUri "http://purl.org/NET/scovo#" .
+
+_:node15qua5cvjx19 vann:preferredNamespacePrefix "sdmx" ;
+	vann:preferredNamespaceUri "http://purl.org/linked-data/cube#" .
+
+_:node15qua5cvjx20 vann:preferredNamespacePrefix "vann" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/vann/" .
+
+_:node15qua5cvjx21 vann:preferredNamespacePrefix "data-gov_vocab" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/vocab/" .
+
+_:node15qua5cvjx22 vann:preferredNamespacePrefix "base_vocab" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/vocab/" .
+
+_:node15qua5cvjx23 vann:preferredNamespacePrefix "ds1212_vocab" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/" .
+
+_:node15qua5cvjx24 vann:preferredNamespacePrefix "raw" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/raw/" .
+
+_:node15qua5cvjx25 vann:preferredNamespacePrefix "ds1212" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/" .
+
+_:node15qua5cvjx26 vann:preferredNamespacePrefix "ds1212_global_value" ;
+	vann:preferredNamespaceUri "http://logd.tw.rpi.edu/source/data-gov/dataset/1212/" .
+
+_:node15qua5cvjx27 vann:preferredNamespacePrefix "sioc" ;
+	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
+
+_:node15qua5cvjx1 rdfs:seeAlso _:node15qua5cvjx2 , _:node15qua5cvjx3 , _:node15qua5cvjx4 , _:node15qua5cvjx5 , _:node15qua5cvjx6 , _:node15qua5cvjx7 , _:node15qua5cvjx8 , _:node15qua5cvjx9 , _:node15qua5cvjx10 , _:node15qua5cvjx11 , _:node15qua5cvjx12 , _:node15qua5cvjx13 , _:node15qua5cvjx14 , _:node15qua5cvjx15 , _:node15qua5cvjx16 , _:node15qua5cvjx17 , _:node15qua5cvjx18 , _:node15qua5cvjx19 , _:node15qua5cvjx20 , _:node15qua5cvjx21 , _:node15qua5cvjx22 , _:node15qua5cvjx23 , _:node15qua5cvjx24 , _:node15qua5cvjx25 , _:node15qua5cvjx26 , _:node15qua5cvjx27 .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212> a data-gov_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1212" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1212" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1212> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> , <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/subset/meta> ;
+	dcterms:modified "2011-03-15T23:08:23.673-05:00"^^xsd:dateTime .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> a data-gov_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1212" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1212 1st-anniversary" ;
+	dcterms:modified "2011-03-15T23:08:23.673-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1212/version/1st-anniversary> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.ttl.gz> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw> a data-gov_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset ;
+	dcterms:modified "2011-03-15T23:08:23.673-05:00"^^xsd:dateTime ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1212" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	conversion:conversion_identifier "raw" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1212/version/1st-anniversary/conversion/raw> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.raw.ttl.gz> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw/subset/sample> ;
+	dcterms:created "2011-03-15T23:08:23.302-05:00"^^xsd:dateTime ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1212 1st-anniversary raw" ;
+	conversion:uses_predicate raw:intensive_care_units , raw:maternity , raw:emergency , raw:outpatient , raw:inpatient , raw:state , raw:city , raw:facility_name , raw:visn_name , raw:visn ;
+	void:exampleResource ds1212:thing_2 , ds1212:thing_161 .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/subset/meta> a data-gov_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1212" ;
+	dcterms:modified "2011-03-15T23:08:23.673-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1212/subset/meta> ;
+	void:vocabulary <http://rdfs.org/ns/void#> , <http://inference-web.org/2.0/pml-provenance.owl#> , <http://inference-web.org/2.0/pml-justification.owl#> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <http://purl.org/NET/scovo#> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.void.ttl.gz> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw/subset/sample> a data-gov_vocab:Dataset , conversion:Dataset , conversion:DatasetSample , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1212" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	conversion:conversion_identifier "raw" ;
+	dcterms:modified "2011-03-15T23:08:23.673-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1212/version/1st-anniversary/conversion/raw/subset/sample> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.raw.sample.ttl.gz> .
+
+<http://logd.tw.rpi.edu/source/data-gov> a foaf:Agent ;
+	dcterms:identifier "data-gov" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source_page/data-gov> .
+
+provenance:nodeset_1 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_2 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.raw.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_3 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.void.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_4 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.raw.sample.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:infstep_1 a pmlj:InferenceStep ;
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e ;
+	pmlj:hasAntecedentList _:node15qua5cvjx28 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node15qua5cvjx29 , _:node15qua5cvjx30 .
+
+tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e" ;
+	dcterms:version "2011-Mar-01" ;
+	doap:revision "2011-Mar-01" ;
+	doap:platform "Java" .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
+	doap:revision tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e ;
+	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> ;
+	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> ;
+	doap:maintainer <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:documenter <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/JohannaFlores> , <http://tw.rpi.edu/instances/LiDing> , <http://tw.rpi.edu/instances/GinoGervasio> ;
+	doap:helper <http://tw.rpi.edu/instances/AlvaroGraves> , <http://tw.rpi.edu/instances/DominicDiFranzo> , <http://tw.rpi.edu/instances/GinoGervasio> , <http://tw.rpi.edu/instances/JamesMcCusker> ;
+	doap:homepage <https://github.com/timrdf/csv2rdf4lod-automation/wiki> ;
+	doap:audience "Data modelers and architects that need (potentially non-RDB) tabular data encoded within the Resource Description Framework." ;
+	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
+	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
+
+_:node15qua5cvjx31 a doap:GitRepository ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
+	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
+
+<http://tw.rpi.edu/instances/GregoryToddWilliams> owl:sameAs <http://kasei.us/about/foaf.xrdf#greg> .
+
+<http://tw.rpi.edu/instances/AlvaroGraves> owl:sameAs <http://alvaro.graves.cl> .
+
+_:node15qua5cvjx28 a rdf:List ;
+	rdf:first provenance:nodeset_5 .
+
+provenance:nodeset_5 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv> .
+
+_:node15qua5cvjx28 rdf:rest _:node15qua5cvjx32 .
+
+_:node15qua5cvjx32 a rdf:List ;
+	rdf:first provenance:nodeset_6 .
+
+provenance:nodeset_6 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv.raw.params.ttl> .
+
+_:node15qua5d0dx5 ov:csvHeader "City" .
+
+_:node15qua5cvjx32 rdf:rest rdf:nil .
+
+_:node15qua5cvjx29 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
+
+_:node15qua5cvjx30 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv.raw.params.ttl> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
+
+<http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv> a pmlp:Information ;
+	pmlp:hasFormat <http://iw.cs.utep.edu/registry/FMT/text/CSV.owl#CSV> .
+
+<http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv.raw.params.ttl> a pmlp:Information ;
+	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
+
+conversion:SameAsDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_class rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:has_version rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:MetaDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:num_triples rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhances rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhancement_layer rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:DatasetSample rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:source_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:VersionedDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:LayerDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:base_uri rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_predicate rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:interpretation rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:symbol rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:dataset_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:conversion_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:AbstractDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:null rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:subject_discriminator rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:Dataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+<http://tw.rpi.edu/web/inside/machine/sam#root> a foaf:OnlineAccount ;
+	foaf:accountName "root" ;
+	dcterms:isPartOf <http://tw.rpi.edu/web/inside/machine/sam#> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw> conversion:base_uri "http://logd.tw.rpi.edu"^^xsd:anyURI .
+
+_:node15qua5d0dx1 a conversion:RawConversionProcess ;
+	conversion:conversion_identifier "raw" ;
+	dcterms:creator <http://tw.rpi.edu/web/inside/machine/sam#root> ;
+	dcterms:created "2011-03-15T23:08:21-04:00"^^xsd:dateTime .
+
+_:node15qua5d0dx2 ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VISN" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx2 .
+
+_:node15qua5d0dx3 ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "VISN Name" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx3 .
+
+_:node15qua5d0dx4 ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Facility Name" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx4 .
+
+_:node15qua5d0dx5 ov:csvCol "4"^^xsd:integer ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx5 .
+
+_:node15qua5d0dx6 ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "State" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx6 .
+
+_:node15qua5d0dx7 ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Inpatient" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx7 .
+
+_:node15qua5d0dx8 ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Outpatient" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx8 .
+
+_:node15qua5d0dx9 ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Emergency" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx9 .
+
+_:node15qua5d0dx10 ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Maternity" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx10 .
+
+_:node15qua5d0dx11 ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Intensive Care Units" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx11 .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw> conversion:conversion_process _:node15qua5d0dx1 ;
+	void:statItem _:node15qua5cvjx34 .
+
+_:node15qua5cvjx34 scovo:dimension void:numberOfTriples ;
+	rdf:value "2262"^^xsd:integer .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw> conversion:num_triples "2262"^^xsd:integer .
+
+# CSV2RDF4LOD DATASET METADATA (reproduced from above):
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Mar-01/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/data-gov/provenance/1212/version/1st-anniversary/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix data-gov_vocab: <http://logd.tw.rpi.edu/source/data-gov/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix ds1212_vocab: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/raw/> .
+@prefix ds1212: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/> .
+@prefix ds1212_global_value: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+raw:visn ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VISN" ;
+	rdfs:label "VISN" ;
+	rdfs:range rdfs:Literal .
+
+raw:visn_name ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "VISN Name" ;
+	rdfs:label "VISN Name" ;
+	rdfs:range rdfs:Literal .
+
+raw:facility_name ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Facility Name" ;
+	rdfs:label "Facility Name" ;
+	rdfs:range rdfs:Literal .
+
+raw:city ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "City" ;
+	rdfs:label "City" ;
+	rdfs:range rdfs:Literal .
+
+raw:state ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "State" ;
+	rdfs:label "State" ;
+	rdfs:range rdfs:Literal .
+
+raw:inpatient ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Inpatient" ;
+	rdfs:label "Inpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:outpatient ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Outpatient" ;
+	rdfs:label "Outpatient" ;
+	rdfs:range rdfs:Literal .
+
+raw:emergency ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Emergency" ;
+	rdfs:label "Emergency" ;
+	rdfs:range rdfs:Literal .
+
+raw:maternity ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Maternity" ;
+	rdfs:label "Maternity" ;
+	rdfs:range rdfs:Literal .
+
+raw:intensive_care_units ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Intensive Care Units" ;
+	rdfs:label "Intensive Care Units" ;
+	rdfs:range rdfs:Literal .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://logd.tw.rpi.edu/source/tw-rpi-edu/service/csv2rdf4lod/version/2011-Mar-01/> .
+@prefix provenance: <http://logd.tw.rpi.edu/source/data-gov/provenance/1212/version/1st-anniversary/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix sdmx: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix data-gov_vocab: <http://logd.tw.rpi.edu/source/data-gov/vocab/> .
+@prefix base_vocab: <http://logd.tw.rpi.edu/vocab/> .
+@prefix ds1212_vocab: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/> .
+@prefix raw: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/raw/> .
+@prefix ds1212: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/> .
+@prefix ds1212_global_value: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212> a data-gov_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1212" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1212" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1212> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> , <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/subset/meta> ;
+	dcterms:modified "2011-03-15T23:08:23.673-05:00"^^xsd:dateTime .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary> a data-gov_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1212" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1212 1st-anniversary" ;
+	dcterms:modified "2011-03-15T23:08:23.673-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1212/version/1st-anniversary> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.ttl.gz> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw> a data-gov_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset ;
+	dcterms:modified "2011-03-15T23:08:23.673-05:00"^^xsd:dateTime ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1212" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	conversion:conversion_identifier "raw" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1212/version/1st-anniversary/conversion/raw> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.raw.ttl.gz> ;
+	void:subset <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw/subset/sample> ;
+	dcterms:created "2011-03-15T23:08:23.302-05:00"^^xsd:dateTime ;
+	dcterms:contributor <http://logd.tw.rpi.edu/source/data-gov> ;
+	dcterms:identifier "data-gov 1212 1st-anniversary raw" ;
+	conversion:uses_predicate raw:intensive_care_units , raw:maternity , raw:emergency , raw:outpatient , raw:inpatient , raw:state , raw:city , raw:facility_name , raw:visn_name , raw:visn ;
+	void:exampleResource ds1212:thing_2 , ds1212:thing_161 .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/subset/meta> a data-gov_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1212" ;
+	dcterms:modified "2011-03-15T23:08:23.673-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1212/subset/meta> ;
+	void:vocabulary <http://rdfs.org/ns/void#> , <http://inference-web.org/2.0/pml-provenance.owl#> , <http://inference-web.org/2.0/pml-justification.owl#> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <http://purl.org/NET/scovo#> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.void.ttl.gz> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw/subset/sample> a data-gov_vocab:Dataset , conversion:Dataset , conversion:DatasetSample , void:Dataset ;
+	conversion:base_uri "http://logd.tw.rpi.edu" ;
+	conversion:source_identifier "data-gov" ;
+	conversion:dataset_identifier "1212" ;
+	conversion:version_identifier "1st-anniversary" ;
+	conversion:dataset_version "1st-anniversary" ;
+	conversion:conversion_identifier "raw" ;
+	dcterms:modified "2011-03-15T23:08:23.673-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source/data-gov/dataset_page/1212/version/1st-anniversary/conversion/raw/subset/sample> ;
+	void:dataDump <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.raw.sample.ttl.gz> .
+
+<http://logd.tw.rpi.edu/source/data-gov> a foaf:Agent ;
+	dcterms:identifier "data-gov" ;
+	foaf:isPrimaryTopicOf <http://logd.tw.rpi.edu/source_page/data-gov> .
+
+provenance:nodeset_1 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_2 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.raw.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_3 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.void.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:nodeset_4 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/file/1212/version/1st-anniversary/conversion/data-gov-1212-1st-anniversary.raw.sample.ttl.gz> ;
+	pmlj:isConsequentOf provenance:infstep_1 .
+
+provenance:infstep_1 a pmlj:InferenceStep ;
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e ;
+	pmlj:hasAntecedentList _:node15qua5cvjx28 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node15qua5cvjx29 , _:node15qua5cvjx30 .
+
+tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e" ;
+	dcterms:version "2011-Mar-01" ;
+	doap:revision "2011-Mar-01" ;
+	doap:platform "Java" .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
+	doap:revision tw_converter:csv2rdf4lod_b302eef60347fb9ae24545ce01fbed3e ;
+	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> ;
+	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> ;
+	doap:maintainer <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:documenter <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/JohannaFlores> , <http://tw.rpi.edu/instances/LiDing> , <http://tw.rpi.edu/instances/GinoGervasio> ;
+	doap:helper <http://tw.rpi.edu/instances/AlvaroGraves> , <http://tw.rpi.edu/instances/DominicDiFranzo> , <http://tw.rpi.edu/instances/GinoGervasio> , <http://tw.rpi.edu/instances/JamesMcCusker> ;
+	doap:homepage <https://github.com/timrdf/csv2rdf4lod-automation/wiki> ;
+	doap:audience "Data modelers and architects that need (potentially non-RDB) tabular data encoded within the Resource Description Framework." ;
+	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
+	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
+
+_:node15qua5cvjx31 a doap:GitRepository ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
+	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
+
+<http://tw.rpi.edu/instances/GregoryToddWilliams> owl:sameAs <http://kasei.us/about/foaf.xrdf#greg> .
+
+<http://tw.rpi.edu/instances/AlvaroGraves> owl:sameAs <http://alvaro.graves.cl> .
+
+_:node15qua5cvjx28 a rdf:List ;
+	rdf:first provenance:nodeset_5 .
+
+provenance:nodeset_5 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv> .
+
+_:node15qua5cvjx28 rdf:rest _:node15qua5cvjx32 .
+
+_:node15qua5cvjx32 a rdf:List ;
+	rdf:first provenance:nodeset_6 .
+
+provenance:nodeset_6 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv.raw.params.ttl> .
+
+_:node15qua5d0dx5 ov:csvHeader "City" .
+
+_:node15qua5cvjx32 rdf:rest rdf:nil .
+
+_:node15qua5cvjx29 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
+
+_:node15qua5cvjx30 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv.raw.params.ttl> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
+
+<http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/manual/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv> a pmlp:Information ;
+	pmlp:hasFormat <http://iw.cs.utep.edu/registry/FMT/text/CSV.owl#CSV> .
+
+<http://logd.tw.rpi.edu/source/data-gov/provenance_file/1212/version/1st-anniversary/automatic/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv.raw.params.ttl> a pmlp:Information ;
+	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
+
+conversion:SameAsDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_class rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:has_version rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:MetaDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:num_triples rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhances rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhancement_layer rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:DatasetSample rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:source_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:VersionedDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:LayerDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:base_uri rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_predicate rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:interpretation rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:symbol rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:dataset_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:conversion_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:AbstractDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:null rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:subject_discriminator rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:Dataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+<http://tw.rpi.edu/web/inside/machine/sam#root> a foaf:OnlineAccount ;
+	foaf:accountName "root" ;
+	dcterms:isPartOf <http://tw.rpi.edu/web/inside/machine/sam#> .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw> conversion:base_uri "http://logd.tw.rpi.edu"^^xsd:anyURI .
+
+_:node15qua5d0dx1 a conversion:RawConversionProcess ;
+	conversion:conversion_identifier "raw" ;
+	dcterms:creator <http://tw.rpi.edu/web/inside/machine/sam#root> ;
+	dcterms:created "2011-03-15T23:08:21-04:00"^^xsd:dateTime .
+
+_:node15qua5d0dx2 ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "VISN" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx2 .
+
+_:node15qua5d0dx3 ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "VISN Name" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx3 .
+
+_:node15qua5d0dx4 ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Facility Name" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx4 .
+
+_:node15qua5d0dx5 ov:csvCol "4"^^xsd:integer ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx5 .
+
+_:node15qua5d0dx6 ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "State" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx6 .
+
+_:node15qua5d0dx7 ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Inpatient" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx7 .
+
+_:node15qua5d0dx8 ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Outpatient" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx8 .
+
+_:node15qua5d0dx9 ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Emergency" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx9 .
+
+_:node15qua5d0dx10 ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Maternity" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx10 .
+
+_:node15qua5d0dx11 ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Intensive Care Units" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node15qua5d0dx1 conversion:enhance _:node15qua5d0dx11 .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw> conversion:conversion_process _:node15qua5d0dx1 ;
+	void:statItem _:node15qua5cvjx35 .
+
+_:node15qua5cvjx35 scovo:dimension void:numberOfTriples ;
+	rdf:value "2262"^^xsd:integer .
+
+<http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary/conversion/raw> conversion:num_triples "2262"^^xsd:integer .
