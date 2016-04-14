@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>MultiData Analysis</title>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script type="text/javascript">
+ 
+
+
+function init(){
+    google.charts.load('current', {'packages': ['corechart']});
+    google.charts.setOnLoadCallback(drawMap);
+  }
+  init();
+
+ 
+
+  function drawMap() {
+    var container = document.getElementById('map_canvas1');
+	  container.innerHTML = '<img src="https://data-gov.tw.rpi.edu/images/ajax-loader.gif" /><br /><br />Please wait... The query may take some time to complete.';
+    
+	var queryurl = "http://localhost:3030/multiDataAnalysis.js"
+    var query = new google.visualization.Query(queryurl); // Send the query.
+    //alert(queryurl);
+   // query.setTimeout(30);
+    query.send(handleQueryResponse);
+  }
+
+  function  handleQueryResponse(response){
+  	 
+    if (response.isError()) {
+    	 alert('3');
+      alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+      return;
+    }
+
+ 	var data = response.getDataTable();
+    console.log(data);
+		
+	/*** code to visualize**/
+	   var newdata = new google.visualization.DataTable();
+		newdata.addColumn('number', 'Total White In-patients');
+		newdata.addColumn('number', 'Total Afr Amr In-patients');
+		newdata.addColumn('number', 'Total Homeless Out-Patients');
+		newdata.addColumn('number', 'Total Emergency Patients');
+		var rows = data.getNumberOfRows();
+		
+		for (var i = 0; i < rows; i++ )
+		{
+		var state = data.getValue(i, 1);
+		var value = data.getValue(i, 2); 
+		var value2 = data.getValue(i, 3);
+		var value3 = data.getValue(i, 4);
+		newdata.addRow([state, value,value2,value3]);
+		}
+		var options = {
+		title: 'Patient Statistics Figures - Based on Inpatients, Homeless Out-Patients and Emergency Patients',
+		hAxis: {title: 'State', titleTextStyle: {color: 'black'}} ,
+		vAxis: {title: 'Count of Inpatients - Satisfaction', titleTextStyle: {color: 'black'}}
+		};
+		var chart = new google.visualization.ColumnChart(document.getElementById('map_canvas1'));
+		chart.draw(data, options);   
+             
+ }
+  </script>
+  </head>
+  <body>
+	<h1>MultiData Analysis</h1>
+    <div class = "row" style="margin:0;">
+		<div class="col-md-6">
+			<div id='map_canvas1' style="width: 1366px; height: 768px;"></div>
+		</div>
+    </div>
+  </body>
+ </html>
