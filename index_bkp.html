@@ -11,7 +11,7 @@
 
 
 function init(){
-    google.charts.load('current', {'packages': ['line']});
+    google.charts.load('current', {'packages': ['geomap']});
     google.charts.setOnLoadCallback(drawMap);
   }
   init();
@@ -66,6 +66,40 @@ var queryurl = "http://localhost:3030/Quality of Care - Populations.js"
  	alert('4');
     var data = response.getDataTable();
     console.log(data);
+	
+	
+	/***Adding code to visualize**/
+	    var newdata = new google.visualization.DataTable();
+
+                newdata.addColumn('string', 'State');
+                newdata.addColumn('number', 'homeless_outpateint');
+				newdata.addColumn('string', 'homeless_outpateint');
+
+		 
+                var rows = data.getNumberOfRows();
+
+                for (var i = 0; i < rows; i++)
+                {
+                    var state = 'US-' + data.getValue(i, 0);
+                    var Inpat09 =  data.getValue(i, 1); 
+
+			  
+                    newdata.addRow([state, Inpat09, state]);
+                }
+      		  
+                     
+               var options = {};
+                options['region'] = 'US';	
+                options['dataMode'] = 'regions';
+                options['width'] = 800;
+                options['height'] = 300;
+				
+		options['colors'] = [0xCCFFFF,0x99FFFF,0x66FFFF,0x00FFFF
+,0x33CCCC,0x00CCCC,0x66CCFF,0x00CCFF,0x9999FF,0X3399FF ,0x3333FF,0x003399,0x000066];
+	
+                var visualize = document.getElementById('map_canvas1');
+                var geomap1 = new google.visualization.GeoMap(visualize);
+                geomap1.draw(newdata, options );   
   }
 
 
