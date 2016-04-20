@@ -1,11 +1,11 @@
-PREFIX DS1209: <http://logd.tw.rpi.edu/source/data-gov/dataset/1209/vocab/raw/>
-
-SELECT distinct ?state (SUM(xsd:double(?white_outpatient)) as ?total_white_outpatient)
+PREFIX DS1202:<http://data-gov.tw.rpi.edu/vocab/p/1202/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+SELECT distinct ?state (SUM(xsd:integer(?white_outpatient)) as ?total_white_outpatient)
 WHERE {  
-
-GRAPH <http://logd.tw.rpi.edu/source/data-gov/dataset/1209/version/1st-anniversary>  {	
-				?s1 DS1209:white_outpatient ?white_outpatient.
-				?s1 DS1209:state ?state .   
+GRAPH <http://localhost:3030/myDataset/data/GRAPH_1209> {
+  ?s1 DS1202:white_outpatient ?white_outpatient.
+  ?s1 DS1202:state ?state .     
 }
 }
+group by ?state
 order by ?state

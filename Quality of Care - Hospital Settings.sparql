@@ -1,11 +1,11 @@
-PREFIX DS1212: <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/vocab/raw/>
-
-SELECT distinct ?state (SUM(xsd:double(?emergency)) as ?total_emergency)
+PREFIX DS1202:<http://data-gov.tw.rpi.edu/vocab/p/1202/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+SELECT distinct ?state (SUM(xsd:integer(?emergency)) as ?total_emergency)
 WHERE {  
-
-GRAPH <http://logd.tw.rpi.edu/source/data-gov/dataset/1212/version/1st-anniversary>  {	
-				?s1 DS1212:emergency ?emergency.
-				?s1 DS1212:state ?state .   
+GRAPH <http://localhost:3030/myDataset/data/GRAPH_1212> {
+  ?s1 DS1202:emergency ?emergency.
+  ?s1 DS1202:state ?state .   
 }
 }
+group by ?state
 order by ?state

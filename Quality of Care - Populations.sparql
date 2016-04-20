@@ -1,10 +1,10 @@
 PREFIX DS1202:<http://data-gov.tw.rpi.edu/vocab/p/1202/>
 PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
-SELECT ?state (SUM( xsd:int(?homeless_outpateint)) as ?total_homeless_outpateint)
+SELECT distinct ?state (SUM( xsd:integer(?homeless_outpateint)) as ?total_homeless_outpateint)
 WHERE { 
 GRAPH <http://localhost:3030/myDataset/data/GRAPH_1208> {
- ?s1 DS1202:homeless_outpateint ?homeless_outpateint.
- ?s1 DS1202:state ?state . 
+?s1 DS1202:homeless_outpateint ?homeless_outpateint.
+?s1 DS1202:state ?state . 
 }
 }
 group by ?state
