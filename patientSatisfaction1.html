@@ -35,7 +35,7 @@ var queryurl = "http://localhost:3030/patientSatisfaction.js"
 
     var query = new google.visualization.Query(queryurl); // Send the query.
 
-    alert(queryurl);
+   // alert(queryurl);
    // query.setTimeout(30);
     query.send(handleQueryResponse);
   }
@@ -49,7 +49,7 @@ var queryurl = "http://localhost:3030/patientSatisfaction.js"
       return;
     }
 
-  alert('4');
+  //alert('4');
     var data = response.getDataTable();
     console.log(data);
   
