@@ -1,0 +1,1882 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://data-gov.tw.rpi.edu/vocab/p/1202/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dgtwc="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://data-gov.tw.rpi.edu/raw/1212/data-1212.rdf" > 
+  <rdf:Description rdf:about="#entry57">
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>VA Mid South Healthcare Network</visn_name>
+    <emergency>88</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <city>Memphis</city>
+    <state>TN</state>
+    <outpatient>80</outpatient>
+    <inpatient>94</inpatient>
+    <visn>9</visn>
+    <facility_name>VAMC</facility_name>
+    <maternity>**</maternity>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry133">
+    <outpatient>74</outpatient>
+    <emergency>93</emergency>
+    <city>Des Moines</city>
+    <facility_name>VA Central Iowa HCS   DesMoines Knoxville</facility_name>
+    <state>IA</state>
+    <maternity>**</maternity>
+    <inpatient>91</inpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <visn>23</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA Midwest Health Care Network</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry5">
+    <city>Togus</city>
+    <maternity>**</maternity>
+    <state>ME</state>
+    <visn>1</visn>
+    <facility_name>VAMC/RO</facility_name>
+    <visn_name>VA New England Health Care System</visn_name>
+    <outpatient>81</outpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>*</inpatient>
+    <emergency>*</emergency>
+    <intensive_care_units>No ICU</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry143">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>91</emergency>
+    <outpatient>74</outpatient>
+    <inpatient>93</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry82">
+    <visn_name>VA Heartland Network</visn_name>
+    <city>Columbia</city>
+    <facility_name>Harry S. Truman Memorial</facility_name>
+    <visn>15</visn>
+    <outpatient>74</outpatient>
+    <state>MO</state>
+    <emergency>89</emergency>
+    <intensive_care_units>**</intensive_care_units>
+    <inpatient>92</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry113">
+    <inpatient>92</inpatient>
+    <emergency>93</emergency>
+    <visn>20</visn>
+    <maternity>**</maternity>
+    <state>AK</state>
+    <facility_name>Alaska VA HCS and Regional Office</facility_name>
+    <outpatient>76</outpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <city>Anchorage</city>
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>Northwest Network</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry103">
+    <inpatient>94</inpatient>
+    <emergency>95</emergency>
+    <city>Albuquerque</city>
+    <state>NM</state>
+    <facility_name>New Mexico HCS</facility_name>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>18</visn>
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>VA Southwest Health Care Network</visn_name>
+    <outpatient>75</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry34">
+    <city>Fayetteville</city>
+    <state>NC</state>
+    <inpatient>94</inpatient>
+    <visn>6</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <emergency>92</emergency>
+    <maternity>**</maternity>
+    <outpatient>79</outpatient>
+    <visn_name>VA Mid-Atlantic Health Care Network</visn_name>
+    <facility_name>VAMC</facility_name>
+    <intensive_care_units>**</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry123">
+    <state>CA</state>
+    <city>Palo Alto</city>
+    <facility_name>VA Palo Alto HCSPaloAlto MenloPk Livermore</facility_name>
+    <visn_name>Sierra Pacific Network</visn_name>
+    <visn>21</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry24">
+    <outpatient>81</outpatient>
+    <visn>4</visn>
+    <visn_name>VA Stars &amp; Stripes Healthcare Network</visn_name>
+    <city>Lebanon</city>
+    <state>PA</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <facility_name>VAMC</facility_name>
+    <inpatient>99</inpatient>
+    <emergency>97</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry154">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>86</emergency>
+    <outpatient>76</outpatient>
+    <inpatient>93</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry62">
+    <inpatient>91</inpatient>
+    <state>OH</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <city>Cincinnati</city>
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>VAMC</facility_name>
+    <visn_name>VA Health Care System of Ohio</visn_name>
+    <emergency>90</emergency>
+    <maternity>**</maternity>
+    <visn>10</visn>
+    <outpatient>73</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry97">
+    <maternity>**</maternity>
+    <state>TX</state>
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>VA Heart of Texas Health Care Network</visn_name>
+    <inpatient>89</inpatient>
+    <outpatient>75</outpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>17</visn>
+    <facility_name>VA North Texas HCS</facility_name>
+    <emergency>93</emergency>
+    <city>Dallas</city>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry77">
+    <city>Madison</city>
+    <visn>12</visn>
+    <inpatient>96</inpatient>
+    <emergency>96</emergency>
+    <outpatient>78</outpatient>
+    <state>WI</state>
+    <maternity>**</maternity>
+    <visn_name>The Great Lakes Health Care System</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>William S. Middleton Memorial Veterans Hospital</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry44">
+    <inpatient>96</inpatient>
+    <state>GA</state>
+    <outpatient>76</outpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+    <city>Augusta</city>
+    <visn>7</visn>
+    <visn_name>VA Southeast Network</visn_name>
+    <facility_name>VAMC</facility_name>
+    <emergency>96</emergency>
+    <intensive_care_units>**</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry14">
+    <intensive_care_units>No ICU</intensive_care_units>
+    <city>East Orange</city>
+    <maternity>**</maternity>
+    <inpatient>*</inpatient>
+    <state>NJ</state>
+    <facility_name>VA New Jersey HCS East Orange Campus</facility_name>
+    <visn>3</visn>
+    <emergency>*</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA NY/NJ Veterans Healthcare Network</visn_name>
+    <outpatient>80</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry56">
+    <inpatient>95</inpatient>
+    <maternity>**</maternity>
+    <intensive_care_units>**</intensive_care_units>
+    <state>KY</state>
+    <city>Louisville</city>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>9</visn>
+    <facility_name>VAMC</facility_name>
+    <visn_name>VA Mid South Healthcare Network</visn_name>
+    <outpatient>80</outpatient>
+    <emergency>92</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry132">
+    <maternity>**</maternity>
+    <city>Omaha</city>
+    <inpatient>89</inpatient>
+    <visn>23</visn>
+    <outpatient>73</outpatient>
+    <state>NE</state>
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>VA Midwest Health Care Network</visn_name>
+    <emergency>92</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <facility_name>VA Nebraska Western Iowa HCS  Omaha Grand Is Lincoln</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry142">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>95</emergency>
+    <outpatient>77</outpatient>
+    <inpatient>95</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry6">
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <facility_name>VAMC</facility_name>
+    <emergency>90</emergency>
+    <inpatient>90</inpatient>
+    <outpatient>75</outpatient>
+    <state>NH</state>
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <visn>1</visn>
+    <visn_name>VA New England Health Care System</visn_name>
+    <city>Manchester</city>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry83">
+    <emergency>98</emergency>
+    <intensive_care_units>**</intensive_care_units>
+    <city>Kansas City</city>
+    <maternity>**</maternity>
+    <facility_name>VAMC</facility_name>
+    <inpatient>96</inpatient>
+    <visn>15</visn>
+    <state>MO</state>
+    <outpatient>81</outpatient>
+    <visn_name>VA Heartland Network</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry25">
+    <inpatient>*</inpatient>
+    <state>PA</state>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <outpatient>78</outpatient>
+    <visn_name>VA Stars &amp; Stripes Healthcare Network</visn_name>
+    <maternity>**</maternity>
+    <city>Philadelphia</city>
+    <visn>4</visn>
+    <emergency>*</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <facility_name>VAMC</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry35">
+    <emergency>92</emergency>
+    <outpatient>77</outpatient>
+    <maternity>**</maternity>
+    <visn_name>VA Mid-Atlantic Health Care Network</visn_name>
+    <city>Salisbury</city>
+    <state>NC</state>
+    <intensive_care_units>**</intensive_care_units>
+    <inpatient>93</inpatient>
+    <visn>6</visn>
+    <facility_name>W.G. (Bill) Hefner VA Medical Center</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry122">
+    <maternity>**</maternity>
+    <state>CA</state>
+    <emergency>*</emergency>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <visn_name>Sierra Pacific Network</visn_name>
+    <outpatient>70</outpatient>
+    <inpatient>*</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <facility_name>VA Northern California HCS Martinez Sacramento</facility_name>
+    <city>Martinez, East Bay</city>
+    <visn>21</visn>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry102">
+    <state>AZ</state>
+    <emergency>93</emergency>
+    <inpatient>93</inpatient>
+    <city>Tucson</city>
+    <visn_name>VA Southwest Health Care Network</visn_name>
+    <maternity>**</maternity>
+    <facility_name>Southern Arizona VA HCS</facility_name>
+    <outpatient>76</outpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>18</visn>
+    <intensive_care_units>**</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry63">
+    <state>OH</state>
+    <city>Cleveland</city>
+    <facility_name>Louis Stokes VA Medical CenterCleveland Brecksville</facility_name>
+    <visn_name>VA Health Care System of Ohio</visn_name>
+    <visn>10</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry155">
+    <intensive_care_units>No ICU</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>*</emergency>
+    <outpatient>77</outpatient>
+    <inpatient>*</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry76">
+    <state>MI</state>
+    <city>Iron Mountain</city>
+    <facility_name>VAMC</facility_name>
+    <visn_name>The Great Lakes Health Care System</visn_name>
+    <visn>12</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry96">
+    <city>Houston</city>
+    <outpatient>79</outpatient>
+    <maternity>**</maternity>
+    <inpatient>92</inpatient>
+    <visn_name>South Central VA Health Care Network</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+    <emergency>94</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>16</visn>
+    <facility_name>VAMC</facility_name>
+    <state>TX</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry45">
+    <state>GA</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <emergency>95</emergency>
+    <maternity>**</maternity>
+    <city>Dublin</city>
+    <facility_name>Carl Vinson VA Medical Center</facility_name>
+    <inpatient>95</inpatient>
+    <outpatient>79</outpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <visn>7</visn>
+    <visn_name>VA Southeast Network</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry112">
+    <state>WY</state>
+    <outpatient>70</outpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <city>Sheridan</city>
+    <emergency>82</emergency>
+    <maternity>**</maternity>
+    <visn>19</visn>
+    <facility_name>VAMC</facility_name>
+    <visn_name>Rocky Mountain Network</visn_name>
+    <inpatient>91</inpatient>
+    <intensive_care_units>**</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry15">
+    <visn>3</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA NY/NJ Veterans Healthcare Network</visn_name>
+    <facility_name>VAMC</facility_name>
+    <city>Bronx</city>
+    <inpatient>94</inpatient>
+    <outpatient>78</outpatient>
+    <emergency>96</emergency>
+    <intensive_care_units>**</intensive_care_units>
+    <state>NY</state>
+    <maternity>**</maternity>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry59">
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+    <visn>9</visn>
+    <inpatient>*</inpatient>
+    <state>TN</state>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <visn_name>VA Mid South Healthcare Network</visn_name>
+    <city>Nashville</city>
+    <outpatient>80</outpatient>
+    <emergency>*</emergency>
+    <facility_name>Tennessee Valley HCSNashville Murfreesboro</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry131">
+    <emergency>*</emergency>
+    <facility_name>VA Southern Nevada HCS</facility_name>
+    <visn>22</visn>
+    <outpatient>76</outpatient>
+    <inpatient>*</inpatient>
+    <maternity>**</maternity>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <city>Las Vegas</city>
+    <state>NV</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>Desert Pacific Healthcare Network</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry70">
+    <state>MI</state>
+    <city>Battle Creek</city>
+    <facility_name>VAMC</facility_name>
+    <visn_name>Veterans In Partnership</visn_name>
+    <visn>11</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry118">
+    <facility_name>VA Puget Sound HCS�  Seattle American Lake</facility_name>
+    <emergency>94</emergency>
+    <inpatient>94</inpatient>
+    <city>Seattle</city>
+    <outpatient>75</outpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+    <visn_name>Northwest Network</visn_name>
+    <visn>20</visn>
+    <state>WA</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <dcterms:identifier>/work/data-gov/data/input/data.gov/1212/DataGov_VHA_Hospital_Quality_of_Care_Hospital.csv</dcterms:identifier>
+    <rdfs:seeAlso rdf:resource="http://data-gov.tw.rpi.edu/raw/1212/index.rdf#me"/>
+    <dcterms:description>generated by csv2rdf CSV2RDF (v1.1, 2009-01-28). http://data-gov.tw.rpi.edu/wiki/Source_Code_of_Data.gov_Wiki#Source_Code_of_Demos_and_Applications. </dcterms:description>
+    <dcterms:creator rdf:resource="http://tw.rpi.edu"/>
+    <dcterms:date>2010-05-10T19:49:39Z</dcterms:date>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry91">
+    <intensive_care_units>No ICU</intensive_care_units>
+    <emergency>91</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>94</inpatient>
+    <outpatient>81</outpatient>
+    <city>Shreveport</city>
+    <state>LA</state>
+    <maternity>**</maternity>
+    <visn_name>South Central VA Health Care Network</visn_name>
+    <facility_name>Overton Brooks VA Medical Center</facility_name>
+    <visn>16</visn>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry7">
+    <emergency>*</emergency>
+    <facility_name>VAMC</facility_name>
+    <city>Providence</city>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA New England Health Care System</visn_name>
+    <maternity>**</maternity>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <state>RI</state>
+    <inpatient>*</inpatient>
+    <outpatient>80</outpatient>
+    <visn>1</visn>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry80">
+    <maternity>**</maternity>
+    <emergency>92</emergency>
+    <visn>15</visn>
+    <inpatient>91</inpatient>
+    <state>KS</state>
+    <city>Topeka</city>
+    <facility_name>VA Eastern Kansas HCS Topeka Leavenworth</facility_name>
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>VA Heartland Network</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>76</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry69">
+    <inpatient>96</inpatient>
+    <facility_name>Ann Arbor VA Ann Arbor HCS</facility_name>
+    <city>Ann Arbor</city>
+    <emergency>97</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+    <visn_name>Veterans In Partnership</visn_name>
+    <outpatient>79</outpatient>
+    <visn>11</visn>
+    <state>MI</state>
+    <intensive_care_units>**</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry145">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>92</emergency>
+    <outpatient>76</outpatient>
+    <inpatient>93</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry89">
+    <state>LA</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <city>Alexandria</city>
+    <intensive_care_units>**</intensive_care_units>
+    <emergency>87</emergency>
+    <facility_name>VAMC</facility_name>
+    <inpatient>92</inpatient>
+    <visn>16</visn>
+    <visn_name>South Central VA Health Care Network</visn_name>
+    <maternity>**</maternity>
+    <outpatient>77</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry156">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>95</emergency>
+    <outpatient>75</outpatient>
+    <inpatient>89</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry99">
+    <facility_name>Central Texas Veterans HCSTemple Waco Marlin</facility_name>
+    <emergency>90</emergency>
+    <inpatient>92</inpatient>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA Heart of Texas Health Care Network</visn_name>
+    <state>TX</state>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>72</outpatient>
+    <city>Temple</city>
+    <visn>17</visn>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry32">
+    <inpatient>94</inpatient>
+    <emergency>93</emergency>
+    <outpatient>80</outpatient>
+    <visn>6</visn>
+    <state>NC</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA Mid-Atlantic Health Care Network</visn_name>
+    <city>Asheville</city>
+    <maternity>**</maternity>
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>VAMC</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry105">
+    <state>TX</state>
+    <emergency>96</emergency>
+    <inpatient>95</inpatient>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <intensive_care_units>**</intensive_care_units>
+    <city>Big Spring</city>
+    <facility_name>West Texas VA HCS</facility_name>
+    <visn>18</visn>
+    <outpatient>75</outpatient>
+    <visn_name>VA Southwest Health Care Network</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry26">
+    <visn_name>VA Stars &amp; Stripes Healthcare Network</visn_name>
+    <maternity>**</maternity>
+    <outpatient>79</outpatient>
+    <facility_name>VA Pittsburgh HCSHeinz Univ Dr Highld Dr</facility_name>
+    <state>PA</state>
+    <visn>4</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>92</inpatient>
+    <city>Pittsburgh</city>
+    <emergency>100</emergency>
+    <intensive_care_units>No ICU</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry60">
+    <state>WV</state>
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>VA Mid South Healthcare Network</visn_name>
+    <visn>9</visn>
+    <facility_name>VAMC</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+    <emergency>94</emergency>
+    <city>Huntington</city>
+    <inpatient>94</inpatient>
+    <outpatient>77</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry125">
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <facility_name>VA Pacific Islands HCSSpark M. Matsunaga VA Medical &amp; Regional Office Center</facility_name>
+    <visn_name>Sierra Pacific Network</visn_name>
+    <outpatient>76</outpatient>
+    <city>Honolulu</city>
+    <emergency>96</emergency>
+    <state>HI</state>
+    <intensive_care_units>**</intensive_care_units>
+    <visn>21</visn>
+    <inpatient>94</inpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry111">
+    <state>WY</state>
+    <city>Cheyenne</city>
+    <facility_name>VAM/ROC</facility_name>
+    <visn_name>Rocky Mountain Network</visn_name>
+    <visn>19</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry46">
+    <state>SC</state>
+    <city>Charleston</city>
+    <facility_name>Ralph H. Johnson VAMC</facility_name>
+    <visn_name>VA Southeast Network</visn_name>
+    <visn>7</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry138">
+    <state>SD</state>
+    <visn_name>VA Midwest Health Care Network</visn_name>
+    <facility_name>VA Black Hills HCSFt Meade Hot Springs</facility_name>
+    <outpatient>75</outpatient>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <maternity>**</maternity>
+    <inpatient>*</inpatient>
+    <emergency>*</emergency>
+    <city>Fort Meade</city>
+    <visn>23</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry50">
+    <city>Miami</city>
+    <emergency>96</emergency>
+    <outpatient>77</outpatient>
+    <visn>8</visn>
+    <intensive_care_units>**</intensive_care_units>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA Sunshine Healthcare Network</visn_name>
+    <inpatient>94</inpatient>
+    <state>FL</state>
+    <facility_name>VAMC</facility_name>
+    <maternity>**</maternity>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry12">
+    <visn>2</visn>
+    <state>NY</state>
+    <intensive_care_units>**</intensive_care_units>
+    <emergency>93</emergency>
+    <outpatient>79</outpatient>
+    <city>Canandaigua</city>
+    <visn_name>VA Healthcare Network Upstate New York</visn_name>
+    <inpatient>93</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+    <facility_name>VAMC</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry79">
+    <emergency>87</emergency>
+    <facility_name>VAMC</facility_name>
+    <city>Tomah</city>
+    <visn>12</visn>
+    <state>WI</state>
+    <maternity>**</maternity>
+    <outpatient>78</outpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>The Great Lakes Health Care System</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>91</inpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry71">
+    <visn_name>Veterans In Partnership</visn_name>
+    <emergency>96</emergency>
+    <inpatient>91</inpatient>
+    <visn>11</visn>
+    <outpatient>73</outpatient>
+    <city>Detroit</city>
+    <state>MI</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <maternity>**</maternity>
+    <facility_name>John D. Dingell VA Medical Center</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry58">
+    <state>TN</state>
+    <visn>9</visn>
+    <inpatient>96</inpatient>
+    <emergency>95</emergency>
+    <city>Mountain Home</city>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA Mid South Healthcare Network</visn_name>
+    <maternity>**</maternity>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>77</outpatient>
+    <facility_name>VAMC</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry119">
+    <outpatient>67</outpatient>
+    <state>WA</state>
+    <emergency>91</emergency>
+    <intensive_care_units>**</intensive_care_units>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+    <inpatient>93</inpatient>
+    <visn>20</visn>
+    <city>Spokane</city>
+    <facility_name>VAMC</facility_name>
+    <visn_name>Northwest Network</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry130">
+    <state>CA</state>
+    <city>San Diego</city>
+    <facility_name>VA San Diego HCS</facility_name>
+    <visn_name>Desert Pacific Healthcare Network</visn_name>
+    <visn>22</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry68">
+    <state>IN</state>
+    <maternity>**</maternity>
+    <emergency>94</emergency>
+    <inpatient>92</inpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <facility_name>Richard L. Roudebush VA Medical Center</facility_name>
+    <outpatient>70</outpatient>
+    <visn_name>Veterans In Partnership</visn_name>
+    <city>Indianapolis</city>
+    <visn>11</visn>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry8">
+    <visn_name>VA New England Health Care System</visn_name>
+    <maternity>**</maternity>
+    <intensive_care_units>**</intensive_care_units>
+    <city>White River Junction</city>
+    <visn>1</visn>
+    <inpatient>96</inpatient>
+    <outpatient>79</outpatient>
+    <state>VT</state>
+    <facility_name>VAM/ROC</facility_name>
+    <emergency>95</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry90">
+    <city>New Orleans</city>
+    <visn>16</visn>
+    <outpatient>75</outpatient>
+    <emergency>85</emergency>
+    <state>LA</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>South Central VA Health Care Network</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+    <inpatient>92</inpatient>
+    <maternity>**</maternity>
+    <facility_name>VAMC</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry144">
+    <intensive_care_units>No ICU</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>*</emergency>
+    <outpatient>74</outpatient>
+    <inpatient>*</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry81">
+    <inpatient>94</inpatient>
+    <maternity>**</maternity>
+    <outpatient>77</outpatient>
+    <city>Wichita</city>
+    <facility_name>Robert J. Dole Department of Veterans Affairs Medical and Regional Office Center</facility_name>
+    <visn>15</visn>
+    <visn_name>VA Heartland Network</visn_name>
+    <state>KS</state>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <emergency>91</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry98">
+    <city>San Antonio</city>
+    <visn>17</visn>
+    <outpatient>73</outpatient>
+    <inpatient>96</inpatient>
+    <state>TX</state>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <facility_name>South Texas Veterans HCS  SanAntonio Kerrville</facility_name>
+    <emergency>92</emergency>
+    <visn_name>VA Heart of Texas Health Care Network</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry61">
+    <emergency>96</emergency>
+    <facility_name>VAMC</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <state>OH</state>
+    <outpatient>84</outpatient>
+    <visn>10</visn>
+    <intensive_care_units>**</intensive_care_units>
+    <city>Chillicothe</city>
+    <visn_name>VA Health Care System of Ohio</visn_name>
+    <inpatient>96</inpatient>
+    <maternity>**</maternity>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry88">
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>71</outpatient>
+    <inpatient>84</inpatient>
+    <facility_name>Central Arkansas Veterans HCSLittle Rock Little Rock N</facility_name>
+    <visn>16</visn>
+    <city>Little Rock</city>
+    <emergency>81</emergency>
+    <maternity>**</maternity>
+    <state>AR</state>
+    <visn_name>South Central VA Health Care Network</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry104">
+    <visn>18</visn>
+    <city>Amarillo</city>
+    <emergency>*</emergency>
+    <outpatient>72</outpatient>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <maternity>**</maternity>
+    <inpatient>*</inpatient>
+    <facility_name>Amarillo VA HCS</facility_name>
+    <visn_name>VA Southwest Health Care Network</visn_name>
+    <state>TX</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry27">
+    <outpatient>80</outpatient>
+    <city>Wilkes-Barre</city>
+    <maternity>**</maternity>
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>VA Stars &amp; Stripes Healthcare Network</visn_name>
+    <visn>4</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <facility_name>VAMC</facility_name>
+    <inpatient>96</inpatient>
+    <state>PA</state>
+    <emergency>96</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry33">
+    <state>NC</state>
+    <city>Durham</city>
+    <facility_name>VAMC</facility_name>
+    <visn_name>VA Mid-Atlantic Health Care Network</visn_name>
+    <visn>6</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry110">
+    <intensive_care_units>**</intensive_care_units>
+    <city>Salt Lake City</city>
+    <facility_name>VA Salt Lake City HCS</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>19</visn>
+    <visn_name>Rocky Mountain Network</visn_name>
+    <inpatient>91</inpatient>
+    <outpatient>72</outpatient>
+    <emergency>93</emergency>
+    <maternity>**</maternity>
+    <state>UT</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry124">
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>Sierra Pacific Network</visn_name>
+    <inpatient>96</inpatient>
+    <maternity>**</maternity>
+    <state>CA</state>
+    <emergency>94</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>21</visn>
+    <city>San Francisco</city>
+    <facility_name>VAMC</facility_name>
+    <outpatient>77</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry78">
+    <visn_name>The Great Lakes Health Care System</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <state>WI</state>
+    <visn>12</visn>
+    <outpatient>73</outpatient>
+    <maternity>**</maternity>
+    <inpatient>92</inpatient>
+    <facility_name>Clement J. Zablocki VAMC</facility_name>
+    <city>Milwaukee</city>
+    <intensive_care_units>**</intensive_care_units>
+    <emergency>91</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry13">
+    <facility_name>VAMC</facility_name>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>80</outpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+    <city>Syracuse</city>
+    <emergency>97</emergency>
+    <visn>2</visn>
+    <inpatient>94</inpatient>
+    <state>NY</state>
+    <visn_name>VA Healthcare Network Upstate New York</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry47">
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <intensive_care_units>**</intensive_care_units>
+    <inpatient>92</inpatient>
+    <facility_name>Wm. Jennings Bryan Dorn VAMC</facility_name>
+    <visn>7</visn>
+    <emergency>94</emergency>
+    <visn_name>VA Southeast Network</visn_name>
+    <outpatient>78</outpatient>
+    <city>Columbia</city>
+    <maternity>**</maternity>
+    <state>SC</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry51">
+    <inpatient>92</inpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>80</outpatient>
+    <visn_name>VA Sunshine Healthcare Network</visn_name>
+    <city>Orlando</city>
+    <emergency>95</emergency>
+    <facility_name>East Central Florida HCS</facility_name>
+    <maternity>**</maternity>
+    <state>FL</state>
+    <visn>8</visn>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry139">
+    <state>SD</state>
+    <city>Sioux Falls</city>
+    <facility_name>VAM/ROC</facility_name>
+    <visn_name>VA Midwest Health Care Network</visn_name>
+    <visn>23</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry157">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>93</emergency>
+    <outpatient>72</outpatient>
+    <inpatient>86</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry10">
+    <state>NY</state>
+    <city>Buffalo</city>
+    <facility_name>VA Western New York HCS Buffalo Batavia</facility_name>
+    <visn_name>VA Healthcare Network Upstate New York</visn_name>
+    <visn>2</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry126">
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>Sierra Pacific Network</visn_name>
+    <maternity>**</maternity>
+    <intensive_care_units>**</intensive_care_units>
+    <emergency>96</emergency>
+    <facility_name>VA Sierra Nevada HCS</facility_name>
+    <state>NV</state>
+    <outpatient>78</outpatient>
+    <inpatient>95</inpatient>
+    <visn>21</visn>
+    <city>Reno</city>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry48">
+    <inpatient>94</inpatient>
+    <state>FL</state>
+    <city>Bay Pines</city>
+    <facility_name>VAMC</facility_name>
+    <visn_name>VA Sunshine Healthcare Network</visn_name>
+    <visn>8</visn>
+    <outpatient>78</outpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <emergency>95</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry137">
+    <intensive_care_units>**</intensive_care_units>
+    <state>ND</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>93</inpatient>
+    <facility_name>VAM/RO</facility_name>
+    <visn>23</visn>
+    <maternity>**</maternity>
+    <outpatient>74</outpatient>
+    <city>Fargo</city>
+    <visn_name>VA Midwest Health Care Network</visn_name>
+    <emergency>89</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry20">
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>78</outpatient>
+    <city>Altoona</city>
+    <inpatient>87</inpatient>
+    <visn>4</visn>
+    <state>PA</state>
+    <maternity>**</maternity>
+    <emergency>94</emergency>
+    <visn_name>VA Stars &amp; Stripes Healthcare Network</visn_name>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <facility_name>James E. Van Zandt VA Medical Center</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry67">
+    <state>IN</state>
+    <visn_name>Veterans In Partnership</visn_name>
+    <facility_name>VA Northern Indiana HCS Marion Ft Wayne</facility_name>
+    <emergency>95</emergency>
+    <maternity>**</maternity>
+    <inpatient>97</inpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>76</outpatient>
+    <city>Marion</city>
+    <visn>11</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry86">
+    <intensive_care_units>**</intensive_care_units>
+    <visn_name>VA Heartland Network</visn_name>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <city>St. Louis</city>
+    <visn>15</visn>
+    <inpatient>93</inpatient>
+    <outpatient>77</outpatient>
+    <emergency>88</emergency>
+    <facility_name>St Louis VAMC St Louis Jefferson Barracks</facility_name>
+    <state>MO</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry53">
+    <city>West Palm Beach</city>
+    <emergency>94</emergency>
+    <inpatient>97</inpatient>
+    <visn_name>VA Sunshine Healthcare Network</visn_name>
+    <state>FL</state>
+    <facility_name>VAMC</facility_name>
+    <outpatient>77</outpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>8</visn>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry72">
+    <inpatient>95</inpatient>
+    <visn>11</visn>
+    <state>MI</state>
+    <city>Saginaw</city>
+    <facility_name>Aleda E. Lutz VA Medical Center</facility_name>
+    <emergency>96</emergency>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>77</outpatient>
+    <visn_name>Veterans In Partnership</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry150">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>92</emergency>
+    <outpatient>78</outpatient>
+    <inpatient>93</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry18">
+    <inpatient>91</inpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <emergency>92</emergency>
+    <visn>3</visn>
+    <visn_name>VA NY/NJ Veterans Healthcare Network</visn_name>
+    <facility_name>VAMC</facility_name>
+    <city>Northport</city>
+    <maternity>**</maternity>
+    <state>NY</state>
+    <outpatient>79</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry1">
+    <state>CT</state>
+    <city>West Haven</city>
+    <facility_name>VA Connecticut HCS</facility_name>
+    <visn_name>VA New England Health Care System</visn_name>
+    <visn>1</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry147">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>93</emergency>
+    <outpatient>76</outpatient>
+    <inpatient>92</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry38">
+    <visn_name>VA Mid-Atlantic Health Care Network</visn_name>
+    <emergency>96</emergency>
+    <inpatient>92</inpatient>
+    <city>Salem</city>
+    <facility_name>VAMC</facility_name>
+    <visn>6</visn>
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <outpatient>82</outpatient>
+    <state>VA</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry116">
+    <maternity>**</maternity>
+    <facility_name>VA Roseburg HCS</facility_name>
+    <state>OR</state>
+    <city>Roseburg</city>
+    <outpatient>77</outpatient>
+    <visn>20</visn>
+    <visn_name>Northwest Network</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <emergency>95</emergency>
+    <intensive_care_units>**</intensive_care_units>
+    <inpatient>92</inpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry158">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>84</emergency>
+    <outpatient>72</outpatient>
+    <inpatient>87</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry93">
+    <facility_name>G.V. (Sonny) Montgomery VA Medical Center</facility_name>
+    <city>Jackson</city>
+    <inpatient>96</inpatient>
+    <outpatient>78</outpatient>
+    <state>MS</state>
+    <emergency>95</emergency>
+    <visn_name>South Central VA Health Care Network</visn_name>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>16</visn>
+    <intensive_care_units>**</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry9">
+    <state>NY</state>
+    <outpatient>77</outpatient>
+    <maternity>**</maternity>
+    <visn>2</visn>
+    <city>Albany</city>
+    <visn_name>VA Healthcare Network Upstate New York</visn_name>
+    <emergency>88</emergency>
+    <inpatient>89</inpatient>
+    <facility_name>Samuel S. Stratton VAMC</facility_name>
+    <intensive_care_units>**</intensive_care_units>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry30">
+    <maternity>**</maternity>
+    <city>Baltimore</city>
+    <intensive_care_units>**</intensive_care_units>
+    <visn>5</visn>
+    <inpatient>93</inpatient>
+    <facility_name>VA Maryland HCSBaltimore Perry Pt</facility_name>
+    <outpatient>78</outpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <state>MD</state>
+    <visn_name>VA Capitol Health Care Network</visn_name>
+    <emergency>91</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry40">
+    <visn>7</visn>
+    <visn_name>VA Southeast Network</visn_name>
+    <maternity>**</maternity>
+    <facility_name>VAMC</facility_name>
+    <inpatient>94</inpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <city>Birmingham</city>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>77</outpatient>
+    <emergency>94</emergency>
+    <state>AL</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry28">
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>Louis A. Johnson VAMC</facility_name>
+    <maternity>**</maternity>
+    <outpatient>74</outpatient>
+    <city>Clarksburg</city>
+    <visn_name>VA Stars &amp; Stripes Healthcare Network</visn_name>
+    <state>WV</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>4</visn>
+    <emergency>93</emergency>
+    <inpatient>91</inpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry107">
+    <inpatient>97</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>80</outpatient>
+    <city>Denver</city>
+    <emergency>91</emergency>
+    <state>CO</state>
+    <facility_name>Eastern Colorado HCS Denver Pueblo</facility_name>
+    <maternity>**</maternity>
+    <visn>19</visn>
+    <visn_name>Rocky Mountain Network</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry127">
+    <visn>22</visn>
+    <maternity>**</maternity>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>77</outpatient>
+    <city>Loma Linda</city>
+    <inpatient>93</inpatient>
+    <emergency>93</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <state>CA</state>
+    <facility_name>VA Loma Linda HCS</facility_name>
+    <visn_name>Desert Pacific Healthcare Network</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry136">
+    <outpatient>77</outpatient>
+    <city>St. Cloud</city>
+    <intensive_care_units>**</intensive_care_units>
+    <state>MN</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>23</visn>
+    <facility_name>VAMC</facility_name>
+    <visn_name>VA Midwest Health Care Network</visn_name>
+    <maternity>**</maternity>
+    <inpatient>94</inpatient>
+    <emergency>91</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry11">
+    <inpatient>93</inpatient>
+    <city>Bath</city>
+    <emergency>93</emergency>
+    <maternity>**</maternity>
+    <visn>2</visn>
+    <outpatient>79</outpatient>
+    <facility_name>VAMC</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA Healthcare Network Upstate New York</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+    <state>NY</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry49">
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <city>Gainesville</city>
+    <facility_name>N FLA/S GA Veterans HS Gainesville Lake Cty</facility_name>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <outpatient>80</outpatient>
+    <inpatient>*</inpatient>
+    <visn_name>VA Sunshine Healthcare Network</visn_name>
+    <maternity>**</maternity>
+    <state>FL</state>
+    <visn>8</visn>
+    <emergency>*</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry52">
+    <state>FL</state>
+    <facility_name>James A. Haley VA Medical Center</facility_name>
+    <emergency>94</emergency>
+    <visn_name>VA Sunshine Healthcare Network</visn_name>
+    <inpatient>94</inpatient>
+    <outpatient>81</outpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <city>Tampa</city>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>8</visn>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry29">
+    <state>DC</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>VAMC</facility_name>
+    <visn>5</visn>
+    <city>Washington</city>
+    <visn_name>VA Capitol Health Care Network</visn_name>
+    <emergency>90</emergency>
+    <inpatient>94</inpatient>
+    <outpatient>78</outpatient>
+    <maternity>**</maternity>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry66">
+    <outpatient>74</outpatient>
+    <maternity>**</maternity>
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>VA Illiana HCS</facility_name>
+    <emergency>89</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <city>Danville</city>
+    <visn_name>Veterans In Partnership</visn_name>
+    <inpatient>90</inpatient>
+    <visn>11</visn>
+    <state>IL</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry19">
+    <outpatient>75</outpatient>
+    <inpatient>94</inpatient>
+    <city>Wilmington</city>
+    <visn_name>VA Stars &amp; Stripes Healthcare Network</visn_name>
+    <maternity>**</maternity>
+    <emergency>93</emergency>
+    <visn>4</visn>
+    <facility_name>VAM&amp;RO</facility_name>
+    <state>DE</state>
+    <intensive_care_units>**</intensive_care_units>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry117">
+    <visn_name>Northwest Network</visn_name>
+    <facility_name>Southern Oregon Rehab Ctr &amp; Clinics</facility_name>
+    <visn>20</visn>
+    <city>White City</city>
+    <emergency>98</emergency>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>77</outpatient>
+    <maternity>**</maternity>
+    <inpatient>93</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <state>OR</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry151">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>85</emergency>
+    <outpatient>74</outpatient>
+    <inpatient>94</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry73">
+    <facility_name>VA Chicago HCS; (Jessie Brown)</facility_name>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <state>IL</state>
+    <city>Chicago, West Side</city>
+    <emergency>90</emergency>
+    <visn>12</visn>
+    <intensive_care_units>**</intensive_care_units>
+    <inpatient>93</inpatient>
+    <outpatient>76</outpatient>
+    <visn_name>The Great Lakes Health Care System</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry87">
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>79</outpatient>
+    <inpatient>93</inpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <state>AR</state>
+    <visn>16</visn>
+    <maternity>**</maternity>
+    <emergency>92</emergency>
+    <visn_name>South Central VA Health Care Network</visn_name>
+    <city>Fayetteville</city>
+    <facility_name>VAMC</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry21">
+    <maternity>**</maternity>
+    <facility_name>VAMC</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>77</outpatient>
+    <city>Butler</city>
+    <visn_name>VA Stars &amp; Stripes Healthcare Network</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+    <inpatient>93</inpatient>
+    <visn>4</visn>
+    <emergency>96</emergency>
+    <state>PA</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry39">
+    <city>Beckley</city>
+    <intensive_care_units>**</intensive_care_units>
+    <visn>6</visn>
+    <emergency>94</emergency>
+    <outpatient>77</outpatient>
+    <maternity>**</maternity>
+    <state>WV</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <facility_name>VAMC</facility_name>
+    <visn_name>VA Mid-Atlantic Health Care Network</visn_name>
+    <inpatient>96</inpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry146">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>96</emergency>
+    <outpatient>74</outpatient>
+    <inpatient>96</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry2">
+    <outpatient>79</outpatient>
+    <visn>1</visn>
+    <emergency>90</emergency>
+    <intensive_care_units>**</intensive_care_units>
+    <inpatient>86</inpatient>
+    <city>Bedford</city>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA New England Health Care System</visn_name>
+    <facility_name>Edith Nourse Rogers Memorial Veterans Hospital</facility_name>
+    <state>MA</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry31">
+    <city>Martinsburg</city>
+    <visn>5</visn>
+    <inpatient>91</inpatient>
+    <facility_name>VAMC</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <emergency>93</emergency>
+    <visn_name>VA Capitol Health Care Network</visn_name>
+    <maternity>**</maternity>
+    <state>WV</state>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>79</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry92">
+    <state>MS</state>
+    <city>Biloxi</city>
+    <facility_name>VA Gulf Coast Veterans HCS</facility_name>
+    <visn_name>South Central VA Health Care Network</visn_name>
+    <visn>16</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry41">
+    <state>AL</state>
+    <emergency>96</emergency>
+    <maternity>**</maternity>
+    <inpatient>96</inpatient>
+    <city>Montgomery</city>
+    <visn>7</visn>
+    <outpatient>77</outpatient>
+    <visn_name>VA Southeast Network</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>Central Alabama Veterans HCS Tuskeegee Montgomery</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry106">
+    <emergency>92</emergency>
+    <intensive_care_units>**</intensive_care_units>
+    <city>El Paso</city>
+    <facility_name>El Paso VA HCS</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>18</visn>
+    <outpatient>83</outpatient>
+    <visn_name>VA Southwest Health Care Network</visn_name>
+    <inpatient>94</inpatient>
+    <state>TX</state>
+    <maternity>**</maternity>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry84">
+    <state>IL</state>
+    <city>Marion</city>
+    <facility_name>VAMC</facility_name>
+    <visn_name>VA Heartland Network</visn_name>
+    <visn>15</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry128">
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>76</outpatient>
+    <emergency>93</emergency>
+    <visn_name>Desert Pacific Healthcare Network</visn_name>
+    <facility_name>VA Long Beach HCS</facility_name>
+    <state>CA</state>
+    <inpatient>87</inpatient>
+    <city>Long Beach</city>
+    <maternity>**</maternity>
+    <intensive_care_units>**</intensive_care_units>
+    <visn>22</visn>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry65">
+    <facility_name>VAMC</facility_name>
+    <maternity>**</maternity>
+    <emergency>96</emergency>
+    <intensive_care_units>**</intensive_care_units>
+    <state>OH</state>
+    <inpatient>93</inpatient>
+    <visn>10</visn>
+    <city>Dayton</city>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn_name>VA Health Care System of Ohio</visn_name>
+    <outpatient>74</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry100">
+    <state>AZ</state>
+    <city>Phoenix</city>
+    <facility_name>Carl T. Hayden VA Medical Center</facility_name>
+    <visn_name>VA Southwest Health Care Network</visn_name>
+    <visn>18</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry135">
+    <intensive_care_units>No ICU</intensive_care_units>
+    <facility_name>VAMC</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>23</visn>
+    <emergency>*</emergency>
+    <visn_name>VA Midwest Health Care Network</visn_name>
+    <inpatient>*</inpatient>
+    <maternity>**</maternity>
+    <city>Minneapolis</city>
+    <outpatient>74</outpatient>
+    <state>MN</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry3">
+    <maternity>**</maternity>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <visn>1</visn>
+    <visn_name>VA New England Health Care System</visn_name>
+    <city>West Roxbury</city>
+    <inpatient>*</inpatient>
+    <outpatient>76</outpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <facility_name>VA Boston HCSW Roxbury Brockton Jamaica Plns</facility_name>
+    <emergency>*</emergency>
+    <state>MA</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry114">
+    <intensive_care_units>**</intensive_care_units>
+    <city>Boise</city>
+    <emergency>95</emergency>
+    <maternity>**</maternity>
+    <state>ID</state>
+    <visn>20</visn>
+    <visn_name>Northwest Network</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>92</inpatient>
+    <facility_name>VAMC</facility_name>
+    <outpatient>76</outpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry22">
+    <state>PA</state>
+    <city>Coatesville</city>
+    <facility_name>VAMC</facility_name>
+    <visn_name>VA Stars &amp; Stripes Healthcare Network</visn_name>
+    <visn>4</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry149">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>92</emergency>
+    <outpatient>74</outpatient>
+    <inpatient>94</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry36">
+    <visn_name>VA Mid-Atlantic Health Care Network</visn_name>
+    <outpatient>76</outpatient>
+    <inpatient>95</inpatient>
+    <visn>6</visn>
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>VAMC</facility_name>
+    <city>Hampton</city>
+    <maternity>**</maternity>
+    <emergency>92</emergency>
+    <state>VA</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry55">
+    <state>KY</state>
+    <city>Lexington</city>
+    <facility_name>VAMC</facility_name>
+    <visn_name>VA Mid South Healthcare Network</visn_name>
+    <visn>9</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry152">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>94</emergency>
+    <outpatient>75</outpatient>
+    <inpatient>91</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry74">
+    <facility_name>Edward Hines Jr. VA Hospital</facility_name>
+    <state>IL</state>
+    <visn>12</visn>
+    <city>Hines</city>
+    <visn_name>The Great Lakes Health Care System</visn_name>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <outpatient>76</outpatient>
+    <emergency>*</emergency>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>*</inpatient>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry16">
+    <state>NY</state>
+    <city>New York Harbor</city>
+    <facility_name>VA NY Harbor HCSNY Harbor Brooklyn</facility_name>
+    <visn_name>VA NY/NJ Veterans Healthcare Network</visn_name>
+    <visn>3</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry141">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>91</emergency>
+    <outpatient>75</outpatient>
+    <inpatient>93</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry95">
+    <emergency>93</emergency>
+    <maternity>**</maternity>
+    <facility_name>VAMC</facility_name>
+    <inpatient>94</inpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>75</outpatient>
+    <visn>16</visn>
+    <state>OK</state>
+    <visn_name>South Central VA Health Care Network</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <city>Oklahoma City</city>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry109">
+    <visn_name>Rocky Mountain Network</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <state>MT</state>
+    <inpatient>95</inpatient>
+    <emergency>91</emergency>
+    <maternity>**</maternity>
+    <city>Fort Harrison</city>
+    <outpatient>78</outpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>VA Montana HCS</facility_name>
+    <visn>19</visn>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry121">
+    <intensive_care_units>No ICU</intensive_care_units>
+    <inpatient>97</inpatient>
+    <visn>21</visn>
+    <city>Fresno</city>
+    <visn_name>Sierra Pacific Network</visn_name>
+    <outpatient>74</outpatient>
+    <emergency>92</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+    <facility_name>VA Central California HCS</facility_name>
+    <state>CA</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry42">
+    <facility_name>VAMC</facility_name>
+    <visn>7</visn>
+    <visn_name>VA Southeast Network</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>79</outpatient>
+    <city>Tuscaloosa</city>
+    <emergency>92</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>98</inpatient>
+    <state>AL</state>
+    <maternity>**</maternity>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry85">
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>John J. Pershing VA Medical Center</facility_name>
+    <city>Poplar Bluff</city>
+    <maternity>**</maternity>
+    <outpatient>77</outpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <state>MO</state>
+    <inpatient>96</inpatient>
+    <visn>15</visn>
+    <visn_name>VA Heartland Network</visn_name>
+    <emergency>90</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry129">
+    <state>CA</state>
+    <city>Los Angeles</city>
+    <visn>22</visn>
+    <intensive_care_units>No ICU</intensive_care_units>
+    <outpatient>78</outpatient>
+    <facility_name>VA Greater Los Angeles HCS (GLA)</facility_name>
+    <maternity>**</maternity>
+    <visn_name>Desert Pacific Healthcare Network</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>89</inpatient>
+    <emergency>94</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry4">
+    <facility_name>VAMC</facility_name>
+    <outpatient>77</outpatient>
+    <state>MA</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>95</inpatient>
+    <maternity>**</maternity>
+    <intensive_care_units>**</intensive_care_units>
+    <visn>1</visn>
+    <city>Northampton</city>
+    <visn_name>VA New England Health Care System</visn_name>
+    <emergency>91</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry101">
+    <state>AZ</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>94</inpatient>
+    <visn_name>VA Southwest Health Care Network</visn_name>
+    <city>Prescott</city>
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <visn>18</visn>
+    <outpatient>75</outpatient>
+    <facility_name>Northern Arizona VA HCS</facility_name>
+    <emergency>97</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry153">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>83</emergency>
+    <outpatient>72</outpatient>
+    <inpatient>90</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry37">
+    <state>VA</state>
+    <city>Richmond</city>
+    <facility_name>Hunter Holmes McGuire VAMC</facility_name>
+    <visn_name>VA Mid-Atlantic Health Care Network</visn_name>
+    <visn>6</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry134">
+    <facility_name>VAMC</facility_name>
+    <city>Iowa City</city>
+    <maternity>**</maternity>
+    <inpatient>93</inpatient>
+    <state>IA</state>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>73</outpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <visn>23</visn>
+    <visn_name>VA Midwest Health Care Network</visn_name>
+    <emergency>93</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry115">
+    <state>OR</state>
+    <city>Portland</city>
+    <facility_name>VAMC</facility_name>
+    <visn_name>Northwest Network</visn_name>
+    <visn>20</visn>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry23">
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <outpatient>79</outpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <city>Erie</city>
+    <inpatient>94</inpatient>
+    <visn_name>VA Stars &amp; Stripes Healthcare Network</visn_name>
+    <visn>4</visn>
+    <state>PA</state>
+    <emergency>93</emergency>
+    <maternity>**</maternity>
+    <facility_name>VAMC</facility_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry148">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>86</emergency>
+    <outpatient>69</outpatient>
+    <inpatient>91</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry75">
+    <maternity>**</maternity>
+    <facility_name>VAMC</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <state>IL</state>
+    <inpatient>94</inpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <emergency>89</emergency>
+    <visn>12</visn>
+    <city>North Chicago</city>
+    <outpatient>77</outpatient>
+    <visn_name>The Great Lakes Health Care System</visn_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry64">
+    <visn_name>VA Health Care System of Ohio</visn_name>
+    <outpatient>77</outpatient>
+    <facility_name>Chalmers Wylie Outpatient Clinic ������</facility_name>
+    <visn>10</visn>
+    <city>Columbus</city>
+    <emergency>95</emergency>
+    <state>OH</state>
+    <maternity>**</maternity>
+    <inpatient>96</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <intensive_care_units>**</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry54">
+    <visn>8</visn>
+    <maternity>**</maternity>
+    <outpatient>78</outpatient>
+    <visn_name>VA Sunshine Healthcare Network</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+    <facility_name>VAMC</facility_name>
+    <city>San Juan</city>
+    <inpatient>91</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <state>PR</state>
+    <emergency>92</emergency>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry140">
+    <intensive_care_units>**</intensive_care_units>
+    <maternity>**</maternity>
+    <emergency>91</emergency>
+    <outpatient>79</outpatient>
+    <inpatient>91</inpatient>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry17">
+    <inpatient>93</inpatient>
+    <emergency>94</emergency>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <visn>3</visn>
+    <facility_name>VA Hudson Valley HCS Montrose Castle Pt</facility_name>
+    <visn_name>VA NY/NJ Veterans Healthcare Network</visn_name>
+    <outpatient>78</outpatient>
+    <intensive_care_units>**</intensive_care_units>
+    <city>Montrose</city>
+    <state>NY</state>
+    <maternity>**</maternity>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry43">
+    <visn_name>VA Southeast Network</visn_name>
+    <city>Atlanta</city>
+    <facility_name>VAMC</facility_name>
+    <emergency>93</emergency>
+    <outpatient>80</outpatient>
+    <state>GA</state>
+    <maternity>**</maternity>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>94</inpatient>
+    <visn>7</visn>
+    <intensive_care_units>**</intensive_care_units>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry94">
+    <city>Muskogee</city>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+    <visn_name>South Central VA Health Care Network</visn_name>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>79</outpatient>
+    <inpatient>93</inpatient>
+    <facility_name>VAMC</facility_name>
+    <visn>16</visn>
+    <emergency>92</emergency>
+    <state>OK</state>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry108">
+    <city>Grand Junction</city>
+    <intensive_care_units>**</intensive_care_units>
+    <visn>19</visn>
+    <emergency>96</emergency>
+    <visn_name>Rocky Mountain Network</visn_name>
+    <outpatient>79</outpatient>
+    <facility_name>VAMC</facility_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <inpatient>93</inpatient>
+    <state>CO</state>
+    <maternity>**</maternity>
+  </rdf:Description>
+  <rdf:Description rdf:about="#entry120">
+    <emergency>93</emergency>
+    <facility_name>Jonathan M. Wainwright Memorial VA Medical Center</facility_name>
+    <visn>20</visn>
+    <city>Walla Walla</city>
+    <intensive_care_units>**</intensive_care_units>
+    <outpatient>77</outpatient>
+    <state>WA</state>
+    <inpatient>90</inpatient>
+    <visn_name>Northwest Network</visn_name>
+    <rdf:type rdf:resource="http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#DataEntry"/>
+    <maternity>**</maternity>
+  </rdf:Description>
+</rdf:RDF>
