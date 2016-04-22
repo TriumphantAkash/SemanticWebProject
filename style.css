@@ -1,0 +1,30 @@
+#body
+{
+	background-color: #90e5c5;
+	margin-left:130px;
+  	margin-right:130px;
+  	width:960px;
+	
+}
+#header
+{
+	font-family:"Imprint MT Shadow";
+	background-image:url("header.jpg");
+	color:black;
+	padding:10px;
+	height:90px;
+	padding-left:1cm;
+}
+#content
+{
+	padding-left:1cm;
+}
+h3
+{
+	font-family:"Imprint MT Shadow";
+	color:darkblue;
+}
+BODY
+{
+	background-color:lightblue;
+}

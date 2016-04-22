@@ -56,9 +56,9 @@ function init(){
 		newdata.addRow([state, value,value2,value3]);
 		}
 		var options = {
-		title: 'Patient Statistics Figures - Based on Inpatients, Homeless Out-Patients and Emergency Patients',
-		hAxis: {title: 'State', titleTextStyle: {color: 'black'}} ,
-		vAxis: {title: 'Count of Inpatients - Satisfaction', titleTextStyle: {color: 'black'}}
+		title: 'Patient Statistics - Based on Inpatients, Homeless Out-Patients and Emergency Patients',
+		hAxis: {title: 'US State', titleTextStyle: {color: 'black'}} ,
+		vAxis: {title: 'Count of Inpatients Satisfaction', titleTextStyle: {color: 'black'}}
 		};
 		var chart = new google.visualization.ColumnChart(document.getElementById('map_canvas1'));
 		chart.draw(data, options);   
